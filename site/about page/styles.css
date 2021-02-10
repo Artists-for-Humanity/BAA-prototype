@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Overall Ontop */
+
+
+.nav-1 {
+    display: flex;
+    flex-direction: row;
+}
