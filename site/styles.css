@@ -1,3 +1,68 @@
 h1 {
-    color: red;
+    font-size: 80px;
+    color: white;
 }
+
+h2 {
+    padding: 20px;
+    border-color: black;
+    border-width: 10px;
+}
+
+.header-box {
+    display: grid;
+    color: lightgray;
+    padding: 100px;
+    background-color: gray;
+}
+
+.upcoming-events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+}
+
+.upcoming-event-image-wrapper {
+    position: relative;
+
+}
+
+.upcoming-event-image {
+    background-color: gray;
+    height: 300px;
+}
+
+.upcoming-event-date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.button {
+    color: white;
+    padding: 30px;
+    background-color: gray;
+    border-color: black;
+    border-width: 20px;
+
+
+}
+
+.month {
+    font-size: 20px;
+}
+
+.day {
+    font-size: 25px
+}
+
+.news {}
+
+.tour-baa {}
+
+.impact-circle {}
