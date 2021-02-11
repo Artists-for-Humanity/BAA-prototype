@@ -1,12 +1,15 @@
 h1 {
     font-size: 80px;
     color: white;
+    font-weight: bolder;
 }
 
 h2 {
+    font-size: 35px;
     padding: 20px;
     border-color: black;
     border-width: 10px;
+    font-weight: bold;
 }
 
 .header-box {
@@ -17,9 +20,10 @@ h2 {
 }
 
 .upcoming-events {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     flex-direction: row;
+    padding: 80px;
+    background-color: cornsilk;
 }
 
 .upcoming-event-image-wrapper {
@@ -44,13 +48,11 @@ h2 {
 }
 
 .button {
-    color: white;
+    color: black;
     padding: 30px;
-    background-color: gray;
+    background-color: white;
     border-color: black;
-    border-width: 20px;
-
-
+    border-width: 50px;
 }
 
 .month {
@@ -61,8 +63,48 @@ h2 {
     font-size: 25px
 }
 
-.news {}
+.view-all {
+    font-size: small;
+    font-weight: lighter;
+}
 
-.tour-baa {}
+.tour-baa {
+    padding: 80px;
+    background-color: cornsilk;
+}
 
-.impact-circle {}
+.donations {
+    padding: 80px;
+    background-color: wheat;
+}
+
+.student-spotlight {
+    padding: 80px;
+    background-color: white;
+}
+
+.impact {
+    padding: 80px;
+    background-color: cornsilk;
+}
+
+.impact-circle {
+    border: radius 50px
+}
+
+.month-review {
+    padding: 80px;
+    background-color: white;
+}
+
+.more-from {
+    text-align: center;
+    padding: 80px;
+    background-color: cornsilk;
+}
+
+footer {
+    text-align: center;
+    padding: 80px;
+    background-color: white;
+}
