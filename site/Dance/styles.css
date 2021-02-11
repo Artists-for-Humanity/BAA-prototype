@@ -2,9 +2,6 @@ h1 {
     color: blue;
 }
 
-body {
-    background-color: rgb(185, 193, 194);
-}
 
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, serif;
@@ -12,4 +9,42 @@ p {
 
 .header-box {
     height: 500px;
-} 
+}
+
+.sub-nav {
+display:flex
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.intro-text {
+  background-color: gray;
+  padding: 40px;
+}
+
+.intro-text p {
+  font-size: 30px;
+}
+
+.TBD-space {
+  height: 1200px;
+}
+
+.related-pages-start {
+  background-color: gray;
+  padding: 50px;
+}
+
+.related-pages-start h2{
+  font-size: 24px;
+  padding: 10px;
+}
+
+.student {
+  height: 100px
+}
