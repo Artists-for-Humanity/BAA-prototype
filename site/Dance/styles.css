@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+}
+
+body {
+    background-color: rgb(185, 193, 194);
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, serif;
+}
+
+.header-box {
+    height: 500px;
+} 
