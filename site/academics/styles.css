@@ -1,3 +1,13 @@
 h1 {
     color: blue;
 }
+
+.support-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.support-block {
+    display: flex;
+
+}
