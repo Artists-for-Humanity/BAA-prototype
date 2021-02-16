@@ -1,25 +1,24 @@
 h1 {
-    color: blue;
+  color: blue;
 }
 
 
 p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, serif;
 }
 
 .header-box {
-    height: 500px;
+  height: 500px;
 }
 
 .sub-nav {
-display:flex
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
 }
 
 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .intro-text {
@@ -36,11 +35,11 @@ p {
 }
 
 .related-pages-start {
-  background-color: gray;
+  background-color: rgb(206, 204, 204);
   padding: 50px;
 }
 
-.related-pages-start h2{
+.related-pages-start h2 {
   font-size: 24px;
   padding: 10px;
 }
@@ -50,6 +49,23 @@ p {
 }
 
 .related-pages-items {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.related-pages-item {}
+
+.related-pages-image {
+  height: 150px;
+  background-color: gray;
+  position: relative;
+  margin: 5px;
+}
+
+.related-pages-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
 }
