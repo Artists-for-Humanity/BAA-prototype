@@ -7,22 +7,51 @@
 
 .nav-1 {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    flex-direction: row;
 }
 
-.connect {}
+.visiter-support {
+    background-color: lightgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-/* NAV 1 ONTOP */
+/* ROW 1 ONTOP */
+
 .nav-2 {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
-/* NAV 2 ONTOP */
+/* ROW 2 ONTOP */
+
+.banner {
+    padding-left: 35px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: lightgray;
+}
+
+.about-title {
+    font-size: 60px;
+    color: white;
+}
+
+/* ABOUT BANNER ONTOP */
+
 .nav-3 {
     display: flex;
     flex-direction: row;
 }
 
-/* NAV 3 ONTOP */
+.our-mission {
+    background-color: lightgray;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
