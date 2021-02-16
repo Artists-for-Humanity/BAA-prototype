@@ -1,7 +1,7 @@
 h1 {
     font-size: 80px;
     color: white;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 h2 {
@@ -15,14 +15,13 @@ h2 {
 .header-box {
     display: grid;
     color: lightgray;
-    padding: 100px;
+    padding: 350px;
     background-color: gray;
 }
 
 .upcoming-events {
     display: flex;
     flex-direction: row;
-    padding: 80px;
     background-color: cornsilk;
 }
 
@@ -49,7 +48,7 @@ h2 {
 
 .button {
     color: black;
-    padding: 30px;
+    padding: 10px;
     background-color: white;
     border-color: black;
     border-width: 50px;
@@ -92,19 +91,96 @@ h2 {
     border: radius 50px
 }
 
-.month-review {
+.month-in-review {
     padding: 80px;
     background-color: white;
 }
 
+.month-in-review-title {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .more-from {
-    text-align: center;
-    padding: 80px;
-    background-color: cornsilk;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.more-from-title {
+    font-weight: bold;
+}
+
+.more-from-buttons {
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    background-color: rgb(160, 160, 160);
+
+}
+
+.student-illustration {
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 180px;
+    border-style: solid;
+    border-color: gray;
 }
 
 footer {
     text-align: center;
+    padding: 200px;
+    background-color: gray;
+}
+
+.footer-title {
+    padding: 40px;
+    font-size: 50px;
+    color: white;
+}
+
+.designing-their-future {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.interaction-buttons-1 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.interaction-buttons-2 {
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.interaction-buttons-box {
+    color: white;
     padding: 80px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color: gray;
+}
+
+.shop-interaction-button {
+    color: gray;
+    padding: 80px;
+    border-style: solid;
+    border-color: white;
     background-color: white;
 }
