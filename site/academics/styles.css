@@ -1,13 +1,34 @@
-h1 {
-    color: blue;
-}
-
 .support-blocks {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 90px;
 }
 
 .support-block {
     display: flex;
-
 }
+
+.support-block-image {
+    height: 60px;
+    width: 60px;
+    margin-right: 50px;
+}
+
+.support-block-text {
+    font-size: 15px;
+}
+
+.support-block-title {
+    font-size: 20px;
+}
+
+.support-block-cta {
+    font-size: 15px;
+    color: blue;
+    font-weight: bold;
+}
+
+/* font-size
+line-height
+color
+margin */
