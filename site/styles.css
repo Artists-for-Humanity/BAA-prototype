@@ -15,14 +15,19 @@ h2 {
 .header-box {
     display: grid;
     color: lightgray;
-    padding: 350px;
     background-color: gray;
+
+}
+
+.header-box-image {
+    object-fit: fill;
 }
 
 .upcoming-events {
     display: flex;
     flex-direction: row;
-    background-color: cornsilk;
+    justify-content: space-around;
+    background-color: lightgray;
 }
 
 .upcoming-event-image-wrapper {
@@ -103,6 +108,12 @@ h2 {
     justify-content: space-between;
 }
 
+.month-in-review-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .more-from {
     display: flex;
     flex-direction: row;
@@ -112,41 +123,47 @@ h2 {
 
 .more-from-title {
     font-weight: bold;
+    font-size: 30px;
+    padding: 40px;
 }
 
 .more-from-buttons {
     color: white;
-    padding: 10px;
+    padding: 40px;
     border-style: solid;
     border-color: gray;
-    border-width: 1px;
+    border-width: 8px;
     background-color: rgb(160, 160, 160);
 
 }
 
 .student-illustration {
+    font-size: 100px;
     color: gray;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 180px;
+    align-items: center;
+    padding: 100px;
     border-style: solid;
     border-color: gray;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
 }
 
 footer {
     text-align: center;
-    padding: 200px;
+    padding: 170px;
     background-color: gray;
 }
 
 .footer-title {
     padding: 40px;
-    font-size: 50px;
+    font-size: 100px;
     color: white;
 }
 
@@ -157,6 +174,7 @@ footer {
 }
 
 .interaction-buttons-1 {
+    font-size: 45px;
     color: white;
     display: flex;
     flex-direction: row;
@@ -165,36 +183,50 @@ footer {
 }
 
 .interaction-buttons-2 {
-    padding: 50px;
+    padding: 10px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .interaction-buttons-box {
     color: white;
-    padding: 80px;
+    font-size: 50px;
+    padding: 100px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
     border-color: white;
     background-color: gray;
 }
 
 .shop-interaction-button {
     color: gray;
-    padding: 80px;
+    font-size: 50px;
+    padding: 100px;
     border-style: solid;
+    border-width: 10px;
     border-color: white;
     background-color: white;
 }
 
 .placeholder-image {
     width: 100px;
-    height: 50px
+
 }
 
 .student-illustration-image-wrapper {
     position: relative;
     text-align: center;
+    width: 100%;
 }
+
+.student-illustration-image {
+    width: 100%;
+}
+
+/* add width+wrapper to big header boxes to fill page
+-use flex to add stuff to text to the bottom corner
+-see.student-illustartion to center text(flex, position ablouet, text alight center....)
+-get header box layered like illustrations box
+-add image photo to all required spots*/
