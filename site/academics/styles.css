@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 90px;
+    column-gap: 90px;
 }
 
 .support-block {
@@ -12,6 +13,9 @@
     height: 60px;
     width: 60px;
     margin-right: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
 }
 
 .support-block-text {
@@ -26,6 +30,10 @@
     font-size: 15px;
     color: blue;
     font-weight: bold;
+}
+
+.header-block {
+    font-size: 30px;
 }
 
 /* font-size
