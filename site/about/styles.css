@@ -45,10 +45,132 @@
     flex-direction: row;
 }
 
+.school-info-nav {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 .our-mission {
     background-color: lightgray;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 50px;
     padding-left: 50px;
+}
+
+/* ROW 3 ONTOP */
+
+.history {
+    display: flex;
+    flex-direction: row;
+}
+
+.history-column-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-column-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-story {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.date-1 {
+    margin-bottom: 10px;
+}
+
+.date-3 {
+    margin-bottom: 10px;
+}
+
+.our-story-title {
+    margin: 20px 20px 20px 0;
+    font-size: 20px;
+}
+
+/* HISTORY ROW ONTOP */
+
+.box-1 {
+    background-color: lightgray;
+    padding: 80px;
+    margin: 20px;
+}
+
+.box-2 {
+    background-color: gray;
+    padding: 80px;
+    margin: 20px;
+}
+
+.box-3 {
+    background-color: lightgray;
+    padding: 80px;
+    margin: 20px;
+}
+
+.box-4 {
+    background-color: lightgray;
+    padding: 80px;
+    margin: 20px;
+}
+
+.box-5 {
+    background-color: lightgray;
+    padding: 80px;
+    margin: 20px;
+}
+
+.box-6 {
+    background-color: gray;
+    padding: 80px;
+    margin: 20px;
+}
+
+.info-box-row-1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.info-box-row-2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.information {
+    margin: 25px 50px 25px 30px;
+}
+
+/* SCHOOL INFO ROW ONTOP */
+
+.new-campus {
+    background-color: lightgray;
+    padding: 20px 30px 20px 30px;
+}
+
+.campus-info-row-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px 20px 20px;
+}
+
+.campus-info-row-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.campus-title {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.campus-subtitle {
+    margin: 20px 0px 5px 20px;
 }
