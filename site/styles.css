@@ -1,5 +1,5 @@
 h1 {
-    font-size: 80px;
+    font-size: 70px;
     color: white;
     font-weight: bold;
 }
@@ -10,17 +10,53 @@ h2 {
     border-color: black;
     border-width: 10px;
     font-weight: bold;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .header-box {
-    display: grid;
-    color: lightgray;
-    background-color: gray;
-
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
 .header-box-image {
     object-fit: fill;
+    width: 100%;
+}
+
+.header-box-title {
+    font-size: 100px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+    border-style: solid;
+    border-color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+.button {
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    background-color: gray;
+    border-color: black;
+    border-width: 120px;
+}
+
+.upcoming-events-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightgray;
 }
 
 .upcoming-events {
@@ -28,6 +64,7 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     background-color: lightgray;
+    padding-bottom: 100px;
 }
 
 .upcoming-event-image-wrapper {
@@ -38,6 +75,7 @@ h2 {
 .upcoming-event-image {
     background-color: gray;
     height: 300px;
+    object-fit: fill;
 }
 
 .upcoming-event-date {
@@ -51,12 +89,11 @@ h2 {
 
 }
 
-.button {
+.descriptions {
+    padding: 20px;
     color: black;
-    padding: 10px;
-    background-color: white;
-    border-color: black;
-    border-width: 50px;
+    text-align: left;
+    font-size: 20px;
 }
 
 .month {
@@ -64,12 +101,16 @@ h2 {
 }
 
 .day {
-    font-size: 25px
+    font-size: 25px;
 }
 
 .view-all {
+    padding: 20px;
+    border-color: black;
+    border-width: 10px;
     font-size: small;
     font-weight: lighter;
+    text-align: right;
 }
 
 .tour-baa {
@@ -78,31 +119,80 @@ h2 {
 }
 
 .donations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
     padding: 80px;
-    background-color: wheat;
+}
+
+.donation {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-image {
+    background-color: gray;
+    height: 500px;
+    object-fit: fill;
+}
+
+.student-spotlight-title {
+    padding: 30px;
+    background-color: lightgray;
+
 }
 
 .student-spotlight {
-    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    background-color: lightgray;
+}
+
+.student-spotlight-image {
+    height: 300px;
+    object-fit: fill;
+}
+
+.student-description {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-spotlight-stats {
+    display: flex;
+    flex-direction: row;
 }
 
 .impact {
-    padding: 80px;
-    background-color: cornsilk;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .impact-circle {
-    border: radius 50px
+    border-radius: 50%;
+    height: 50px;
+    object-fit: fill;
+
+}
+
+.impact-sections {
+    display: flex;
+    flex-direction: column;
 }
 
 .month-in-review {
-    padding: 80px;
-    background-color: white;
+    padding: 40px;
+    background-color: lightgray;
 }
 
 .month-in-review-title {
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -111,7 +201,13 @@ h2 {
 .month-in-review-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.month-in-review-image {
+    background-color: gray;
+    height: 500px;
+    object-fit: fill;
 }
 
 .more-from {
@@ -223,10 +319,12 @@ footer {
 
 .student-illustration-image {
     width: 100%;
+    height: 350px;
+    object-fit: fill;
 }
 
-/* add width+wrapper to big header boxes to fill page
--use flex to add stuff to text to the bottom corner
--see.student-illustartion to center text(flex, position ablouet, text alight center....)
--get header box layered like illustrations box
--add image photo to all required spots*/
+.blue-text {
+    color: blue
+}
+
+/* figure out spacing issues in imoact section (rows? then columns?)
