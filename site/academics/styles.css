@@ -37,6 +37,11 @@
     font-weight: bold;
 }
 
+.subjects-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* font-size
 line-height
 color
