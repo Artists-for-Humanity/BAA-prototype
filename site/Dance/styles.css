@@ -1,12 +1,44 @@
-h1 {
-  color: grey;
-  font-size: 100px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
+h1 {
+  font-size: 110px;
+  color: rgb(88, 88, 88);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 180px;
+  border-style: solid;
+  border-color: gray;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-80%, -30%);
+}
 
+.header-text {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-style: solid;
+  border-color: gray;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateX(50%) rotate(-90deg) translateY(-100%);
+}
+
+.banner {
+  width: 100%;
+}
 
 .header-box {
   font-weight: bold;
+  position: relative;
 }
 
 .sub-nav {
@@ -45,21 +77,19 @@ h1 {
   padding: 10px;
 }
 
-.student {
-  ;
-}
-
 .related-pages-items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
-
-.related-pages-item {}
 
 .related-pages-image {
   background-color: gray;
   position: relative;
-  margin: 5px;
+}
+
+.related-pages-image img {
+  vertical-align: top;
 }
 
 .related-pages-date {
@@ -81,7 +111,6 @@ h1 {
 .related-pages-wrapper {
   background-color: white;
   padding: 10px;
-  margin-right: 5px;
 }
 
 .related-pages-title {
@@ -91,4 +120,79 @@ h1 {
 
 .related-pages-item a {
   color: blue;
+}
+
+footer {
+  text-align: center;
+  padding: 200px;
+  background-color: gray;
+}
+
+.footer-title {
+  padding: 40px;
+  font-size: 50px;
+  color: white;
+}
+
+.designing-their-future {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.interaction-buttons-1 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.interaction-buttons-2 {
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.interaction-buttons-box {
+  color: white;
+  padding: 80px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  background-color: gray;
+}
+
+.shop-interaction-button {
+  color: gray;
+  padding: 80px;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+}
+
+.placeholder-image {
+  width: 100px;
+  height: 50px
+}
+
+.student-illustration-image-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.student-illustration {
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 180px;
+  border-style: solid;
+  border-color: gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
