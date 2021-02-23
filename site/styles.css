@@ -41,6 +41,7 @@ h2 {
     right: 0;
     bottom: 0;
     text-align: left;
+    padding-bottom: 50px;
 }
 
 .button {
@@ -53,10 +54,16 @@ h2 {
 }
 
 .upcoming-events-title {
+    background-color: lightgray;
+    padding-bottom: 20px;
+}
+
+.title-spacing {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: lightgray;
+    margin-left: 1%;
+    margin-right: 5%;
 }
 
 .upcoming-events {
@@ -83,9 +90,11 @@ h2 {
     right: 0;
     bottom: 0;
     padding: 30px;
+
     background-color: white;
     flex-direction: column;
     text-align: center;
+    font-weight: bold;
 
 }
 
@@ -97,18 +106,18 @@ h2 {
 }
 
 .month {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .day {
-    font-size: 25px;
+    font-size: 50px;
 }
 
 .view-all {
     padding: 20px;
     border-color: black;
     border-width: 10px;
-    font-size: small;
+    font-size: 20px;
     font-weight: lighter;
     text-align: right;
 }
@@ -138,7 +147,8 @@ h2 {
 }
 
 .student-spotlight-title {
-    padding: 30px;
+    padding: 10px;
+    padding-top: 50px;
     background-color: lightgray;
 
 }
@@ -146,44 +156,87 @@ h2 {
 .student-spotlight {
     display: flex;
     flex-direction: row;
-    padding: 100px;
+    padding: 150px;
     background-color: lightgray;
+    padding-top: 20px;
 }
 
 .student-spotlight-image {
-    height: 300px;
+    height: 500px;
+    width: 4000px;
     object-fit: fill;
 }
 
-.student-description {
+.student-description-background {
     background-color: white;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    width: 4000px;
+}
+
+.student-description {
+    padding: 50px;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.student-name {
+    color: black;
+    font-size: 70px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.line-spacing {
+    line-height: 35px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .student-spotlight-stats {
     display: flex;
     flex-direction: row;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .impact {
-    padding: 40px;
+    padding: 100px;
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .impact-circle {
     border-radius: 50%;
     height: 50px;
     object-fit: fill;
-
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
 }
 
-.impact-sections {
+.impact-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.gray-line {
+    height: 10px;
+    color: gray;
+    width: 20px;
+}
+
+.impact-description {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
 }
 
 .month-in-review {
@@ -324,7 +377,7 @@ footer {
 }
 
 .blue-text {
-    color: blue
+    color: rgb(0, 119, 255)
 }
 
 /* -figure out spacing issues in impact section
