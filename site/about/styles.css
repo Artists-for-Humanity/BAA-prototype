@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /* Overall Ontop */
 
 .nav-1 {
@@ -13,8 +14,46 @@
 
 .visiter-support {
     background-color: lightgray;
+}
+
+.item-1-1 {
     padding-top: 20px;
-    padding-bottom: 20px;
+    color: white;
+}
+
+.nav-1-items-4 {
+    margin: 0px 50px 0px 50px;
+    padding: 20px 0px 20px 0px;
+}
+
+.nav-1-items {
+    padding: 20px 50px 0px 50px;
+    color: white;
+}
+
+.connect-border {
+    border-left: 1px black solid;
+}
+
+.give-border {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+.apply-border {
+    background-color: white;
+    border-bottom: 1px black solid;
+}
+
+.item-1-EN {
+    color: white;
+    padding: 20px 0px 20px 5px;
+}
+
+.language-box {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1200px;
 }
 
 /* ROW 1 ONTOP */
@@ -22,20 +61,41 @@
 .nav-2 {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    margin-bottom: 20px;
+}
 
+.navigations {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 0px 20px 0px;
+}
+
+.BAA-title-edit {
+    font-size: 30px;
+}
+
+.BAA-Title {
+    margin-right: 600px;
+}
+
+.nav-2-items {
+    font-size: 15px;
+    color: lightgrey;
+    padding: 20px 40px 0px 40px;
 }
 
 /* ROW 2 ONTOP */
 
-.banner {
-    background-color: lightgray;
+.about-title {
+    font-size: 120px;
+    color: white;
+    position: absolute;
+    bottom: 310px;
+    left: 70px;
 }
 
-.about-title {
-    font-size: 60px;
-    color: white;
+.placeholder-image img {
+    width: 100%;
 }
 
 /* ABOUT BANNER ONTOP */
@@ -45,10 +105,332 @@
     flex-direction: row;
 }
 
+.school-info-nav {
+    padding: 20px 0px 20px 20px;
+}
+
+.school-info-items {
+    padding: 0px 30px 0px 30px;
+    color: gray;
+}
+
 .our-mission {
     background-color: lightgray;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 50px;
     padding-left: 50px;
+}
+
+.mission {
+    margin: 20px 0px 30px 0px;
+    font-size: 25px;
+}
+
+.mission-info-1 {
+    margin-bottom: 30px;
+}
+
+/* ROW 3 ONTOP */
+
+.history {
+    display: flex;
+    flex-direction: row;
+}
+
+.history-column-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-column-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-story {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.date-1 {
+    margin-bottom: 30px;
+}
+
+.date-3 {
+    margin-bottom: 30px;
+}
+
+.our-story-title {
+    margin: 40px 0px 40px 0;
+    font-size: 25px;
+}
+
+.date-edits {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+/* HISTORY ROW ONTOP */
+
+.box-1 {
+    background-color: lightgray;
+    padding: 100px 155px 100px 155px;
+    margin: 20px;
+}
+
+.box-2 {
+    background-color: gray;
+    padding: 100px 100px 100px 100px;
+    margin: 20px;
+}
+
+.box-3 {
+    background-color: lightgray;
+    padding: 100px 195px 100px 195px;
+    margin: 20px;
+}
+
+.box-4 {
+    background-color: lightgray;
+    padding: 100px 100px 100px 100px;
+    margin: 20px;
+}
+
+.box-5 {
+    background-color: lightgray;
+    padding: 100px 220px 100px 220px;
+    margin: 20px;
+}
+
+.box-6 {
+    background-color: gray;
+    padding: 100px;
+    margin: 20px;
+}
+
+.info-box-h1 {
+    font-size: 110px;
+}
+
+
+.info-box-row-1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.info-box-row-2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.information {
+    margin: 25px 50px 25px 30px;
+}
+
+/* SCHOOL INFO ROW ONTOP */
+
+.new-campus {
+    background-color: lightgray;
+    padding: 20px 30px 80px 30px;
+}
+
+.campus-info-row-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px 20px 20px;
+}
+
+.campus-info-row-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.campus-title {
+    font-size: 25px;
+    margin: 50px 0px 40px 0px;
+    margin-left: 20px;
+}
+
+.campus-subtitle {
+    margin: 0px 0px 5px 20px;
+}
+
+.campus-image-edit-1 {
+    width: 800px;
+    height: 300px;
+}
+
+.campus-image-edit-2 {
+    width: 800px;
+    height: 300px;
+    margin: 0px 10px 0px 10px;
+}
+
+.campus-image-edit-3 {
+    width: 800px;
+    height: 300px;
+}
+
+.campus-image-alignment {
+    display: flex;
+    flex-direction: row;
+    margin: 60px 20px 0px 20px;
+}
+
+.campus-info-1 {
+    margin-right: 20px;
+}
+
+.campus-info-3 {
+    margin-right: 20px;
+}
+
+/* CAMPUS INFO ONTOP */
+
+.our-approach {
+    margin: 90px 50px 10px 50px;
+}
+
+.approach-info-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.approach-card-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.approach-image {
+    width: 320px;
+    height: 200px;
+    padding-bottom: 20px;
+}
+
+.approach-card-1 {
+    border: 1px solid black;
+    margin: 0px 67px 0px 0px;
+}
+
+.approach-card-2 {
+    border: 1px solid black;
+    margin: 0px 67px 0px 67px;
+}
+
+.approach-card-3 {
+    border: 1px solid black;
+    margin: 0px 67px 0px 67px;
+}
+
+.approach-card-4 {
+    border: 1px solid black;
+    margin: 0px 0px 0px 67px;
+}
+
+.learn-more-A {
+    color: lightskyblue;
+    margin-top: 10px;
+    padding: 0px 0px 10px 10px;
+}
+
+.approach-topic {
+    padding: 10px;
+    width: 300px;
+}
+
+.approach-subtitle {
+    padding-left: 10px;
+}
+
+.educational-subtitle {
+    padding-left: 10px;
+}
+
+.approach-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.approach-1-info {
+    margin-right: 140px;
+}
+
+/* APPROACH ROW ONTOP */
+
+.student-work-image img {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.student-work {
+    position: relative;
+    margin-left: 710px;
+    color: white;
+    font-size: 25px;
+    top: 200px;
+}
+
+
+/* STUDENT WORK ROW ONTOP */
+.footer {
+    background-color: gray;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.footer-content {
+    padding: 30px;
+}
+
+.footer-items-row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px;
+}
+
+.footer-items-1 {
+    font-size: 20px;
+    color: white;
+    margin-right: 555px;
+}
+
+.footer-items-2 {
+    font-size: 20px;
+    color: white;
+}
+
+.visiter-border {
+    font-size: 27px;
+    color: white;
+    padding: 40px 60px 40px 60px;
+    border: 3px white solid;
+    margin: 20px;
+}
+
+.visiter-border-1 {
+    font-size: 27px;
+    color: black;
+    padding: 40px 80px 40px 80px;
+    border: 3px white solid;
+    margin: 20px;
+    background-color: white;
+}
+
+.visiter-option-row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 355px;
+    margin-bottom: 100px;
+
 }
