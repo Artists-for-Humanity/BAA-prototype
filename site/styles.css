@@ -14,6 +14,52 @@ h2 {
     margin-left: 30px;
 }
 
+.language {
+    color: white;
+    font-size: 30px;
+    align-items: left;
+}
+
+.nav-1 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.visiter-support {
+    background-color: lightgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ROW 1 ONTOP */
+
+.nav-2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* ROW 2 ONTOP */
+
+.banner {
+    background-color: lightgray;
+}
+
+.about-title {
+    font-size: 60px;
+    color: white;
+}
+
+/* ABOUT BANNER ONTOP */
+
+.nav-3 {
+    display: flex;
+    flex-direction: row;
+}
+
 .header-box {
     position: relative;
     text-align: center;
