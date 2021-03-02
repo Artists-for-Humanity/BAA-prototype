@@ -61,7 +61,7 @@ h1 {
     border-color: gray;
     position: absolute;
     top: 35%;
-    left: 46%;
+    left: 30%;
     transform: translate(-80%, -30%);
 }
 
@@ -114,4 +114,15 @@ h1 {
     flex-direction: column;
     align-items: center;
 
-}
+    .tbd {
+        font-size: 150px;
+        color: grey;
+        display: flex;
+        justify-content: center;
+    }
+
+    .related-pages-2 {
+        background-color: rgb(184, 184, 184);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
