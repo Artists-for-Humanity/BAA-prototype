@@ -17,29 +17,63 @@ h2 {
 .language {
     color: white;
     font-size: 30px;
-    align-items: left;
+    padding-left: 50px;
+    align-items: center;
 }
 
 .nav-1 {
     display: flex;
-    justify-content: flex-end;
     flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.interact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.interact-apply {
+    color: black;
+    background-color: white;
+
+}
+
+.black-text {
+    color: black;
+    font-size: 30px;
+}
+
+.BAA-logo {
+    transform: rotate(90deg);
+    width: 80px;
+
 }
 
 .visiter-support {
-    background-color: lightgray;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: gray;
 }
 
 /* ROW 1 ONTOP */
+.baa-corner-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .nav-2 {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: lightgrey;
+    height: 150px;
+    justify-content: space-between;
+}
 
+.nav-2-interaction {
+    display: flex;
+    flex-direction: row;
+    align-items:
 }
 
 /* ROW 2 ONTOP */
@@ -436,6 +470,3 @@ footer {
 .blue-text {
     color: rgb(0, 119, 255)
 }
-
-/* -figure out spacing issues in impact section
--style text in student spotlight
