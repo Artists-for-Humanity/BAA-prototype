@@ -93,159 +93,122 @@ h1 {
   padding: 10px;
 }
 
-.related-pages-items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.related-pages-image {
-  background-color: gray;
-  position: relative;
-}
-
-.related-pages-image img {
-  vertical-align: top;
-}
-
-.related-pages-date {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 50px;
-  width: 50px;
-  background-color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 15px;
-  text-align: center;
-}
-
-.related-pages-date-number {
-  font-size: 25px;
-  text-align: center;
-}
-
-.related-pages-wrapper {
-  background-color: white;
-  padding: 10px;
-}
-
-.related-pages-title {
-  font-weight: bolder;
-  font-size: 20px;
-}
-
-.related-pages-item a {
-  color: blue;
-}
-
-footer {
-  text-align: center;
-  padding: 200px;
-  background-color: gray;
-}
-
-.footer-title {
-  padding: 40px;
-  font-size: 50px;
-  color: white;
-}
-
-.designing-their-future {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.interaction-buttons-1 {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.interaction-buttons-2 {
-  padding: 50px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.interaction-buttons-box {
-  color: white;
-  padding: 80px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-  background-color: gray;
-}
-
-.shop-interaction-button {
-  color: gray;
-  padding: 80px;
-  border-style: solid;
-  border-color: white;
-  background-color: white;
-}
-
-.placeholder-image {
-  width: 100px;
-  height: 50px
-}
-
-.student-illustration-image-wrapper {
-  position: relative;
-  text-align: center;
-}
-
-.student-illustration {
-  color: gray;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 180px;
-  border-style: solid;
-  border-color: gray;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.intro-text p {
-  margin-bottom: 50px;
-}
-
 @media (max-width: 600px) {
-  .banner {
-    color: red;
+  .related-pages-items {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    gap: 10px;
   }
-}
 
-@media (max-width: 600px) {
-  .intro-text {
-    color: red;
+  .related-pages-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
   }
-}
 
-@media (max-width: 600px) {
-  .related-pages-start {
-    color: red;
+  .related-pages-image {
+    background-color: gray;
+    position: relative;
   }
-}
 
-@media (max-width: 600px) {
+  .related-pages-image img {
+    vertical-align: top;
+  }
+
+  .related-pages-date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .related-pages-date-number {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .related-pages-wrapper {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .related-pages-title {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .related-pages-item a {
+    color: blue;
+  }
+
+  footer {
+    text-align: center;
+    padding: 200px;
+    background-color: gray;
+  }
+
   .footer-title {
-    color: red;
+    padding: 40px;
+    font-size: 50px;
+    color: white;
   }
-}
 
-@media (max-width: 600px) {
-  .h1 {
-    color: red;
-    font-size: 59px;
+  .designing-their-future {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .interaction-buttons-1 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .interaction-buttons-2 {
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .interaction-buttons-box {
+    color: white;
+    padding: 80px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color: gray;
+  }
+
+  .shop-interaction-button {
+    color: gray;
+    padding: 80px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+  }
+
+  .placeholder-image {
+    width: 100px;
+    height: 50px
+  }
+
+  .student-illustration-image-wrapper {
+    position: relative;
+    text-align: center;
+  }
+
+  .student-illustration {
+    color: gray;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -254,7 +217,50 @@ footer {
     border-color: gray;
     position: absolute;
     top: 50%;
-    left: 25%;
-    transform: translate(-80%, -30%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-}
+
+  .intro-text p {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 600px) {
+    .banner {
+      color: red;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .intro-text {
+      color: red;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .related-pages-start {
+      color: red;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .footer-title {
+      color: red;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .h1 {
+      font-size: 59px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 180px;
+      border-style: solid;
+      border-color: gray;
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-80%, -30%);
+    }
+  }
