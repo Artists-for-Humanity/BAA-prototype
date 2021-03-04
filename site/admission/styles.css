@@ -110,19 +110,28 @@ h1 {
 }
 
 .student-text {
+    top: 50%;
+    left: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%)
+}
 
-    .tbd {
-        font-size: 150px;
-        color: grey;
-        display: flex;
-        justify-content: center;
-    }
+;
 
-    .related-pages-2 {
-        background-color: rgb(184, 184, 184);
-        display: grid;
-        grid-template-columns: repeat(4, 1fr)
-    }
+.tbd {
+    font-size: 150px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+.related-pages-2 {
+    background-color: rgb(184, 184, 184);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.footer {
+    background-color: gray;
+}
