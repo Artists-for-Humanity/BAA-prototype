@@ -51,6 +51,12 @@
     gap: 30px;
 }
 
+@media (max-width:600px) {
+    .majors-block-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .majors-block {
     position: relative;
 }
@@ -124,6 +130,11 @@
     top: 50%;
     right: 0%;
     transform: translateX(50%) rotate(-90deg) translateY(-100%);
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 /* font-size
