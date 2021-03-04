@@ -2,6 +2,12 @@ h1 {
     font-size: 70px;
     color: white;
     font-weight: bold;
+
+    @media screen and (max-width: 800px) {
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+    }
 }
 
 h2 {
@@ -46,9 +52,9 @@ h2 {
 }
 
 .BAA-logo {
-    transform: rotate(90deg);
-    width: 80px;
-
+    width: 100px;
+    height: 100px;
+    padding-right: 80px;
 }
 
 .visiter-support {
@@ -59,7 +65,6 @@ h2 {
 .baa-corner-logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .nav-2 {
@@ -469,4 +474,9 @@ footer {
 
 .blue-text {
     color: rgb(0, 119, 255)
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
