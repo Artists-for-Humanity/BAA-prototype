@@ -1,0 +1,82 @@
+.page-section {
+  background-color: #DDDDDD;
+  padding: 60px 135px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.three-up-grid-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.three-up-grid-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* this aligns the title and the cta text on the bottom */
+  margin-bottom: 30px;
+}
+
+.three-up-grid-cta {
+  text-decoration: underline;
+}
+
+.three-up-grid-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.grid-item-image {
+  position: relative;
+}
+
+.grid-item-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #666666;
+  margin-top: 12px;
+}
+
+.grid-item-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  height: 70px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item-date .month {
+  font-size: 16px;
+}
+
+.grid-item-date .day {
+  font-size: 40px;
+}
+
+@media (max-width: 900px) {
+  .page-section {
+    padding: 45px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-section {
+    padding: 30px 20px;
+  }
+
+  .three-up-grid-title {
+    font-size: 24px;
+  }
+
+  .three-up-grid-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
