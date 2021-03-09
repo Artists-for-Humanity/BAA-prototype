@@ -2,11 +2,11 @@ h1 {
     font-size: 70px;
     color: white;
     font-weight: bold;
+}
 
-    @media screen and (max-width: 800px) {
+@media (max-width: 900px) {
+    h1 {
         font-size: 30px;
-        color: black;
-        font-weight: bold;
     }
 }
 
@@ -18,6 +18,14 @@ h2 {
     font-weight: bold;
     text-align: left;
     margin-left: 30px;
+}
+
+@media (max-width:900px) {
+    h2 {
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 0;
+    }
 }
 
 .language {
@@ -61,7 +69,6 @@ h2 {
     background-color: gray;
 }
 
-/* ROW 1 ONTOP */
 .baa-corner-logo {
     display: flex;
     flex-direction: row;
@@ -78,10 +85,7 @@ h2 {
 .nav-2-interaction {
     display: flex;
     flex-direction: row;
-    /* align-items: */
 }
-
-/* ROW 2 ONTOP */
 
 .banner {
     background-color: lightgray;
@@ -91,8 +95,6 @@ h2 {
     font-size: 60px;
     color: white;
 }
-
-/* ABOUT BANNER ONTOP */
 
 .nav-3 {
     display: flex;
@@ -108,6 +110,12 @@ h2 {
 .header-box-image {
     object-fit: fill;
     width: 100%;
+}
+
+@media (max-width:900px) {
+    .header-box-image {
+        height: 700px;
+    }
 }
 
 .header-box-title {
@@ -129,6 +137,13 @@ h2 {
     padding-bottom: 50px;
 }
 
+@media (max-width:900px) {
+    .header-box-title {
+        padding: 50px;
+        padding-bottom: 10px;
+    }
+}
+
 .button {
     font-size: 15px;
     color: white;
@@ -138,49 +153,103 @@ h2 {
     border-width: 120px;
 }
 
-.upcoming-events-title {
-    background-color: lightgray;
-    padding-bottom: 20px;
+@media (max-width:900p) {
+    .button: {
+        font-size: 10px;
+        padding: 5px;
+    }
 }
 
-.title-spacing {
+
+.page-section {
+    background-color: #DDDDDD;
+    padding: 60px 135px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.three-up-grid-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #666666;
+}
+
+.three-up-grid-title-bar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-left: 1%;
-    margin-right: 5%;
+    align-items: baseline;
+    /* this aligns the title and the cta text on the bottom */
+    margin-bottom: 30px;
 }
 
-.upcoming-events {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: lightgray;
-    padding-bottom: 100px;
+.three-up-grid-cta {
+    text-decoration: underline;
 }
 
-.upcoming-event-image-wrapper {
+.three-up-grid-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.grid-item-image {
     position: relative;
-
 }
 
-.upcoming-event-image {
-    background-color: gray;
-    height: 300px;
-    object-fit: fill;
+.grid-item-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #666666;
+    margin-top: 12px;
 }
 
-.upcoming-event-date {
+.grid-item-date {
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 30px;
-
-    background-color: white;
+    width: 70px;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
 
+.grid-item-date .month {
+    font-size: 16px;
+}
+
+.grid-item-date .day {
+    font-size: 40px;
+}
+
+@media (max-width: 900px) {
+    .page-section {
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-section {
+        padding: 30px 20px;
+    }
+
+    .three-up-grid-title {
+        font-size: 24px;
+    }
+
+    .three-up-grid-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.title-spacing {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .descriptions {
@@ -188,14 +257,6 @@ h2 {
     color: black;
     text-align: left;
     font-size: 20px;
-}
-
-.month {
-    font-size: 30px;
-}
-
-.day {
-    font-size: 50px;
 }
 
 .view-all {
@@ -217,7 +278,18 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
-    padding: 80px;
+    padding: 60px 135px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:900px) {
+    .donations {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 
 .donation {
@@ -231,12 +303,25 @@ h2 {
     object-fit: fill;
 }
 
+@media (max-width:900px) {
+    .donation-image {
+        height: 300px;
+    }
+}
+
 .student-spotlight-title {
     padding: 10px;
     padding-top: 50px;
     background-color: lightgray;
 
 }
+
+@media (max-width:900px) {
+    .student-spotlight-title {
+        padding: 0px;
+    }
+}
+
 
 .student-spotlight {
     display: flex;
@@ -246,10 +331,25 @@ h2 {
     padding-top: 20px;
 }
 
+@media (max-width:900px) {
+    .student-spotlight {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
 .student-spotlight-image {
     height: 500px;
     width: 4000px;
     object-fit: fill;
+}
+
+@media (max-width:900px) {
+    .student-spotlight-image {
+        height: 300px;
+        padding: none;
+    }
 }
 
 .student-description-background {
@@ -260,10 +360,22 @@ h2 {
     width: 4000px;
 }
 
+@media (max-width:900px) {
+    .student-description-background {}
+}
+
 .student-description {
     padding: 50px;
     font-size: 40px;
     margin-left: 30px;
+}
+
+@media (max-width:900px) {
+    .student-description {
+        padding: 10px;
+        margin: 0;
+        width: 300px
+    }
 }
 
 .student-name {
@@ -274,11 +386,26 @@ h2 {
     padding-top: 5px;
 }
 
+@media (max-width:900px) {
+    .student-name {
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
 .line-spacing {
     line-height: 35px;
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+@media (max-width:900px) {
+    .line-spacing {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 5px;
+    }
 }
 
 .student-spotlight-stats {
@@ -288,12 +415,21 @@ h2 {
     font-size: 20px;
 }
 
+
 .impact {
     padding: 100px;
     background-color: white;
     display: grid;
     grid-template-columns: 2fr 50%;
     grid-column-gap: 10%;
+}
+
+@media (max-width:900px) {
+    .impact {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 
 .impact-circle {
@@ -323,7 +459,6 @@ h2 {
     width: 200px;
     text-align: center;
     box-shadow: black;
-    height: 50spx
 }
 
 .impact-highlights {
@@ -335,28 +470,49 @@ h2 {
     grid-row-gap: 150px
 }
 
+@media (max-width:900px) {
+    .impact-highlights {
+        display: flex;
+        flex-direction: column;
+        padding: 10px
+    }
+}
+
 .month-in-review {
     padding: 40px;
     background-color: lightgray;
 }
 
-.month-in-review-title {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media (max-width:900px) {
+    .month-in-review {
+        padding: 20px;
+    }
 }
 
 .month-in-review-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+}
+
+@media (max-width:900px) {
+    .month-in-review-content {
+        flex-direction: column;
+    }
+
+    .month-in-review-event {}
 }
 
 .month-in-review-image {
     background-color: gray;
     height: 500px;
     object-fit: fill;
+}
+
+@media (max-width:900px) {
+    .month-in-review-image {
+        height: 150px;
+    }
+
 }
 
 .more-from {
