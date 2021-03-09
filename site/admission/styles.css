@@ -109,15 +109,24 @@ h1 {
     align-items: center;
 }
 
-.student-text {
-    top: 50%;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    transform: translate(-50%, -50%)
+.student-illustration-image-wrapper {
+    position: relative;
+    text-align: center;
 }
 
-;
+.student-illustration {
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 180px;
+    border-style: solid;
+    border-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .tbd {
     font-size: 150px;
@@ -132,6 +141,98 @@ h1 {
     grid-template-columns: repeat(4, 1fr)
 }
 
-.footer {
+.shop-footer {
+    text-align: center;
+    padding: 200px;
     background-color: gray;
+}
+
+.footer-title {
+    padding: 40px;
+    font-size: 50px;
+    color: white;
+}
+
+.designing-their-future {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.interaction-buttons-1 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.interaction-buttons-2 {
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.interaction-buttons-box {
+    color: white;
+    padding: 80px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color: gray;
+}
+
+.shop-interaction-button {
+    color: gray;
+    padding: 80px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
+
+.audition-requirement {
+    background-color: rgb(194, 193, 193);
+}
+
+.audition-Requirement-title {
+    font-weight: bold;
+}
+
+.accordian-box {
+    padding: 50px;
+}
+
+.accordian {
+    background: #ffffff;
+}
+
+.accordian-label {
+    background: #ffffff;
+    padding: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(194, 193, 193);
+}
+
+.accordian-inner {
+    padding: 20px;
+}
+
+.accordian-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordian-label::-webkit-details-marker {
+    order: 2;
+}
+
+.accordian .accordian-label::-webkit-details-marker {
+    transform: rotate(90deg);
+}
+
+.accordian[open] .accordian-label::-webkit-details-marker {
+    transform: rotate(180deg);
 }
