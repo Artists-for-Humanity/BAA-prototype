@@ -196,8 +196,11 @@ h1 {
     background-color: rgb(194, 193, 193);
 }
 
-.audition-Requirement-title {
+.audition-requirement-title {
     font-weight: bold;
+    position: absolute;
+    left: 3%;
+    padding-top: 20px;
 }
 
 .accordian-box {
@@ -235,4 +238,19 @@ h1 {
 
 .accordian[open] .accordian-label::-webkit-details-marker {
     transform: rotate(180deg);
+}
+
+.faq-title {
+    position: absolute;
+    color: rgb(164, 164, 164);
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.faq-text {
+    font-size: 150px;
+    color: rgb(164, 164, 164);
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
 }
