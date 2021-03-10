@@ -4,7 +4,7 @@ h1 {
     font-weight: bold;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     h1 {
         font-size: 30px;
     }
@@ -20,7 +20,7 @@ h2 {
     margin-left: 30px;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     h2 {
         font-size: 20px;
         padding: 10px;
@@ -112,7 +112,7 @@ h2 {
     width: 100%;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .header-box-image {
         height: 700px;
     }
@@ -137,7 +137,7 @@ h2 {
     padding-bottom: 50px;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .header-box-title {
         padding: 50px;
         padding-bottom: 10px;
@@ -153,7 +153,7 @@ h2 {
     border-width: 120px;
 }
 
-@media (max-width:900p) {
+@media (max-width:700p) {
     .button: {
         font-size: 10px;
         padding: 5px;
@@ -225,7 +225,7 @@ h2 {
     font-size: 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .page-section {
         padding: 45px 30px;
     }
@@ -284,7 +284,7 @@ h2 {
     margin-right: auto;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .donations {
         display: flex;
         flex-direction: column;
@@ -303,7 +303,7 @@ h2 {
     object-fit: fill;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .donation-image {
         height: 300px;
     }
@@ -316,7 +316,7 @@ h2 {
 
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .student-spotlight-title {
         padding: 0px;
     }
@@ -331,7 +331,7 @@ h2 {
     padding-top: 20px;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .student-spotlight {
         display: flex;
         flex-direction: column;
@@ -345,7 +345,7 @@ h2 {
     object-fit: fill;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .student-spotlight-image {
         height: 300px;
         padding: none;
@@ -356,12 +356,13 @@ h2 {
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: 4000px;
 }
 
-@media (max-width:900px) {
-    .student-description-background {}
+@media (max-width:700px) {
+    .student-description-background {
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .student-description {
@@ -370,11 +371,12 @@ h2 {
     margin-left: 30px;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .student-description {
         padding: 10px;
         margin: 0;
-        width: 300px
+        width: 300px;
+        text-align: center;
     }
 }
 
@@ -386,7 +388,7 @@ h2 {
     padding-top: 5px;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .student-name {
         font-size: 30px;
         padding: 5px;
@@ -400,11 +402,12 @@ h2 {
     padding-bottom: 20px;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .line-spacing {
         font-size: 20px;
         line-height: 20px;
         padding: 5px;
+        text-align: center;
     }
 }
 
@@ -420,14 +423,13 @@ h2 {
     padding: 100px;
     background-color: white;
     display: grid;
-    grid-template-columns: 2fr 50%;
+    grid-template-columns: 50% 50%;
     grid-column-gap: 10%;
 }
 
-@media (max-width:900px) {
+@media (max-width:1000px) {
     .impact {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         padding: 10px;
     }
 }
@@ -442,11 +444,25 @@ h2 {
     overflow: hidden;
 }
 
+@media (max-width:700px) {
+    .impact-circle {
+        height: 70px;
+        width: 70px;
+    }
+}
+
 .impact-section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 30px;
+}
+
+@media (max-width:700px) {
+    .impact-section {
+        padding: 10px;
+        align-items: center;
+    }
 }
 
 .gray-line {
@@ -470,11 +486,13 @@ h2 {
     grid-row-gap: 150px
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .impact-highlights {
         display: flex;
         flex-direction: column;
-        padding: 10px
+        padding: 10px;
+        grid-row-gap: 0;
+        text-align: center;
     }
 }
 
@@ -483,7 +501,7 @@ h2 {
     background-color: lightgray;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .month-in-review {
         padding: 20px;
     }
@@ -494,12 +512,16 @@ h2 {
     flex-direction: row;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .month-in-review-content {
         flex-direction: column;
     }
 
-    .month-in-review-event {}
+    .month-in-review-event {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .month-in-review-image {
@@ -508,7 +530,7 @@ h2 {
     object-fit: fill;
 }
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     .month-in-review-image {
         height: 150px;
     }
@@ -522,10 +544,24 @@ h2 {
     padding: 50px;
 }
 
+@media (max-width:700px) {
+    .more-from {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
 .more-from-title {
     font-weight: bold;
     font-size: 30px;
     padding: 40px;
+}
+
+@media (max-width:700px) {
+    .more-from-title {
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 .more-from-buttons {
@@ -535,7 +571,12 @@ h2 {
     border-color: gray;
     border-width: 8px;
     background-color: rgb(160, 160, 160);
+}
 
+@media (max-width:700px) {
+    .more-from-buttons {
+        padding: 10px;
+    }
 }
 
 .student-illustration {
@@ -562,10 +603,23 @@ footer {
     background-color: gray;
 }
 
+@media (max-width:700px) {
+    footer {
+        padding: 10px;
+    }
+}
+
 .footer-title {
     padding: 40px;
     font-size: 100px;
     color: white;
+}
+
+@media (max-width:700px) {
+    .footer-title {
+        padding: 10px;
+        font-size: 30px;
+    }
 }
 
 .designing-their-future {
@@ -583,12 +637,26 @@ footer {
 
 }
 
+@media (max-width:700px) {
+    .interaction-buttons-1 {
+        flex-direction: column;
+        font-size: 25px;
+    }
+}
+
 .interaction-buttons-2 {
     padding: 10px;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+@media (max-width:700px) {
+    .interaction-buttons-2 {
+        flex-direction: column;
+        font-size: 25px;
+    }
 }
 
 .interaction-buttons-box {
@@ -601,6 +669,15 @@ footer {
     background-color: gray;
 }
 
+@media (max-width:700px) {
+    .interaction-buttons-box {
+        padding: 10px;
+        border-width: 5px;
+        font-size: 25px;
+        border-width: 3px;
+    }
+}
+
 .shop-interaction-button {
     color: gray;
     font-size: 50px;
@@ -609,6 +686,14 @@ footer {
     border-width: 10px;
     border-color: white;
     background-color: white;
+}
+
+@media (max-width:700px) {
+    .shop-interaction-button {
+        padding: 10px;
+        border-width: 3px;
+        font-size: 25px;
+    }
 }
 
 .placeholder-image {
