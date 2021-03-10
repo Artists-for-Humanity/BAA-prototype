@@ -12,6 +12,7 @@
 
 .hero-image img {
   width: 100%;
+  vertical-align: top;
 }
 
 .hero-text {
