@@ -14,6 +14,30 @@ h1 {
   border-color: gray;
 }
 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 70px;
+    color: rgb(88, 88, 88);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 180px;
+    border-style: solid;
+    border-color: gray;
+  }
+}
+
+.header-box {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.header-box-image {
+  object-fit: fill;
+  width: 100%;
+}
+
 .header-box-title {
   font-size: 100px;
   color: gray;
@@ -33,6 +57,13 @@ h1 {
   padding-bottom: 50px;
 }
 
+@media (max-width: 600px) {
+  .header-box-title {
+    top: -50px;
+    left: -260px;
+  }
+}
+
 .header-text {
   font-size: 20px;
   color: rgb(0, 0, 0);
@@ -45,6 +76,13 @@ h1 {
   top: 50%;
   right: 0%;
   transform: translateX(50%) rotate(-90deg) translateY(-100%);
+}
+
+@media (max-width: 600px) {
+  .header-text {
+    font-size: 13px;
+    top: 15%;
+  }
 }
 
 .banner {
@@ -178,12 +216,32 @@ footer {
   bottom: 0;
 }
 
+
+@media (max-width: 600px) {
+  .interaction-buttons-1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .interaction-buttons-1 {
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
+}
+
+@media (max-width: 600px) {
+  .interaction-buttons-2 {
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .interaction-buttons-2 {
@@ -193,6 +251,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+
 
 .interaction-buttons-box {
   color: white;
