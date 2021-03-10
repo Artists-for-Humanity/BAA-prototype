@@ -438,9 +438,27 @@
 }
 
 /* Mobile */
+@media only screen and (min-width:650px) {
+    .mobile-top-row {
+        display: none;
+    }
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .visiter-support {
+        display: none;
+    }
+
+    .info-box-row-1 {
+        display: none;
+    }
+
+    .info-box-row-2 {
         display: none;
     }
 
@@ -448,4 +466,57 @@
         display: none;
     }
 
+    .mobile-top-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .BAA-Title {
+        font-size: 80px;
+        margin-left: 100px;
+        padding-top: 50px;
+    }
+
+    .about-title {
+        display: absolute;
+        bottom: 230px;
+        left: 20px;
+        font-size: 50px;
+    }
+
+    .info-box-mobile {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .mobile-box-info-1 {
+        padding: 100px 155px 100px 155px;
+        background-color: lightgray;
+    }
+
+    .mobile-box-info-2 {
+        padding: 100px 155px 100px 155px;
+        background-color: lightgray;
+    }
+
+    .mobile-box-info-3 {
+        padding: 100px 155px 100px 155px;
+        background-color: lightgray;
+    }
+
+    .mobile-box-info-4 {
+        padding: 100px 155px 100px 155px;
+        background-color: lightgray;
+    }
+
+    .mobile-box-info-5 {
+        padding: 100px 155px 100px 155px;
+        background-color: lightgray;
+    }
+
+    .mobile-box-info-6 {
+        padding: 100px 155px 100px 155px;
+        background-color: lightgray;
+    }
 }
