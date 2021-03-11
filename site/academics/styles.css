@@ -79,7 +79,6 @@
 
 @media (max-width:600px) {
     .support-block {
-        display: flex;
         flex-wrap: wrap;
         grid-template-columns: repeat(1, 1fr);
 
