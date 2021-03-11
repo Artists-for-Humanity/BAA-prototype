@@ -437,13 +437,42 @@
 
 }
 
-/* Mobile */
+/* Desktop */
 @media only screen and (min-width:650px) {
     .mobile-top-row {
         display: none;
     }
+
+    .info-box-mobile {
+        display: none;
+    }
+
+    .campus-image-mobile {
+        display: none;
+    }
+
+    .campus-more-info {
+        display: none;
+    }
+
+    .campus-image-mobile-div {
+        display: none;
+    }
+
+    .approach-1-mobile-info {
+        display: none;
+    }
+
+    .approach-2-mobile-info {
+        display: none;
+    }
 }
 
+
+
+
+
+/* Mobile */
 @media only screen and (max-width: 601px) {
     body {
         margin: 0px;
@@ -466,6 +495,40 @@
         display: none;
     }
 
+    .campus-info-row-2 {
+        display: none;
+    }
+
+    .campus-image-alignment {
+        display: none;
+    }
+
+    .campus-image-edit-1 {
+        display: none;
+    }
+
+    .campus-image-edit-2 {
+        display: none;
+    }
+
+    .campus-image-edit-3 {
+        display: none;
+    }
+
+    .approach-info-row {
+        display: none;
+    }
+
+    .approach-1-info {
+        display: none;
+    }
+
+    .approach-2-info {
+        display: none;
+    }
+
+    /* EVERYTHING THAT IS DISPLAYED NONE ONTOP */
+
     .mobile-top-row {
         display: flex;
         flex-direction: row;
@@ -484,6 +547,8 @@
         font-size: 50px;
     }
 
+    /* TOP PAGE */
+
     .info-box-mobile {
         display: flex;
         flex-direction: row;
@@ -491,32 +556,77 @@
     }
 
     .mobile-box-info-1 {
-        padding: 100px 155px 100px 155px;
+        padding: 100px 200px 100px 200px;
         background-color: lightgray;
+        margin: 20px;
     }
 
     .mobile-box-info-2 {
-        padding: 100px 155px 100px 155px;
+        padding: 100px 200px 100px 200px;
         background-color: lightgray;
+        margin: 20px;
     }
 
     .mobile-box-info-3 {
-        padding: 100px 155px 100px 155px;
+        padding: 100px 200px 100px 200px;
         background-color: lightgray;
+        margin: 20px;
     }
 
     .mobile-box-info-4 {
-        padding: 100px 155px 100px 155px;
+        padding: 100px 200px 100px 200px;
         background-color: lightgray;
+        margin: 20px;
     }
 
     .mobile-box-info-5 {
-        padding: 100px 155px 100px 155px;
+        padding: 100px 200px 100px 200px;
         background-color: lightgray;
+        margin: 20px;
     }
 
     .mobile-box-info-6 {
-        padding: 100px 155px 100px 155px;
+        padding: 100px 200px 100px 200px;
         background-color: lightgray;
+        margin: 20px;
     }
+
+    /* INFORMATION ROW ONTOP */
+}
+
+.campus-image-mobile-edit-1 {
+    width: 100%;
+    margin: 20px;
+}
+
+.campus-image-mobile-edit-2 {
+    width: 100%;
+    margin: 20px;
+}
+
+.campus-image-mobile-edit-3 {
+    width: 100%;
+    margin: 20px;
+}
+
+.campus-image-mobile {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+}
+
+.campus-more-info {
+    color: lightskyblue;
+    margin-left: 400px;
+}
+
+/* CAMPUS ROW ONTOP */
+.approach-mobile-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.approach-1-mobile-info {
+    margin-bottom: 10px;
+}
 }
