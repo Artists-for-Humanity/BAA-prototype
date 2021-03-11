@@ -205,9 +205,10 @@ footer {
 }
 
 .footer-title {
-  padding: 40px;
-  font-size: 50px;
+  padding: 20px;
+  font-size: 40px;
   color: white;
+  text-align: center;
 }
 
 .designing-their-future {
@@ -236,11 +237,13 @@ footer {
 
 @media (max-width: 600px) {
   .interaction-buttons-2 {
-    padding: 50px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex: 1 0 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 50%;
   }
 }
 
