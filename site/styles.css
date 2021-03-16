@@ -291,11 +291,12 @@ h2 {
 
 
 .student-spotlight {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 150px;
     background-color: lightgray;
     padding-top: 20px;
+    align-items: center;
 }
 
 @media (max-width:700px) {
@@ -306,11 +307,6 @@ h2 {
     }
 }
 
-.student-spotlight-image {
-    height: 500px;
-    width: 3000px;
-    object-fit: fill;
-}
 
 @media (max-width:700px) {
     .student-spotlight-image {
@@ -697,7 +693,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 400px;
     z-index: 1000;
     padding: 20px;
 }
