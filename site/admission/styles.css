@@ -25,6 +25,7 @@ h1 {
     padding-right: 50px;
     padding-left: 50px;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .more-admission-info {
@@ -35,6 +36,7 @@ h1 {
 .upcoming-admission-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
 }
 
 .header-title {
@@ -107,6 +109,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .student-illustration-image-wrapper {
@@ -253,4 +256,9 @@ h1 {
     display: flex;
     justify-content: center;
     padding-top: 60px;
+}
+
+.page-section {
+    padding: 40px;
+    background-color: rgb(172, 171, 171);
 }
