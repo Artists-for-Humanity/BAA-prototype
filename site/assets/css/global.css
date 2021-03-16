@@ -42,8 +42,10 @@ a:hover {
 }
 
 .nav-logo a {
-    color: inherit; /* by default links are blue. this makes the link take on the color of it's parent so it will be #666666 */
-    text-decoration: none; /* this removes the underline from the link */
+    color: inherit;
+    /* by default links are blue. this makes the link take on the color of it's parent so it will be #666666 */
+    text-decoration: none;
+    /* this removes the underline from the link */
 }
 
 .nav-items {
@@ -64,7 +66,7 @@ a:hover {
 /* this means put this CSS on any .nav-item that has a .nav-item before it */
 /* so, the first .nav-item doesn't get this since it doesn't have one before it */
 /* and the rest will get this since they all have a .nav-item before them */
-.nav-item + .nav-item {
+.nav-item+.nav-item {
     margin-left: 40px;
 }
 
@@ -74,7 +76,7 @@ a:hover {
     }
 }
 
-.mobile-menu {
+/* .mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -108,4 +110,4 @@ a:hover {
 .mobile-menu-item {
     font-size: 24px;
     margin: 10px 0;
-}
+} */
