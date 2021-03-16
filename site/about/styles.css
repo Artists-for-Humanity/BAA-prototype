@@ -306,6 +306,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    margin-left: 50px;
 }
 
 .approach-image {
@@ -466,6 +467,22 @@
     .approach-2-mobile-info {
         display: none;
     }
+
+    .approach-mobile-card-row {
+        display: none;
+    }
+
+    .visiter-option-mobile-row {
+        display: none;
+    }
+
+    .footer-more {
+        display: none;
+    }
+
+    .footer-items-mobile-row {
+        display: none;
+    }
 }
 
 
@@ -524,6 +541,26 @@
     }
 
     .approach-2-info {
+        display: none;
+    }
+
+    .approach-card-row {
+        display: none;
+    }
+
+    .footer-items-row {
+        display: none;
+    }
+
+    .visiter-option-row {
+        display: none;
+    }
+
+    .visiter-border {
+        display: none;
+    }
+
+    .visiter-options-card {
         display: none;
     }
 
@@ -618,15 +655,57 @@
 .campus-more-info {
     color: lightskyblue;
     margin-left: 400px;
+    text-decoration: underline;
 }
 
 /* CAMPUS ROW ONTOP */
-.approach-mobile-row {
+.approach-mobile-card-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: scroll;
+    margin-left: 85px;
+    margin-top: 20px;
+    margin-right: 80px;
 }
 
 .approach-1-mobile-info {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.approach-mobile-card-edit {
+    margin-right: 95px;
+    border: 1px solid black;
+}
+
+/* APPROACH ROW */
+.visiter-options-card-mobile {
+    padding: 50px 25px 50px 25px;
+}
+
+.visiter-border-mobile {
+    font-size: 27px;
+    border: 3px white solid;
+    margin: 20px;
+}
+
+.footer-more {
+    color: lightskyblue;
+    margin-right: 410px;
+    text-decoration: underline;
+}
+
+.footer-items-mobile-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-items-mobile-1 {
+    margin-right: 280px;
+    text-decoration: underline;
+}
+
+.footer-items-mobile-2 {
+    text-decoration: underline;
+    margin-right: 5px;
 }
 }
