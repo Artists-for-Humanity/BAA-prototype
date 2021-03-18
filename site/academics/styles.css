@@ -78,10 +78,10 @@
 }
 
 @media (max-width:600px) {
-    .support-block {
-        flex-wrap: wrap;
-        grid-template-columns: repeat(1, 1fr);
-
+    .support-blocks {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 40px;
     }
 }
 
