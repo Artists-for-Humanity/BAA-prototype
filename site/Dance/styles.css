@@ -3,12 +3,12 @@ body {
   padding: 0;
 }
 
+
 .nav-1 {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
 }
-
 
 
 .visiter-support {
@@ -72,6 +72,7 @@ body {
   justify-content: flex-end;
   padding: 20px 0px 20px 0px;
 }
+
 
 .BAA-title-edit {
   font-size: 30px;
@@ -377,6 +378,13 @@ footer {
   text-align: center;
 }
 
+.dancers {
+  object-fit: fill;
+  width: 50%;
+  height: 50%;
+}
+
+
 .student-illustration {
   color: gray;
   display: flex;
@@ -390,6 +398,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 .intro-text p {
   margin-bottom: 50px;
