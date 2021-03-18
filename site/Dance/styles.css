@@ -9,8 +9,16 @@ body {
   flex-direction: row;
 }
 
+
+
 .visiter-support {
   background-color: lightgray;
+}
+
+@media (max-width: 600px) {
+  .visiter-support {
+    flex-direction: column;
+  }
 }
 
 .item-1-1 {
@@ -157,7 +165,7 @@ body {
 @media (max-width: 600px) {
   .header-text {
     font-size: 13px;
-    top: 15%;
+    top: 38%;
   }
 }
 
@@ -276,7 +284,7 @@ body {
 
 footer {
   text-align: center;
-  padding: 200px;
+  padding: 30px;
   background-color: gray;
 }
 
