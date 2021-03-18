@@ -14,7 +14,7 @@
   <nav><a href="/">Home</a><a href="/about">About</a></nav>
   <h1>Main</h1>
   <div class="wrapper">
-    <div class="mobile-top-row">
+    <!-- <div class="mobile-top-row">
       <div class="BAA-Title">
         <h1> BAA</h1>
       </div>
@@ -29,7 +29,7 @@
           <option value="foundation">Foundation</option>
         </select>
       </div>
-    </div>
+    </div> -->
     <div class="visiter-support">
       <div class="nav-1">
         <div class="language-box">
@@ -58,14 +58,27 @@
       </div>
     </div>
     <div class="navigations">
-      <div class="BAA-Title">
-        <div class="BAA-title-edit">
-          <h1>Boston Art</h1>
+      <nav class="drop-down-top-page">
+        <a ref="/">
+          <div class="BAA-Title">
+            <div class="BAA-title-edit">
+              <h1>Boston Art</h1>
+            </div>
+            <div class="BAA-title-edit">
+              <h1>Academy</h1>
+            </div>
+          </div>
+        </a>
+        <div class=top-page-nav>
+          <a class="dropdown-item" href="/about">About</a>
+          <a class="dropdown-item" href="/acedemics">Acedemics</a>
+          <a class="dropdown-item" href="/admissions">Admissions</a>
+          <a class="dropdown-item" href="/community">Community</a>
+          <a class="dropdown-item" href="/events&exhibitions">Events & Exhibitions</a>
+          <a class="dropdown-item" href="/foundation">Foundation</a>
         </div>
-        <div class="BAA-title-edit">
-          <h1>Academy</h1>
-        </div>
-      </div>
+        <button class="dropdown-button" type="button">☰</button>
+      </nav>
       <div class="nav-2">
         <div class="nav-2-items">
           <h2>About</h2>
@@ -86,8 +99,12 @@
           <h2>Founation</h2>
         </div>
       </div>
+
     </div>
     <div class="banner">
+      <div class="placeholder-tall-image">
+        <img src="../assets/images/placeholder-image-rectangle-tall.png" alt="placeholder-image-rectangle">
+      </div>
       <div class="placeholder-image">
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
       </div>
