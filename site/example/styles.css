@@ -6,6 +6,41 @@
   margin-right: auto;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.hero-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 100px 50px 50px;
+}
+
+.hero-title {
+  color: white;
+  font-size: 90px;
+}
+
+@media (max-width: 600px) {
+  .hero-text {
+    padding: 25px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+}
+
 .three-up-grid-title {
   font-size: 32px;
   font-weight: 700;
