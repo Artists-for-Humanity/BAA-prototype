@@ -36,6 +36,7 @@ h1 {
 .upcoming-admission-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 
 }
 
@@ -92,6 +93,7 @@ h1 {
 .related-pages {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 
 .application-process-item {
@@ -141,7 +143,7 @@ h1 {
 .related-pages-2 {
     background-color: rgb(184, 184, 184);
     display: grid;
-    grid-template-columns: repeat(4, 1fr)
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .shop-footer {
@@ -256,9 +258,19 @@ h1 {
     display: flex;
     justify-content: center;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .page-section {
     padding: 40px;
     background-color: rgb(172, 171, 171);
+}
+
+.student-illustration-image {
+    height: 300%;
+    width: 100%;
+    object-fit: cover;
+
+
+
 }
