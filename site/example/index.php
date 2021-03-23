@@ -1,3 +1,4 @@
+<?php include_once('../php/template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,27 +55,27 @@
         <a class="three-up-grid-cta" href="#">View all</a>
       </div>
       <div class="three-up-grid-items">
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/placeholder-image-rectangle.png" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/placeholder-image-rectangle.png" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/placeholder-image-rectangle.png" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
+        <?php
+          template("three-up-item.php", array(
+            'month' => 'Feb',
+            'day' => '10',
+            'text' => 'Event name 1'
+          ));
+        ?>
+        <?php
+          template("three-up-item.php", array(
+            'month' => 'Mar',
+            'day' => '15',
+            'text' => 'Event name 2'
+          ));
+        ?>
+        <?php
+          template("three-up-item.php", array(
+            'month' => 'Mar',
+            'day' => '22',
+            'text' => 'Event name 3'
+          ));
+        ?>
       </div>
     </div>
   </section>
