@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/reset.css" type="text/css" />
   <link rel="stylesheet" href="/assets/css/global.css" type="text/css" />
-  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <link rel="stylesheet" href="/example/styles.css" type="text/css" />
 </head>
 
 <body>
@@ -21,7 +21,7 @@
       <a class="nav-item" href="/about">About</a>
       <a class="nav-item" href="/academics">Academics</a>
       <a class="nav-item" href="/admission">Admission</a>
-      <a class="nav-item" href="/Dance">Dance</a>
+      <a class="nav-item" href="/dance">Dance</a>
     </div>
     <button class="nav-open-button" type="button">☰</button>
   </nav>
@@ -33,7 +33,7 @@
       <a class="mobile-menu-item" href="/about">About</a>
       <a class="mobile-menu-item" href="/academics">Academics</a>
       <a class="mobile-menu-item" href="/admission">Admission</a>
-      <a class="mobile-menu-item" href="/Dance">Dance</a>
+      <a class="mobile-menu-item" href="/dance">Dance</a>
     </div>
   </nav>
   <header class="hero">
@@ -78,7 +78,7 @@
       </div>
     </div>
   </section>
-  <script src="script.js"></script>
+  <script src="/example/script.js"></script>
 </body>
 
 </html>
