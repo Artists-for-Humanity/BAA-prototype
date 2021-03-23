@@ -101,7 +101,7 @@
         </div>
       </div>
     </div>
-    <?php template("hero.php", array('text' => "Information")) ?>
+    <?php template("hero.php", array('text' => "About")) ?>
     <div class="school-info-nav">
       <div class="nav-3">
         <div class="school-info-items">
@@ -123,27 +123,7 @@
         <h4>Our Mission</h4>
       </div>
       <div class="mission-info-edit">
-        <div class="mission-info-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
-        </div>
-        <div class="mission-info-2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
-        </div>
-      </div>
+      <?php include "mission-info.php" ?>
     </div>
     <div class="our-story">
       <div class="our-story-title">
