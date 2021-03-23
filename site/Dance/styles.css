@@ -3,7 +3,92 @@ body {
   padding: 0;
 }
 
-h1 {
+
+.nav-1 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+
+.visiter-support {
+  background-color: lightgray;
+}
+
+@media (max-width: 600px) {
+  .visiter-support {
+    flex-direction: column;
+  }
+}
+
+.item-1-1 {
+  padding-top: 20px;
+  color: white;
+}
+
+.nav-1-items-4 {
+  margin: 0px 50px 0px 50px;
+  padding: 20px 0px 20px 0px;
+}
+
+.nav-1-items {
+  padding: 20px 50px 0px 50px;
+  color: white;
+}
+
+.connect-border {
+  border-left: 1px black solid;
+}
+
+.give-border {
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+.apply-border {
+  background-color: white;
+  border-bottom: 1px black solid;
+}
+
+.item-1-EN {
+  color: white;
+  padding: 20px 0px 20px 5px;
+}
+
+.language-box {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1200px;
+}
+
+.nav-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigations {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 0px 20px 0px;
+}
+
+
+.BAA-title-edit {
+  font-size: 30px;
+}
+
+.BAA-Title {
+  margin-right: 600px;
+}
+
+.nav-2-items {
+  font-size: 15px;
+  color: lightgrey;
+  padding: 20px 40px 0px 40px;
+}
+
+.header-box h1 {
   font-size: 110px;
   color: rgb(88, 88, 88);
   display: flex;
@@ -12,10 +97,56 @@ h1 {
   padding: 180px;
   border-style: solid;
   border-color: gray;
+}
+
+@media (max-width: 600px) {
+  .header-box h1 {
+    font-size: 70px;
+    color: rgb(88, 88, 88);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 180px;
+    border-style: solid;
+    border-color: gray;
+  }
+}
+
+.header-box {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.header-box-image {
+  object-fit: fill;
+  width: 100%;
+}
+
+.header-box-title {
+  font-size: 100px;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px;
+  border-style: solid;
+  border-color: gray;
   position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-80%, -30%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .header-box-title {
+    top: -50px;
+    left: -260px;
+  }
 }
 
 .header-text {
@@ -30,6 +161,13 @@ h1 {
   top: 50%;
   right: 0%;
   transform: translateX(50%) rotate(-90deg) translateY(-100%);
+}
+
+@media (max-width: 600px) {
+  .header-text {
+    font-size: 13px;
+    top: 38%;
+  }
 }
 
 .banner {
@@ -99,6 +237,12 @@ h1 {
   gap: 10px;
 }
 
+@media (max-width: 600px) {
+  .related-pages-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .related-pages-image {
   background-color: gray;
   position: relative;
@@ -141,20 +285,31 @@ h1 {
 
 footer {
   text-align: center;
-  padding: 200px;
+  padding: 30px;
   background-color: gray;
 }
 
 .footer-title {
-  padding: 40px;
-  font-size: 50px;
+  padding: 20px;
+  font-size: 40px;
   color: white;
+  text-align: center;
 }
 
 .designing-their-future {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+
+@media (max-width: 600px) {
+  .interaction-buttons-1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .interaction-buttons-1 {
@@ -165,6 +320,17 @@ footer {
 
 }
 
+@media (max-width: 600px) {
+  .interaction-buttons-2 {
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex: 1 0 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+
 .interaction-buttons-2 {
   padding: 50px;
   color: white;
@@ -173,6 +339,7 @@ footer {
   justify-content: space-around;
 }
 
+
 .interaction-buttons-box {
   color: white;
   padding: 80px;
@@ -180,6 +347,17 @@ footer {
   border-width: 5px;
   border-color: white;
   background-color: gray;
+}
+
+@media (max-width: 600px) {
+  .interaction-buttons-box {
+    color: white;
+    padding: 80px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color: gray;
+  }
 }
 
 .shop-interaction-button {
@@ -200,6 +378,13 @@ footer {
   text-align: center;
 }
 
+.dancers {
+  object-fit: fill;
+  width: 50%;
+  height: 50%;
+}
+
+
 .student-illustration {
   color: gray;
   display: flex;
@@ -214,6 +399,20 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+
 .intro-text p {
   margin-bottom: 50px;
+}
+
+
+@media (max-width: 600px) {
+  .h1 {
+    font-size: 59px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 180px;
+    border-style: solid;
+    border-color: gray;
+  }
 }
