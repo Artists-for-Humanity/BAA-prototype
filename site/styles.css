@@ -4,6 +4,12 @@ h1 {
     font-weight: bold;
 }
 
+@media (max-width: 700px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
 h2 {
     font-size: 35px;
     padding: 20px;
@@ -14,6 +20,57 @@ h2 {
     margin-left: 30px;
 }
 
+@media (max-width:700px) {
+    h2 {
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 0;
+    }
+}
+
+.page-section {
+    background-color: #DDDDDD;
+    padding: 60px 135px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 100px 50px 50px;
+}
+
+.hero-title {
+    color: white;
+    font-size: 90px;
+}
+
+@media (max-width:600px) {
+    .hero-text {
+        padding: 25px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+}
+
 .header-box {
     position: relative;
     text-align: center;
@@ -21,8 +78,14 @@ h2 {
 }
 
 .header-box-image {
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
+}
+
+@media (max-width:700px) {
+    .header-box-image {
+        height: 700px;
+    }
 }
 
 .header-box-title {
@@ -44,6 +107,13 @@ h2 {
     padding-bottom: 50px;
 }
 
+@media (max-width:700px) {
+    .header-box-title {
+        padding: 50px;
+        padding-bottom: 10px;
+    }
+}
+
 .button {
     font-size: 15px;
     color: white;
@@ -53,49 +123,104 @@ h2 {
     border-width: 120px;
 }
 
-.upcoming-events-title {
-    background-color: lightgray;
-    padding-bottom: 20px;
+@media (max-width:700p) {
+    .button {
+        font-size: 10px;
+        padding: 5px;
+    }
 }
 
-.title-spacing {
+
+.page-section {
+    background-color: #DDDDDD;
+    padding: 60px 135px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.three-up-grid-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #666666;
+}
+
+.three-up-grid-title-bar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-left: 1%;
-    margin-right: 5%;
+    align-items: baseline;
+    /* this aligns the title and the cta text on the bottom */
+    margin-bottom: 30px;
 }
 
-.upcoming-events {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: lightgray;
-    padding-bottom: 100px;
+.three-up-grid-cta {
+    text-decoration: underline;
 }
 
-.upcoming-event-image-wrapper {
+.three-up-grid-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.grid-item-image {
     position: relative;
-
+    object-fit: cover;
+    width: 100%;
 }
 
-.upcoming-event-image {
-    background-color: gray;
-    height: 300px;
-    object-fit: fill;
+.grid-item-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #666666;
+    margin-top: 12px;
 }
 
-.upcoming-event-date {
+.grid-item-date {
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 30px;
-
-    background-color: white;
+    width: 70px;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
 
+.grid-item-date .month {
+    font-size: 16px;
+}
+
+.grid-item-date .day {
+    font-size: 40px;
+}
+
+@media (max-width: 700px) {
+    .page-section {
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-section {
+        padding: 30px 20px;
+    }
+
+    .three-up-grid-title {
+        font-size: 24px;
+    }
+
+    .three-up-grid-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.title-spacing {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .descriptions {
@@ -103,14 +228,6 @@ h2 {
     color: black;
     text-align: left;
     font-size: 20px;
-}
-
-.month {
-    font-size: 30px;
-}
-
-.day {
-    font-size: 50px;
 }
 
 .view-all {
@@ -132,7 +249,17 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
-    padding: 80px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:700px) {
+    .donations {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 
 .donation {
@@ -143,7 +270,12 @@ h2 {
 .donation-image {
     background-color: gray;
     height: 500px;
-    object-fit: fill;
+}
+
+@media (max-width:700px) {
+    .donation-image {
+        height: 300px;
+    }
 }
 
 .student-spotlight-title {
@@ -153,32 +285,64 @@ h2 {
 
 }
 
+@media (max-width:700px) {
+    .student-spotlight-title {
+        padding: 0px;
+    }
+}
+
+
 .student-spotlight {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 150px;
     background-color: lightgray;
     padding-top: 20px;
+    align-items: center;
 }
 
-.student-spotlight-image {
-    height: 500px;
-    width: 4000px;
-    object-fit: fill;
+@media (max-width:700px) {
+    .student-spotlight {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width:700px) {
+    .student-spotlight-image {
+        height: 300px;
+        padding: none;
+    }
 }
 
 .student-description-background {
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: 4000px;
+}
+
+@media (max-width:700px) {
+    .student-description-background {
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .student-description {
     padding: 50px;
     font-size: 40px;
     margin-left: 30px;
+}
+
+@media (max-width:700px) {
+    .student-description {
+        padding: 10px;
+        margin: 0;
+        width: 300px;
+        text-align: center;
+    }
 }
 
 .student-name {
@@ -189,11 +353,27 @@ h2 {
     padding-top: 5px;
 }
 
+@media (max-width:700px) {
+    .student-name {
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
 .line-spacing {
     line-height: 35px;
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+@media (max-width:700px) {
+    .line-spacing {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 5px;
+        text-align: center;
+    }
 }
 
 .student-spotlight-stats {
@@ -203,12 +383,19 @@ h2 {
     font-size: 20px;
 }
 
+
 .impact {
     padding: 100px;
     background-color: white;
     display: grid;
-    grid-template-columns: 2fr 50%;
-    grid-column-gap: 10%;
+    grid-template-columns: 50% 50%;
+}
+
+@media (max-width:1000px) {
+    .impact {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
 }
 
 .impact-circle {
@@ -221,11 +408,25 @@ h2 {
     overflow: hidden;
 }
 
+@media (max-width:700px) {
+    .impact-circle {
+        height: 70px;
+        width: 70px;
+    }
+}
+
 .impact-section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 30px;
+}
+
+@media (max-width:700px) {
+    .impact-section {
+        padding: 10px;
+        align-items: center;
+    }
 }
 
 .gray-line {
@@ -238,7 +439,6 @@ h2 {
     width: 200px;
     text-align: center;
     box-shadow: black;
-    height: 50spx
 }
 
 .impact-highlights {
@@ -250,16 +450,26 @@ h2 {
     grid-row-gap: 150px
 }
 
+@media (max-width:700px) {
+    .impact-highlights {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        grid-row-gap: 0;
+        text-align: center;
+    }
+}
+
 .month-in-review {
     padding: 40px;
     background-color: lightgray;
+    align-items: center;
 }
 
-.month-in-review-title {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media (max-width:700px) {
+    .month-in-review {
+        padding: 20px;
+    }
 }
 
 .month-in-review-content {
@@ -268,10 +478,29 @@ h2 {
     justify-content: space-evenly;
 }
 
+@media (max-width:700px) {
+    .month-in-review-content {
+        flex-direction: column;
+    }
+
+    .month-in-review-event {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .month-in-review-image {
     background-color: gray;
-    height: 500px;
-    object-fit: fill;
+    object-fit: cover;
+}
+
+@media (max-width:700px) {
+    .month-in-review-image {
+        height: 150px;
+        object-fit: cover;
+    }
+
 }
 
 .more-from {
@@ -281,10 +510,24 @@ h2 {
     padding: 50px;
 }
 
+@media (max-width:700px) {
+    .more-from {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
 .more-from-title {
     font-weight: bold;
     font-size: 30px;
     padding: 40px;
+}
+
+@media (max-width:700px) {
+    .more-from-title {
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 .more-from-buttons {
@@ -294,7 +537,12 @@ h2 {
     border-color: gray;
     border-width: 8px;
     background-color: rgb(160, 160, 160);
+}
 
+@media (max-width:700px) {
+    .more-from-buttons {
+        padding: 10px;
+    }
 }
 
 .student-illustration {
@@ -321,10 +569,23 @@ footer {
     background-color: gray;
 }
 
+@media (max-width:900px) {
+    footer {
+        padding: 10px;
+    }
+}
+
 .footer-title {
     padding: 40px;
     font-size: 100px;
     color: white;
+}
+
+@media (max-width:900px) {
+    .footer-title {
+        padding: 10px;
+        font-size: 30px;
+    }
 }
 
 .designing-their-future {
@@ -339,7 +600,13 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
 
+@media (max-width:700px) {
+    .interaction-buttons-1 {
+        flex-direction: column;
+        font-size: 25px;
+    }
 }
 
 .interaction-buttons-2 {
@@ -348,6 +615,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media (max-width:900px) {
+    .interaction-buttons-2 {
+        flex-direction: column;
+        font-size: 25px;
+    }
 }
 
 .interaction-buttons-box {
@@ -360,6 +635,14 @@ footer {
     background-color: gray;
 }
 
+@media (max-width:900px) {
+    .interaction-buttons-box {
+        padding: 10px;
+        font-size: 25px;
+        border-width: 3px;
+    }
+}
+
 .shop-interaction-button {
     color: gray;
     font-size: 50px;
@@ -370,12 +653,21 @@ footer {
     background-color: white;
 }
 
+@media (max-width:900px) {
+    .shop-interaction-button {
+        padding: 10px;
+        border-width: 3px;
+        font-size: 25px;
+    }
+}
+
 .placeholder-image {
     width: 100px;
 
 }
 
 .student-illustration-image-wrapper {
+    object-fit: cover;
     position: relative;
     text-align: center;
     width: 100%;
@@ -383,7 +675,6 @@ footer {
 
 .student-illustration-image {
     width: 100%;
-    height: 350px;
     object-fit: fill;
 }
 
@@ -391,5 +682,86 @@ footer {
     color: rgb(0, 119, 255)
 }
 
-/* -figure out spacing issues in impact section
--style text in student spotlight
+html,
+body {
+    overflow-x: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #EEEEEE;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        padding: 20px;
+    }
+}
+
+.nav-logo {
+    font-weight: 700;
+    color: #666666;
+}
+
+.nav-logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-items {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+.nav-item {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-item+.nav-item {
+    margin-left: 40px;
+}
+
+@media (min-width: 600px) {
+    .nav-open-button {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px;
+    transform: translateX(0%);
+    transition: transform 0.3s;
+}
+
+.mobile-menu[data-state="closed"] {
+    transform: translateX(-100%);
+}
+
+.mobile-menu-button {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.mobile-menu-bar {
+    display: flex;
+    justify-content: flex-end;
+}
