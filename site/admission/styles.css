@@ -25,6 +25,7 @@ h1 {
     padding-right: 50px;
     padding-left: 50px;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .more-admission-info {
@@ -35,6 +36,8 @@ h1 {
 .upcoming-admission-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
 }
 
 .header-title {
@@ -61,7 +64,7 @@ h1 {
     border-color: gray;
     position: absolute;
     top: 35%;
-    left: 46%;
+    left: 30%;
     transform: translate(-80%, -30%);
 }
 
@@ -90,6 +93,7 @@ h1 {
 .related-pages {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 
 .application-process-item {
@@ -107,4 +111,166 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+}
+
+.student-illustration-image-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.student-illustration {
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 180px;
+    border-style: solid;
+    border-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tbd {
+    font-size: 150px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+.related-pages-2 {
+    background-color: rgb(184, 184, 184);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.shop-footer {
+    text-align: center;
+    padding: 200px;
+    background-color: gray;
+}
+
+.footer-title {
+    padding: 40px;
+    font-size: 50px;
+    color: white;
+}
+
+.designing-their-future {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.interaction-buttons-1 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.interaction-buttons-2 {
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.interaction-buttons-box {
+    color: white;
+    padding: 80px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color: gray;
+}
+
+.shop-interaction-button {
+    color: gray;
+    padding: 80px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
+
+.audition-requirement {
+    background-color: rgb(194, 193, 193);
+}
+
+.audition-requirement-title {
+    font-weight: bold;
+    position: absolute;
+    left: 3%;
+    padding-top: 20px;
+}
+
+.accordian-box {
+    padding: 50px;
+}
+
+.accordian {
+    background: #ffffff;
+}
+
+.accordian-label {
+    background: #ffffff;
+    padding: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(194, 193, 193);
+}
+
+.accordian-inner {
+    padding: 20px;
+}
+
+.accordian-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordian-label::-webkit-details-marker {
+    order: 2;
+}
+
+.accordian .accordian-label::-webkit-details-marker {
+    transform: rotate(90deg);
+}
+
+.accordian[open] .accordian-label::-webkit-details-marker {
+    transform: rotate(180deg);
+}
+
+.faq-title {
+    position: absolute;
+    color: rgb(164, 164, 164);
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.faq-text {
+    font-size: 150px;
+    color: rgb(164, 164, 164);
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.page-section {
+    padding: 40px;
+    background-color: rgb(172, 171, 171);
+}
+
+.student-illustration-image {
+    height: 300%;
+    width: 100%;
+    object-fit: cover;
+
+
+
 }
