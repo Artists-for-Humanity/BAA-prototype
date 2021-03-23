@@ -1,4 +1,7 @@
+<?php include_once('../php/template.php'); ?>
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -153,15 +156,8 @@
       </div>
     </div>
 
-    <div class="header-box">
-      <img class="header-box-image" src="../assets/images/placeholder-image-rectangle.png">
-      <div class="header-box-title">
-        <h1>Dance</h1>
-      </div>
-    </div>
-    <div>
-      <p class="header-text">Jodie McSally Dance Program, Class of 21</p>
-    </div>
+    <?php template("hero.php", array('text' => 'Dance')) ?>
+
 
 
 
