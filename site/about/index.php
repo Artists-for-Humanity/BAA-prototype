@@ -1,3 +1,4 @@
+<?php include_once('../php/template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,22 +100,8 @@
           <h2>Founation</h2>
         </div>
       </div>
-
     </div>
-    <div class="banner">
-      <div class="placeholder-tall-image">
-        <img src="../assets/images/placeholder-image-rectangle-tall.png" alt="placeholder-image-rectangle">
-      </div>
-      <div class="placeholder-image">
-        <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-      </div>
-      <div class="about-title-mobile">
-        <h1>About</h1>
-      </div>
-      <div class="about-title">
-        <h1>About</h1>
-      </div>
-    </div>
+    <?php template("hero.php", array('text' => "Information")) ?>
     <div class="school-info-nav">
       <div class="nav-3">
         <div class="school-info-items">
