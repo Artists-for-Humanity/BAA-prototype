@@ -38,6 +38,10 @@
     margin-block-end: 30px;
 }
 
+.subject-block-title {
+    font-size: 25px;
+}
+
 .subjects-blocks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -45,10 +49,52 @@
     column-gap: 15px;
 }
 
+.subject-block {
+    position: relative;
+}
+
+@media (max-width:600px) {
+    .subject-blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .subject-block-title {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bolder;
+
+    }
+}
+
+@media (max-width:600px) {
+    .support-blocks {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 40px;
+    }
+}
+
 .majors-block-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+
+@media (max-width:600px) {
+    .majors-block-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .majors-block {
@@ -66,6 +112,8 @@
     display: flex;
     color: white;
     text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
 }
 
 .section {
@@ -73,6 +121,60 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.lorem-ipsum {
+    font-size: 25px;
+}
+
+.header-block-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    color: white;
+    text-align: left;
+    font-size: 80px;
+    font-weight: bolder;
+    padding: 90px;
+}
+
+.header {
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+}
+
+.sub-nav {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 100px;
+}
+
+.header-text {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style: solid;
+    border-color: gray;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateX(50%) rotate(-90deg) translateY(-100%);
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 /* font-size
