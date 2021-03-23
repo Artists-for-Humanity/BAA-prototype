@@ -1,3 +1,4 @@
+<?php include_once('../php/template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/reset.css" type="text/css" />
   <link rel="stylesheet" href="/assets/css/global.css" type="text/css" />
-  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <link rel="stylesheet" href="/example/styles.css" type="text/css" />
 </head>
 
 <body>
@@ -21,7 +22,7 @@
       <a class="nav-item" href="/about">About</a>
       <a class="nav-item" href="/academics">Academics</a>
       <a class="nav-item" href="/admission">Admission</a>
-      <a class="nav-item" href="/Dance">Dance</a>
+      <a class="nav-item" href="/dance">Dance</a>
     </div>
     <button class="nav-open-button" type="button">☰</button>
   </nav>
@@ -33,7 +34,7 @@
       <a class="mobile-menu-item" href="/about">About</a>
       <a class="mobile-menu-item" href="/academics">Academics</a>
       <a class="mobile-menu-item" href="/admission">Admission</a>
-      <a class="mobile-menu-item" href="/Dance">Dance</a>
+      <a class="mobile-menu-item" href="/dance">Dance</a>
     </div>
   </nav>
   <header class="hero">
@@ -54,31 +55,31 @@
         <a class="three-up-grid-cta" href="#">View all</a>
       </div>
       <div class="three-up-grid-items">
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/placeholder-image-rectangle.png" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/placeholder-image-rectangle.png" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/placeholder-image-rectangle.png" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
+        <?php
+          template("three-up-item.php", array(
+            'month' => 'Feb',
+            'day' => '10',
+            'text' => 'Event name 1'
+          ));
+        ?>
+        <?php
+          template("three-up-item.php", array(
+            'month' => 'Mar',
+            'day' => '15',
+            'text' => 'Event name 2'
+          ));
+        ?>
+        <?php
+          template("three-up-item.php", array(
+            'month' => 'Mar',
+            'day' => '22',
+            'text' => 'Event name 3'
+          ));
+        ?>
       </div>
     </div>
   </section>
-  <script src="script.js"></script>
+  <script src="/example/script.js"></script>
 </body>
 
 </html>
