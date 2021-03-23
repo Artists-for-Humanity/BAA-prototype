@@ -1,5 +1,7 @@
+<?php include_once('./php/template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
   <meta charset="UTF-8" />
@@ -36,13 +38,7 @@
       <a class="mobile-menu-button" href="/dance">Dance</a>
     </div>
   </nav>
-  <div class="header-box">
-    <img class="header-box-image" src="assets/images/68-0314.jpg">
-    <div class="header-box-title">
-      <h1>Artist-scholars designing their own future.</h1>
-      <div class="button">view their work</div>
-    </div>
-  </div>
+  <?php template("hero.php", array('text' => 'Artist Scholars designing their own future')) ?>
   <section class="page-section">
     <div class="three-up-grid">
       <div class="three-up-grid-title-bar">
