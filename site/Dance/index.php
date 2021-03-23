@@ -177,8 +177,7 @@
     </div>
 
 
-    <div class="intro-text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit
+    <?php template("hero.php", array('introtext' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit
         tristique quam. Donec mollis auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui.
         Duis
         dictum in ligula a aliquet. Vestibulum consequat nisl a elementum tincidunt. Nunc nec egestas erat. Fusce
@@ -186,22 +185,8 @@
         nibh nec convallis eleifend, est lorem tristique quam, sit amet aliquet elit lorem eu quam. Etiam pharetra
         aliquam
         orci, vitae blandit nisi maximus in. Integer ante eros, elementum vitae hendrerit eget, pharetra eget quam.
-        Donec
-        fringilla, nisi nec fermentum pellentesque, ante eros consectetur ante, at venenatis ex dui ut velit.</p>
-      <div class="intro-text-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit
-          tristique quam. Donec mollis auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu
-          dui.
-          Duis
-          dictum in ligula a aliquet. Vestibulum consequat nisl a elementum tincidunt. Nunc nec egestas erat. Fusce
-          efficitur,
-          nibh nec convallis eleifend, est lorem tristique quam, sit amet aliquet elit lorem eu quam. Etiam pharetra
-          aliquam
-          orci, vitae blandit nisi maximus in. Integer ante eros, elementum vitae hendrerit eget, pharetra eget quam.
-          Donec
-          fringilla, nisi nec fermentum pellentesque, ante eros consectetur ante, at venenatis ex dui ut velit.</p>
-      </div>
-    </div>
+        Donec')) ?>
+
 
     <div class="TBD-space">
       <div class="TBD-text">TBD</div>

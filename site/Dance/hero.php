@@ -7,3 +7,10 @@
     <div>
       <p class="header-text">Jodie McSally Dance Program, Class of 21</p>
     </div>
+
+    <div class="intro-text">
+      <p><?php print $introtext; ?></p>
+      <div class="intro-text-2">
+        <p><?php print $introtext; ?></p>
+      </div>
+    </div>
