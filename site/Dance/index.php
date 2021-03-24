@@ -96,7 +96,6 @@
       });
     </script>
 
-    <nav><a href="/">Home</a><a href="/about">About</a></nav>
     <div class="visiter-support">
       <div class="nav-1">
         <div class="language-box">
@@ -187,14 +186,12 @@
         orci, vitae blandit nisi maximus in. Integer ante eros, elementum vitae hendrerit eget, pharetra eget quam.
         Donec')) ?>
 
+<?php template("hero.php", array('TBD' => 'TBD')) ?>
 
-    <div class="TBD-space">
-      <div class="TBD-text">TBD</div>
-    </div>
+   
 
-    <div class="related-pages-start">
-      <h2>Related Pages</h2>
-      <div class="related-pages-items">
+<?php template("related.php", array('relatedstart' => 'Related Pages')) ?>
+
 
         <div class="related-pages-item">
           <div class="related-pages-image">
