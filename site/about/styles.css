@@ -485,6 +485,14 @@
      .student-work-mobile {
          display: none;
      }
+
+     .mobile-menu-nav {
+         display: none;
+     }
+
+     .mobile-menu {
+         display: none;
+     }
  }
 
  /* MOBILE */

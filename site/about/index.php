@@ -15,22 +15,6 @@
   <nav><a href="/">Home</a><a href="/about">About</a></nav>
   <h1>Main</h1>
   <div class="wrapper">
-    <!-- <div class="mobile-top-row">
-      <div class="BAA-Title">
-        <h1> BAA</h1>
-      </div>
-      <div class="top-row-dropdown">
-        <label for="visiter-options"></label>
-        <select name="options" id="visiter options">
-          <option value="about">About</option>
-          <option value="acedemics">Acedemics</option>
-          <option value="admissions">Admissions</option>
-          <option value="community">Community</option>
-          <option value="events&exhibitions">Events & Exhibitions</option>
-          <option value="foundation">Foundation</option>
-        </select>
-      </div>
-    </div> -->
     <div class="visiter-support">
       <div class="nav-1">
         <div class="language-box">
@@ -70,7 +54,8 @@
             </div>
           </div>
         </a>
-        <div class=top-page-nav>
+        <div class="mobile-menu-nav">
+        <div class="top-page-nav">
           <a class="dropdown-item" href="/about">About</a>
           <a class="dropdown-item" href="/acedemics">Acedemics</a>
           <a class="dropdown-item" href="/admissions">Admissions</a>
@@ -78,8 +63,22 @@
           <a class="dropdown-item" href="/events&exhibitions">Events & Exhibitions</a>
           <a class="dropdown-item" href="/foundation">Foundation</a>
         </div>
-        <button class="dropdown-button" type="button">☰</button>
+        <button class="dropdown-open-button" type="button">☰</button>
       </nav>
+      <nav class="mobile-menu" data-state="closed">
+        <div class="mobile-menu-dropdown">
+        <button class="dropdown-close-button" type="button">𝖷</button>
+        </div>
+        <div class="mobile-menu-items">
+      <a class="mobile-menu-item" href="/about">About</a>
+      <a class="mobile-menu-item" href="/academics">Acedemics</a>
+      <a class="mobile-menu-item" href="/admission">Admission</a>
+      <a class="mobile-menu-item" href="/community">Community</a>
+      <a class="mobile-menu-item" href="/events&exhibitions">Events & Exhibitions</a>
+      <a class="mobile-menu-item" href="/foundation">Foundation</a>
+      </nav>
+    </div>
+    </div>
       <div class="nav-2">
         <div class="nav-2-items">
           <h2>About</h2>
@@ -284,50 +283,18 @@
       <div class="campus-info-edits">
         <div class="campus-info-row-1">
           <div class="campus-info-1">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa,
-              vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-              sagittis
-              felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-              placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+            <p> <?php include "large-text.php" ?> </p>
           </div>
           <div class="campus-info-2">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa,
-              vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-              sagittis
-              felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-              placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+            <p> <?php include "large-text.php" ?> </p>
           </div>
         </div>
         <div class="campus-info-row-2">
           <div class="campus-info-3">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa,
-              vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-              sagittis
-              felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-              placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+            <p> <?php include "large-text.php" ?> </p>
           </div>
           <div class="campus-info-4">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa,
-              vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-              sagittis
-              felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-              placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+            <p> <?php include "large-text.php" ?> </p>
           </div>
         </div>
         <div class="campus-more-info">
@@ -378,62 +345,18 @@
       </div>
       <div class="approach-mobile-row">
         <div class="approach-1-mobile-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+          <p><?php include "large-text.php" ?></p>
         </div>
         <div class="approach-1-mobile-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+          <p><?php include "large-text.php" ?></p>
         </div>
       </div>
       <div class="approach-info-row">
         <div class="approach-1-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+          <p><?php include "large-text.php" ?></p>
         </div>
         <div class="approach-2-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+          <p><?php include "large-text.php" ?></p>
         </div>
       </div>
       <div class="approach-mobile-card-row">
