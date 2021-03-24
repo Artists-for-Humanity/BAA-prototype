@@ -38,35 +38,40 @@
       <a class="mobile-menu-button" href="/dance">Dance</a>
     </div>
   </nav>
-  <?php template("hero.php", array('text' => 'Artist Scholars designing their own future')) ?>
-  <section class="page-section">
-    <div class="three-up-grid">
-      <div class="three-up-grid-title-bar">
-        <div class="three-up-grid-title">Upcoming Events</div>
-        <a class="three-up-grid-cta" href="#">View all</a>
+  <?php template("header.php", array(
+    'text' => 'Artist Scholars designing their own future',
+    'image' => 'assets/images/68-0314.jpg',
+    'button' =>'Learn more'
+    )) ?>
+  <section class="upcoming-events">
+    <div class="upcoming-events-content">
+      <div class="upcoming-events-title-bar">
+        <div class="upcoming-events-title">Upcoming Events</div>
+        <a class="upcoming-events-cta" href="#">View all</a>
       </div>
-      <div class="three-up-grid-items">
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/dancers.jpg" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/img_2200.jpg" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
-        <a class="grid-item" href="#">
-          <div class="grid-item-image">
-            <img src="/assets/images/russn_fckr-krv5as4jdja-unsplash.jpg" alt="Image" />
-            <div class="grid-item-date"><span class="month">Mar</span> <span class="day">10</span></div>
-          </div>
-          <div class="grid-item-title">Lorem ipsom dolsot amior</div>
-        </a>
+      <div class="upcoming-events-items">
+      <?php
+          template("upcoming-events.php", array(
+            'month' => 'Feb',
+            'day' => '10',
+            'text' => 'event name 1'
+          ));
+        ?>
+        <?php
+          template("upcoming-events.php", array(
+            'month' => 'Mar',
+            'day' => '15',
+            'text' => 'event name 2'
+          ));
+        ?>
+        <?php
+          template("upcoming-events.php", array(
+            'month' => 'May',
+            'day' => '22',
+            'text' => 'event name 3'
+          ));
+        ?>
+        
       </div>
     </div>
   </section>
@@ -75,22 +80,22 @@
     <div class="view-all">View All</div>
   </div>
   </div>
-  <div class="header-box">
-    <img class="header-box-image" src="assets/images/rhondak-native-florida-folk-artist-_yc7otffn-0-unsplash.jpg">
-    <div class="header-box-title">
-      <h1>174 Ipswich Street</h1>
-      <div class="button">Tour the New BAA</div>
-    </div>
-  </div>
-  <div class="donations">
-    <div class="donation">
-      <img class="donation-image" src="assets/images/dancers.jpg">
-      <div class="descriptions">Professor Jonah Harding Wins Genius Grant</div>
-    </div>
-    <div class=donation>
-      <img class="donation-image" src="assets/images/russn_fckr-krv5as4jdja-unsplash.jpg">
-      <div class="descriptions">Alum Franny Hall on nine Years Leading a Non-Profit</div>
-    </div>
+  <?php template("header.php", array(
+    'text' => '174 Ipswich Street',
+    'image' => 'assets/images/rhondak-native-florida-folk-artist-_yc7otffn-0-unsplash.jpg',
+    'button' => 'Tour the New BAA'
+    )) ?>
+<div class="donations">
+  <?php template("donation.php", array(
+    'image'=> 'assets/images/dancers.jpg',
+    'description'=> 'description 1'
+  ));
+  ?>
+  <?php template("donation.php", array(
+    'image'=> 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg',
+    'description'=> 'description 2'
+  ));
+  ?>
   </div>
   <div class="student-spotlight-title">
     <div class="title-spacing">
@@ -99,31 +104,26 @@
     </div>
   </div>
   <div class="student-spotlight">
-    <div>
-      <img class="student-spotlight-image" src="assets/images/68-0314.jpg">
-    </div>
-    <div class="student-description-background">
-      <div class="student-description">
-        <div class="student-name">Sandy Perdue</div>
-        <div class="student-spotlight-stats">
-          <div>Class of '23 |</div>
-          <div class="blue-text">Music Department</div>
-        </div>
-        <div class="line-spacing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus
-          scelerisque orci
-          eu rutrum.
-          Nulla blandit pharetra urna ac fringilla. Nam mollis nunc sed turpis suscipit rutrum. Integer dui nisi, auctor
-          at
-          imperdiet et, consectetur vitae lacus. Ut nec aliquam felis, in consectetur est. Proin maximus quis odio et
-          porta.
-          Donec a odio fringilla, volutpat lectus mattis, blandit erat. Aenean dignissim dapibus nibh, ac malesuada
-          risus
-          gravida eu. Ut felis leo, accumsan vitae nibh ac, varius dignissim enim. Suspendisse pharetra cursus tortor,
-          vel
-          dignissim purus tincidunt a.</div>
-        <div class="blue-text student-spotlight-stats">Learn more</div>
-      </div>
-    </div>
+<?php 
+  template("student-spotlight.php", array(
+    'name'=> 'Sandy Perdue',
+   'image'=>'assets/images/68-0314.jpg',
+   'class'=>'23',
+   'department'=>'Music Department',
+   'description' =>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus
+   scelerisque orci
+   eu rutrum.
+   Nulla blandit pharetra urna ac fringilla. Nam mollis nunc sed turpis suscipit rutrum. Integer dui nisi, auctor
+   at
+   imperdiet et, consectetur vitae lacus. Ut nec aliquam felis, in consectetur est. Proin maximus quis odio et
+   porta.
+   Donec a odio fringilla, volutpat lectus mattis, blandit erat. Aenean dignissim dapibus nibh, ac malesuada
+   risus
+   gravida eu. Ut felis leo, accumsan vitae nibh ac, varius dignissim enim. Suspendisse pharetra cursus tortor,
+   vel
+   dignissim purus tincidunt a.'
+  ));
+  ?>
   </div>
   <div class="impact">
     <div class=impact-section>
@@ -141,28 +141,32 @@
       <div class="button stats">View More Stats</div>
     </div>
     <div class="impact-highlights">
-      <div>
-        <img class="impact-circle" src="assets/images/placeholder-image-rectangle.png">
-        <div class="line-spacing">Vivamus et ante quis massa sagittis dapibus. Aenean vitae eleifend ipsum, vitae
-          cursus
-          ligula.</div>
-      </div>
-      <div>
-        <img class="impact-circle" src="assets/images/placeholder-image-rectangle.png">
-        <div class="line-spacing">Nam malesuada ut est sed gravida. Donec elementum, dui sed finibus malesuada,
-          nisilorem efficitur turpis,sedcondimentum nibh arcu in est.</div>
-      </div>
-      <div>
-        <img class="impact-circle" src="assets/images/placeholder-image-rectangle.png">
-        <div class="line-spacing">Etiam semper magna id massa blandit porta. Nullam malesuada tortor quis velit
-          aliquet,
-          nec aliquam elit aliquet. Quisque consequat cursus nulla </div>
-      </div>
-      <div>
-        <img class="impact-circle" src="assets/images/placeholder-image-rectangle.png">
-        <div class="line-spacing">Vivamus et ante quis massa sagittis dapibus. Aenean vitae eleifend ipsum, vitae
-          cursu ligula.</div>
-      </div>
+    <?php
+          template("impact-highlights.php", array(
+            'description' => 'ivamus et ante quis massa sagittis dapibus. Aenean vitae eleifend ipsum, vitae
+            cursus
+            ligula.'
+          ));
+        ?>
+        <?php
+          template("impact-highlights.php", array(
+            'description' => 'Nam malesuada ut est sed gravida. Donec elementum, dui sed finibus malesuada,
+            nisilorem efficitur turpis,sedcondimentum nibh arcu in est.'
+          ));
+        ?>    
+         <?php
+          template("impact-highlights.php", array(
+            'description' => 'Etiam semper magna id massa blandit porta. Nullam malesuada tortor quis velit
+            aliquet,
+            nec aliquam elit aliquet. Quisque consequat cursus nulla'
+          ));
+        ?>  
+         <?php
+          template("impact-highlights.php", array(
+            'description' => 'Vivamus et ante quis massa sagittis dapibus. Aenean vitae eleifend ipsum, vitae
+            cursu ligula.'
+          ));
+        ?>  
     </div>
   </div>
   <div class="month-in-review">
@@ -170,24 +174,26 @@
       <h2>Month in Review</h2>
       <div class="view-all">View all</div>
     </div>
-    <div class="month-in-review-content">
-      <div class="month-in-review-event">
-        <img class="month-in-review-image" src="assets/images/img_2200.jpg">
-        <div class="descriptions">Cy twombly Student Workshop</div>
-      </div>
-      <div class="month-in-review-event">
-        <img class="month-in-review-image" src="assets/images/dancers.jpg">
-        <div class="descriptions">Celine Dion Choral Music Intensive</div>
-      </div>
+    <?php
+          template("month-in-review.php", array(
+            'description' => 'Cy wombly student workshop',
+            'image'=> 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg'
+          ));
+        ?>
+        <?php
+          template("month-in-review.php", array(
+            'description' => 'Celine Dion Choral Music Intensive',
+            'image'=> 'assets/images/img_2200.jpg'
+          ));
+        ?>   pr
     </div>
   </div>
-  <div class="header-box">
-    <img class="header-box-image" src="assets/images/2015-class-photo.jpg">
-    <div class="header-box-title">
-      <h1>Winterfest 2021</h1>
-      <div class="button">watch the concert</div>
-    </div>
-  </div>
+  <?php template("header.php", array(
+    'text' => 'Winterfest 2021',
+    'button'=> "watch the concert",
+    'image' => 'assets/images/2015-class-photo.jpg'
+  )); 
+    ?>
   <div class="more-from">
     <div class="more-from-title">more from</div>
     <div class="more-from-buttons">Community</div>
