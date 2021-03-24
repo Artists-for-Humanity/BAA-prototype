@@ -1,3 +1,4 @@
+<?php include_once('../php/template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +14,7 @@
 <body>
   <nav><a href="/">Home</a><a href="/about">About</a></nav>
   <div>
-    <?php include "hero.php" ?>
+  <?php template("hero.php", array('text' => 'Example Page')) ?>
     <div class="sub-nav">
       <div>Majors</div>
       <div>Inquiry & innovation</div>
@@ -30,48 +31,8 @@
       </p>
     </div>
   </div>
-  <div class="section">
-    <div class="support-blocks">
-      <div class="support-block">
-        <div class="support-block-image">
-          <img src="../assets/images/placeholder-image-square.png" alt="placeholder-image-rectangle">
-        </div>
-        <div class="support-block-text-wrap">
-          <div class="support-block-title">Support for IEP</div>
-          <div class="support-block-text">Lorem Ipsum</div>
-          <div class="support-block-cta">Learn more</div>
-        </div>
-      </div>
-      <div class="support-block">
-        <div class="support-block-image">
-          <img src="../assets/images/placeholder-image-square.png" alt="placeholder-image-rectangle">
-        </div>
-        <div class="support-block-text-wrap">
-          <div class="support-block-title"> Dual Curriculum</div>
-          <div class="support-block-text">Lorem Ipsum</div>
-          <div class="support-block-cta">Learn More</div>
-        </div>
-      </div>
-      <div class="support-block">
-        <div class="support-block-image">
-          <img src="../assets/images/placeholder-image-square.png" alt="placeholder-image-rectangle">
-        </div>
-        <div class="support-block-text-wrap">
-          <div class="support-block-title">Resilience</div>
-          <div class="support-block-text">Lorem Ipsum</div>
-        </div>
-      </div>
-      <div class="support-block">
-        <div class="support-block-image">
-          <img src="../assets/images/placeholder-image-square.png" alt="placeholder-image-rectangle">
-        </div>
-        <div class="support-block-text-wrap">
-          <div class="support-block-title">Growth Mindset</div>
-          <div class="support-block-text">Lorem Ipsum</div>
-          <div class="support-block-cta">Learn More</div>
-        </div>
-      </div>
-    </div>
+  <div>
+  <?php template("hero.php", array('text' => 'Example Page')) ?>
   </div>
   <div>
     <div class="header-block section">
