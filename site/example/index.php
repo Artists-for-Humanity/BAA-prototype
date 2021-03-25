@@ -37,17 +37,7 @@
       <a class="mobile-menu-item" href="/dance">Dance</a>
     </div>
   </nav>
-  <header class="hero">
-    <div class="hero-image">
-      <picture>
-        <source srcset="/assets/images/placeholder-image-rectangle-tall.png" media="(max-width: 600px)">
-        <img src="/assets/images/placeholder-image-rectangle.png" alt="image" />
-      </picture>
-    </div>
-    <div class="hero-text">
-      <h1 class="hero-title">Example Page</h1>
-    </div>
-  </header>
+  <?php template("hero.php", array('text' => 'Example Page')) ?>
   <section class="page-section">
     <div class="three-up-grid">
       <div class="three-up-grid-title-bar">
