@@ -19,19 +19,22 @@
         Boston Arts<br /> Academy
       </a>
     </div>
-
-    <div class="nav-items">
-      <a class="nav-item" href="/about">About</a>
-      <a class="nav-item" href="/academics">Academics</a>
-      <a class="nav-item" href="/admission">Admission</a>
-      <a class="nav-item" href="/dance">Dance</a>
-      <?php
-$colors = array("red", "green", "blue", "yellow", "purple");
-
-foreach ($colors as $color) {
-  echo "<a class=\"nav-item\" href=\"/dance\">$color</a>";
-}
+    <?php $navItems=array(
+  array('name' => 'About', 'link' => '/about'),
+  array('name' => 'Academics', 'link' => '/academics'),
+  array('name' => 'Admission', 'link' => '/admission'),
+  array('name' => 'Dance', 'link' => '/dance'),
+);
 ?>
+    <div class="nav-items">
+      <?php 
+    forEach($navItems as $item){
+      template("nav-item.php", array(
+        "name" => $item['name'],
+        "link" => $item['link']
+      ));
+    }
+  ?>
     </div>
     <button class="nav-open-button" type="button">☰</button>
   </nav>
@@ -40,12 +43,12 @@ foreach ($colors as $color) {
       <button class="nav-close-button" type="button">X</button>
     </div>
     <div class="mobile-menu-button">
-      <a class="mobile-menu-button" href="/about">About</a>
-      <a class="mobile-menu-button" href="/academics">Academics</a>
-      <a class="mobile-menu-button" href="/admission">Admissions</a>
-      <a class="mobile-menu-button" href="/dance">Dance</a>
-      <?php foreach ($colors as $color) {
-  echo "<a class=\"mobile-menu-button\" href=\"/dance\">$color</a>";
+      <?php
+  forEach($navItems as $item){
+    template("mobile-menu-button.php", array(
+    "name"=>$item['name'],
+    "link"=>$item['link']
+  ));
 }
 ?>
     </div>
@@ -83,7 +86,7 @@ foreach ($colors as $color) {
             'text' => 'event name 3'
           ));
         ?>
-
+        Write some text
       </div>
     </div>
   </section>

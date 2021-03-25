@@ -1,0 +1,1 @@
+<a class="nav-item" href="<?php print $link; ?>"><?php print $name; ?></a>
