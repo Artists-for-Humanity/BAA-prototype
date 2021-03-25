@@ -39,51 +39,51 @@
   </div>
   <section class="page-section">
     <div class="admission-info">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+      <?php echo"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut nisi ut puh.";?>
     </div>
-    <h5>Students must live in Boston by TKTK in order to enroll. Learn more</h5>
+    <?php echo"<h5>Students must live in Boston by TKTK in order to enroll. Learn more</h5>";?>
     <div class="more-admission-info">
       <div>
-        <div class="info-1">
-          <h5>Grades Blind</h5>
+       <div class="info-1">
+          <?php echo"<h5>Grades Blind</h5>";?> 
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"<p>Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.</p>";?>
       </div>
       <div>
         <div class="info-2">
-          <h5>All Levels of Experience</h5>
+          <?php echo"<h5>All Levels of Experience</h5>";?>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"<p>Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.</p>";?>
       </div>
       <div>
         <div class="info-3">
-          <h5>Full Inclusion</h5>
+          <?php echo"<h5>Full Inclusion</h5>";?>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"<p>Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.</p>";?>
       </div>
     </div>
     <div class="upcoming-admission-events">
       <div>
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
         <div>Nov 10</div>
-        <p>Sign up for open house</p>
+        <?php echo"<p>Sign up for open house</p>";?>
       </div>
       <div>
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
         <div>Dec 17</div>
-        <p>Sign up for Audition Workshop</p>
+        <?php echo"<p>Sign up for Audition Workshop</p>"; ?>
       </div>
       <div>
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
         <div>Jan 23</div>
-        <p>Sign up for Alumni Panel: Opportunity After BAA</p>
+        <?php echo"<p>Sign up for Alumni Panel: Opportunity After BAA</p>";?>
       </div>
     </div>
   </section>
@@ -245,24 +245,24 @@
         <div class="info-1">
           <h5>Grades Blind</h5>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.";?>
       </div>
       <div>
         <div class="info-2">
           <h5>All Levels of Experience</h5>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.";?>
       </div>
         <div class="info-3">
           <h5>Full Inclusion</h5>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.";?>
       </div>
     </div>
   </section>
