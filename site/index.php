@@ -19,11 +19,19 @@
         Boston Arts<br /> Academy
       </a>
     </div>
+
     <div class="nav-items">
       <a class="nav-item" href="/about">About</a>
       <a class="nav-item" href="/academics">Academics</a>
       <a class="nav-item" href="/admission">Admission</a>
       <a class="nav-item" href="/dance">Dance</a>
+      <?php
+$colors = array("red", "green", "blue", "yellow", "purple");
+
+foreach ($colors as $color) {
+  echo "<a class=\"nav-item\" href=\"/dance\">$color</a>";
+}
+?>
     </div>
     <button class="nav-open-button" type="button">☰</button>
   </nav>
@@ -36,6 +44,10 @@
       <a class="mobile-menu-button" href="/academics">Academics</a>
       <a class="mobile-menu-button" href="/admission">Admissions</a>
       <a class="mobile-menu-button" href="/dance">Dance</a>
+      <?php foreach ($colors as $color) {
+  echo "<a class=\"mobile-menu-button\" href=\"/dance\">$color</a>";
+}
+?>
     </div>
   </nav>
   <?php template("header.php", array(
@@ -50,7 +62,7 @@
         <a class="upcoming-events-cta" href="#">View all</a>
       </div>
       <div class="upcoming-events-items">
-      <?php
+        <?php
           template("upcoming-events.php", array(
             'month' => 'Feb',
             'day' => '10',
@@ -71,7 +83,7 @@
             'text' => 'event name 3'
           ));
         ?>
-        
+
       </div>
     </div>
   </section>
@@ -85,13 +97,13 @@
     'image' => 'assets/images/rhondak-native-florida-folk-artist-_yc7otffn-0-unsplash.jpg',
     'button' => 'Tour the New BAA'
     )) ?>
-<div class="donations">
-  <?php template("donation.php", array(
+  <div class="donations">
+    <?php template("donation.php", array(
     'image'=> 'assets/images/dancers.jpg',
     'description'=> 'description 1'
   ));
   ?>
-  <?php template("donation.php", array(
+    <?php template("donation.php", array(
     'image'=> 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg',
     'description'=> 'description 2'
   ));
@@ -104,7 +116,7 @@
     </div>
   </div>
   <div class="student-spotlight">
-<?php 
+    <?php 
   template("student-spotlight.php", array(
     'name'=> 'Sandy Perdue',
    'image'=>'assets/images/68-0314.jpg',
@@ -125,22 +137,21 @@
   ));
   ?>
   </div>
-  <div class="impact">
-    <div class=impact-section>
-      <h2>Boston Arts Academy Impact</h2>
-      <div class="gray-line"></div>
-      <div class="line-spacing">Nam urna mauris, viverra et sem ac, accumsan interdum tellus. Aenean
-        facilisis erat eu
-        quam scelerisque tempus. Duis cursus fermentum elit vel pulvinar. Sed in lectus tristique, aliquam arcu at,
-        iaculis orci. Sed eu orci
-        sapien. Nulla eget volutpat mauris. Phasellus semper sollicitudin dolor. Morbi ut interdum augue. Nam dignissim
-        tempor mattis. Proin sit amet mollis erat, nec viverra nulla. Mauris vehicula lectus non suscipit condimentum.
-        Nulla
-        vestibulum consectetur pellentesque. Proin in pharetra eros. Aenean id suscipit dolor. Phasellus sed fermentum
-        nulla, id fermentum nisi.</div>
-      <div class="button stats">View More Stats</div>
-    </div>
-    <div class="impact-highlights">
+  <?php template("impact.php", array(
+    'title'=>'Boston Arts Academy Impact',
+    'description'=>'Nam urna mauris, viverra et sem ac, accumsan interdum tellus. Aenean
+    facilisis erat eu
+    quam scelerisque tempus. Duis cursus fermentum elit vel pulvinar. Sed in lectus tristique, aliquam arcu at,
+    iaculis orci. Sed eu orci
+    sapien. Nulla eget volutpat mauris. Phasellus semper sollicitudin dolor. Morbi ut interdum augue. Nam dignissim
+    tempor mattis. Proin sit amet mollis erat, nec viverra nulla. Mauris vehicula lectus non suscipit condimentum.
+    Nulla
+    vestibulum consectetur pellentesque. Proin in pharetra eros. Aenean id suscipit dolor. Phasellus sed fermentum
+    nulla, id fermentum nisi.',
+    'button'=>'View More Stats',
+  ))
+  ?>
+  <div class="impact-highlights">
     <?php
           template("impact-highlights.php", array(
             'description' => 'ivamus et ante quis massa sagittis dapibus. Aenean vitae eleifend ipsum, vitae
@@ -148,26 +159,26 @@
             ligula.'
           ));
         ?>
-        <?php
+    <?php
           template("impact-highlights.php", array(
             'description' => 'Nam malesuada ut est sed gravida. Donec elementum, dui sed finibus malesuada,
             nisilorem efficitur turpis,sedcondimentum nibh arcu in est.'
           ));
-        ?>    
-         <?php
+        ?>
+    <?php
           template("impact-highlights.php", array(
             'description' => 'Etiam semper magna id massa blandit porta. Nullam malesuada tortor quis velit
             aliquet,
             nec aliquam elit aliquet. Quisque consequat cursus nulla'
           ));
-        ?>  
-         <?php
+        ?>
+    <?php
           template("impact-highlights.php", array(
             'description' => 'Vivamus et ante quis massa sagittis dapibus. Aenean vitae eleifend ipsum, vitae
             cursu ligula.'
           ));
-        ?>  
-    </div>
+        ?>
+  </div>
   </div>
   <div class="month-in-review">
     <div class="title-spacing">
@@ -180,13 +191,13 @@
             'image'=> 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg'
           ));
         ?>
-        <?php
+    <?php
           template("month-in-review.php", array(
             'description' => 'Celine Dion Choral Music Intensive',
             'image'=> 'assets/images/img_2200.jpg'
           ));
-        ?>   pr
-    </div>
+        ?> pr
+  </div>
   </div>
   <?php template("header.php", array(
     'text' => 'Winterfest 2021',
