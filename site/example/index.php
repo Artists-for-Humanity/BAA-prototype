@@ -18,11 +18,23 @@
         Boston Arts<br /> Academy
       </a>
     </div>
+    <?php
+      $navItems = array(
+        array('name' => 'About', 'link' => '/about'),
+        array('name' => 'Academics', 'link' => '/academics'),
+        array('name' => 'Admission', 'link' => '/admission'),
+        array('name' => 'Dance', 'link' => '/dance'),
+      );
+    ?>
     <div class="nav-items">
-      <a class="nav-item" href="/about">About</a>
-      <a class="nav-item" href="/academics">Academics</a>
-      <a class="nav-item" href="/admission">Admission</a>
-      <a class="nav-item" href="/dance">Dance</a>
+      <?php
+        forEach($navItems as $item) {
+          template("nav-item.php", array(
+            "name" => $item['name'],
+            "link" => $item['link']
+          ));
+        }
+      ?>
     </div>
     <button class="nav-open-button" type="button">☰</button>
   </nav>
@@ -31,10 +43,14 @@
       <button class="nav-close-button" type="button">𝖷</button>
     </div>
     <div class="mobile-menu-items">
-      <a class="mobile-menu-item" href="/about">About</a>
-      <a class="mobile-menu-item" href="/academics">Academics</a>
-      <a class="mobile-menu-item" href="/admission">Admission</a>
-      <a class="mobile-menu-item" href="/dance">Dance</a>
+      <?php
+        forEach($navItems as $item) {
+          template("mobile-menu-item.php", array(
+            "name" => $item['name'],
+            "link" => $item['link']
+          ));
+        }
+      ?>
     </div>
   </nav>
   <?php template("hero.php", array('text' => 'Example Page')) ?>
