@@ -170,9 +170,6 @@
     </div>
     <div class="information">
       <div class="info-box-wrapper">
-      <!-- MOBILE INFO CARDS PHP -->
-      <?php include "mobile-info-cards.php" ?>
-       <!-- MOBILE INFO CARDS PHP -->
         <div class="info-box-row-1">
           <div class="box-1">
             <div class="info-box-h1">
@@ -279,9 +276,14 @@
       <div class="approach-title">
         <h5>Our Approach</h5>
       </div>
-      <!-- MOBILE APPROACH CARDS -->
-      <?php include "mobile-approach-cards.php"?>
-       <!-- MOBILE APPROACH CARDS -->
+      <div class="approach-info-row">
+        <div class="approach-1-info">
+          <p><?php include "large-text.php" ?></p>
+        </div>
+        <div class="approach-2-info">
+          <p><?php include "large-text.php" ?></p>
+        </div>
+      </div>
   <div class="approach-card-row">
     <div class="approach-card-1">
       <div class="approach-image">

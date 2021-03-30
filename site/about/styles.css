@@ -301,7 +301,6 @@
      display: flex;
      flex-direction: row;
      margin-top: 30px;
-     margin-left: 50px;
  }
 
  .approach-image {
@@ -351,6 +350,8 @@
 
  .approach-1-info {
      margin-right: 140px;
+     margin-bottom: 20px;
+
  }
 
  /* APPROACH ROW ONTOP */
@@ -450,18 +451,6 @@
          display: none;
      }
 
-     .approach-1-mobile-info {
-         display: none;
-     }
-
-     .approach-2-mobile-info {
-         display: none;
-     }
-
-     .approach-mobile-card-row {
-         display: none;
-     }
-
      .visiter-option-mobile-row {
          display: none;
      }
@@ -534,18 +523,6 @@
          display: none;
      }
 
-     .approach-1-info {
-         display: none;
-     }
-
-     .approach-2-info {
-         display: none;
-     }
-
-     .approach-card-row {
-         display: none;
-     }
-
      .footer-items-row {
          display: none;
      }
@@ -587,18 +564,6 @@
      }
 
      .box-6 {
-         display: none;
-     }
-
-     .approach-card-1 {
-         display: none;
-     }
-
-     .approach-card {
-         display: none;
-     }
-
-     .approach-card-4 {
          display: none;
      }
 
@@ -690,22 +655,18 @@
      }
 
      /* CAMPUS ROW ONTOP */
-     .approach-mobile-card-row {
-         display: flex;
-         flex-direction: row;
+     .approach-card-row {
          overflow: scroll;
          margin-left: 85px;
-         margin-top: 20px;
          margin-right: 80px;
      }
 
-     .approach-1-mobile-info {
-         margin-bottom: 20px;
+     .approach-info-row {
+         flex-direction: column;
      }
 
-     .approach-mobile-card-edit {
-         margin-right: 95px;
-         border: 1px solid black;
+     .approach-1-info {
+         margin-right: 0px;
      }
 
      /* STUDENT WORK */
