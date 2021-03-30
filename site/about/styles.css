@@ -170,40 +170,11 @@
 
  /* HISTORY ROW ONTOP */
 
- .box-1 {
+ .story-box {
+     padding: 100px 200px 100px 200px;
      background-color: lightgray;
-     padding: 100px 155px 100px 155px;
      margin: 20px;
- }
-
- .box-2 {
-     background-color: gray;
-     padding: 100px 100px 100px 100px;
-     margin: 20px;
- }
-
- .box-3 {
-     background-color: lightgray;
-     padding: 100px 195px 100px 195px;
-     margin: 20px;
- }
-
- .box-4 {
-     background-color: lightgray;
-     padding: 100px 100px 100px 100px;
-     margin: 20px;
- }
-
- .box-5 {
-     background-color: lightgray;
-     padding: 100px 220px 100px 220px;
-     margin: 20px;
- }
-
- .box-6 {
-     background-color: gray;
-     padding: 100px;
-     margin: 20px;
+     text-align: center;
  }
 
  .info-box-h1 {
@@ -257,25 +228,24 @@
  }
 
  .campus-image-edit-1 {
-     width: 800px;
-     height: 300px;
+     width: 100%;
+     margin-left: 20px;
  }
 
  .campus-image-edit-2 {
-     width: 800px;
-     height: 300px;
-     margin: 0px 10px 0px 10px;
+     width: 100%;
+     margin: 0px 20px 0px 20px;
  }
 
  .campus-image-edit-3 {
-     width: 800px;
-     height: 300px;
+     margin-right: 20px;
+     width: 100%
  }
 
  .campus-image-alignment {
      display: flex;
      flex-direction: row;
-     margin: 60px 20px 0px 20px;
+     margin-top: 30px;
  }
 
  .campus-info-1 {
@@ -435,19 +405,7 @@
          display: none;
      }
 
-     .info-box-mobile {
-         display: none;
-     }
-
-     .campus-image-mobile {
-         display: none;
-     }
-
      .campus-more-info {
-         display: none;
-     }
-
-     .campus-image-mobile-div {
          display: none;
      }
 
@@ -507,22 +465,6 @@
          display: none;
      }
 
-     .campus-image-alignment {
-         display: none;
-     }
-
-     .campus-image-edit-1 {
-         display: none;
-     }
-
-     .campus-image-edit-2 {
-         display: none;
-     }
-
-     .campus-image-edit-3 {
-         display: none;
-     }
-
      .footer-items-row {
          display: none;
      }
@@ -540,30 +482,6 @@
      }
 
      .about-title {
-         display: none;
-     }
-
-     .box-3 {
-         display: none;
-     }
-
-     .box-1 {
-         display: none;
-     }
-
-     .box-2 {
-         display: none;
-     }
-
-     .box-4 {
-         display: none;
-     }
-
-     .box-5 {
-         display: none;
-     }
-
-     .box-6 {
          display: none;
      }
 
@@ -613,39 +531,12 @@
      /* TOP PAGE */
 
      .info-box-mobile {
-         display: flex;
-         flex-direction: row;
          overflow: scroll;
      }
-
-     .mobile-box-info-cards {
-         padding: 100px 200px 100px 200px;
-         background-color: lightgray;
-         margin: 20px;
-         text-align: center;
-     }
-
 
      /* INFORMATION ROW ONTOP */
-     .campus-image-mobile-edit-1 {
-         width: 100%;
-         margin: 20px;
-     }
-
-     .campus-image-mobile-edit-2 {
-         width: 100%;
-         margin: 20px;
-     }
-
-     .campus-image-mobile-edit-3 {
-         width: 100%;
-         margin: 20px;
-     }
-
-     .campus-image-mobile {
+     .campus-image-alignment {
          overflow: scroll;
-         display: flex;
-         flex-direction: row;
      }
 
      .campus-more-info {
