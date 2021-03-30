@@ -5,7 +5,7 @@
       </div>
     </div>
     <div>
-      <p class="header-text">Jodie McSally Dance Program, Class of 21</p>
+      <p class="header-text"><?php print $headertext2; ?></p>
     </div>
 
 

@@ -157,8 +157,7 @@
 
     <?php template("hero.php", array('headertext' => 'Dance')) ?>
 
-
-
+<?php template("hero.php", array('headertext2' => 'Jodie McSally Dance Program, Class of 21')) ?>
 
     <div class="sub-nav">
       <div>
@@ -176,7 +175,7 @@
     </div>
 
 
-    <?php template("hero.php", array('introtext' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit
+    <?php template("intro.php", array('introtext' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit
         tristique quam. Donec mollis auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui.
         Duis
         dictum in ligula a aliquet. Vestibulum consequat nisl a elementum tincidunt. Nunc nec egestas erat. Fusce
@@ -186,11 +185,11 @@
         orci, vitae blandit nisi maximus in. Integer ante eros, elementum vitae hendrerit eget, pharetra eget quam.
         Donec')) ?>
 
-<?php template("hero.php", array('TBD' => 'TBD')) ?>
+<?php template("tbd.php", array('TBD' => 'TBD')) ?>
 
    
 
-<?php template("related.php", array('relatedstart' => 'Related Pages')) ?>
+<?php template("related.php", array('title' => 'Related Pages')) ?>
 
 
         

@@ -1,5 +1,5 @@
 <div class="related-pages-start">
-      <h2><?php print $relatedstart; ?></h2>
+      <h2><?php print $title; ?></h2>
       <div class="related-pages-items">
       <div class="related-pages-item">
           <div class="related-pages-image">
