@@ -1,3 +1,4 @@
+<?php include_once('../php/template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,32 +15,11 @@
   <nav><a href="/">Home</a><a href="/about">About</a></nav>
   <h1>Main</h1>
   <div class="wrapper">
-    <!-- <div class="mobile-top-row">
-      <div class="BAA-Title">
-        <h1> BAA</h1>
-      </div>
-      <div class="top-row-dropdown">
-        <label for="visiter-options"></label>
-        <select name="options" id="visiter options">
-          <option value="about">About</option>
-          <option value="acedemics">Acedemics</option>
-          <option value="admissions">Admissions</option>
-          <option value="community">Community</option>
-          <option value="events&exhibitions">Events & Exhibitions</option>
-          <option value="foundation">Foundation</option>
-        </select>
-      </div>
-    </div> -->
     <div class="visiter-support">
       <div class="nav-1">
-        <div class="language-box">
-          <div class="item-1-1">
-            <h1>Language</h1>
-          </div>
-          <div class="item-1-EN">
-            <h1>EN</h1>
-          </div>
-        </div>
+      <!-- LANGUAGE PHP -->
+      <?php include "language.php" ?>
+       <!-- LANGUAGE PHP -->
         <div class=" connect-border">
           <div class="nav-1-items">
             <h2>Connect</h2>
@@ -69,7 +49,8 @@
             </div>
           </div>
         </a>
-        <div class=top-page-nav>
+        <div class="mobile-menu-nav">
+        <div class="top-page-nav">
           <a class="dropdown-item" href="/about">About</a>
           <a class="dropdown-item" href="/acedemics">Acedemics</a>
           <a class="dropdown-item" href="/admissions">Admissions</a>
@@ -77,8 +58,22 @@
           <a class="dropdown-item" href="/events&exhibitions">Events & Exhibitions</a>
           <a class="dropdown-item" href="/foundation">Foundation</a>
         </div>
-        <button class="dropdown-button" type="button">☰</button>
+        <button class="dropdown-open-button" type="button">☰</button>
       </nav>
+      <nav class="mobile-menu" data-state="closed">
+        <div class="mobile-menu-dropdown">
+        <button class="dropdown-close-button" type="button">𝖷</button>
+        </div>
+        <div class="mobile-menu-items">
+      <a class="mobile-menu-item" href="/about">About</a>
+      <a class="mobile-menu-item" href="/academics">Acedemics</a>
+      <a class="mobile-menu-item" href="/admission">Admission</a>
+      <a class="mobile-menu-item" href="/community">Community</a>
+      <a class="mobile-menu-item" href="/events&exhibitions">Events & Exhibitions</a>
+      <a class="mobile-menu-item" href="/foundation">Foundation</a>
+      </nav>
+    </div>
+    </div>
       <div class="nav-2">
         <div class="nav-2-items">
           <h2>About</h2>
@@ -99,22 +94,8 @@
           <h2>Founation</h2>
         </div>
       </div>
-
     </div>
-    <div class="banner">
-      <div class="placeholder-tall-image">
-        <img src="../assets/images/placeholder-image-rectangle-tall.png" alt="placeholder-image-rectangle">
-      </div>
-      <div class="placeholder-image">
-        <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-      </div>
-      <div class="about-title-mobile">
-        <h1>About</h1>
-      </div>
-      <div class="about-title">
-        <h1>About</h1>
-      </div>
-    </div>
+    <?php template("hero.php", array('text' => "About")) ?>
     <div class="school-info-nav">
       <div class="nav-3">
         <div class="school-info-items">
@@ -136,25 +117,11 @@
         <h4>Our Mission</h4>
       </div>
       <div class="mission-info-edit">
-        <div class="mission-info-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+      <div class="mission-info-1">
+          <p><?php include "large-text.php" ?></p>
         </div>
         <div class="mission-info-2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+          <p><?php include "large-text.php" ?></p>
         </div>
       </div>
     </div>
@@ -203,56 +170,9 @@
     </div>
     <div class="information">
       <div class="info-box-wrapper">
-        <div class="info-box-mobile">
-          <div class="mobile-box-info-cards">
-            <div class="info-box-h1">
-              <h1>6</h1>
-            </div>
-            <h2> Pro-arts</h2>
-            <h3> Consortium Colleges</h3>
-            <p>where our students take college-level courses</p>
-          </div>
-          <div class="mobile-box-info-cards">
-            <div class="info-box-h1">
-              <h1>8</h1>
-            </div>
-            <h2>Hour School Days</h2>
-            <p>Our school day is longer than at other schools to accomodate our dual curriculum</p>
-          </div>
-          <div class="mobile-box-info-cards">
-            <div class="info-box-h1">
-              <h1>96</h1>
-            </div>
-            <h2>Percent of BAA</h2>
-            <h3>students accepted to</h3>
-            <p>4 year colleges</p>
-          </div>
-          <div class="mobile-box-info-cards">
-            <div class="info-box-h1">
-              <h1>#</h1>
-            </div>
-            <h2>Blah blah</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus</p>
-          </div>
-          <div class="mobile-box-info-cards">
-            <div class="info-box-h1">
-              <h1>60</h1>
-            </div>
-            <h2>Perfomances &</h2>
-            <p>exhibitions in 2021</p>
-          </div>
-          <div class="mobile-box-info-cards">
-            <div class="info-box-h1">
-              <h1>#</h1>
-            </div>
-            <h2>Blah blah</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus</p>
-          </div>
-        </div>
+      <!-- MOBILE INFO CARDS PHP -->
+      <?php include "mobile-info-cards.php" ?>
+       <!-- MOBILE INFO CARDS PHP -->
         <div class="info-box-row-1">
           <div class="box-1">
             <div class="info-box-h1">
@@ -317,50 +237,18 @@
       <div class="campus-info-edits">
         <div class="campus-info-row-1">
           <div class="campus-info-1">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa,
-              vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-              sagittis
-              felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-              placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+            <p> <?php include "large-text.php" ?> </p>
           </div>
           <div class="campus-info-2">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa,
-              vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-              sagittis
-              felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-              placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+            <p> <?php include "large-text.php" ?> </p>
           </div>
         </div>
         <div class="campus-info-row-2">
           <div class="campus-info-3">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa,
-              vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-              sagittis
-              felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-              placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+            <p> <?php include "large-text.php" ?> </p>
           </div>
           <div class="campus-info-4">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa,
-              vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-              sagittis
-              felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-              placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
+            <p> <?php include "large-text.php" ?> </p>
           </div>
         </div>
         <div class="campus-more-info">
@@ -382,169 +270,18 @@
             <p>Gallery & Performance Spaces</p>
           </div>
         </div>
-        <div class="campus-image-mobile">
-          <div class="campus-image-mobile-div">
-            <div class="campus-image-mobile-edit-1">
-              <img src=" ../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-              <p> Space Rental Options</p>
-            </div>
-          </div>
-          <div class="campus-image-mobile-div">
-            <div class="campus-image-mobile-edit-2">
-              <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-              <p>labs, Art Studios & Rehearsal Spaces</p>
-            </div>
-          </div>
-          <div class="campus-image-mobile-div">
-            <div class="campus-image-mobile-edit-3">
-              <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-              <p>Gallery & Performance Spaces</p>
-            </div>
-          </div>
-        </div>
+        <!-- CAMPUS MOBILE IMAGES PHP -->
+        <?php include "campus-images-mobile.php" ?>
+        <!-- CAMPUS MOBILE IMAGES PHP -->
       </div>
-
     </div>
     <div class="our-approach">
       <div class="approach-title">
         <h5>Our Approach</h5>
       </div>
-      <div class="approach-mobile-row">
-        <div class="approach-1-mobile-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
-        </div>
-        <div class="approach-1-mobile-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
-        </div>
-      </div>
-      <div class="approach-info-row">
-        <div class="approach-1-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
-        </div>
-        <div class="approach-2-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-            ultricies,
-            vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-            massa,
-            vitae blandit ex. Suspendisse ut risus mi. Etiam at venenatis libero. In eget tincidunt nisl. Fusce
-            sagittis
-            felis ut orci dictum vehicula. Donec efficitur nisl eu quam ultrices luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam in condimentum erat. Mauris rhoncus euismod erat vitae semper. Fusce
-            placerat tempor tempus. Aenean fringilla pharetra orci quis commodo.</p>
-        </div>
-      </div>
-      <div class="approach-mobile-card-row">
-        <div class="approach-mobile-card-edit">
-          <div class="approach-image">
-            <img src=" ../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-          </div>
-          <div class="approach-subtitle">
-            <h6>Thoughts on Inclusion</h6>
-          </div>
-          <div class="approach-topic">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa.</p>
-          </div>
-          <div class="learn-more-A">
-            <h1>learn more</h1>
-          </div>
-        </div>
-        <div class="approach-mobile-card-edit">
-          <div class="approach-image">
-            <img src=" ../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-          </div>
-          <div class="approach-subtitle">
-            <h6>The Future of BAA</h6>
-          </div>
-          <div class="approach-topic">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa.</p>
-          </div>
-          <div class="learn-more-A">
-            <h1>learn more</h1>
-          </div>
-        </div>
-        <div class="approach-mobile-card-edit">
-          <div class="approach-image">
-            <img src=" ../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-          </div>
-          <div class="approach-subtitle">
-            <h6>Our Students Lead the Way</h6>
-          </div>
-          <div class="approach-topic">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa.</p>
-          </div>
-          <div class="learn-more-A">
-            <h1>learn more</h1>
-          </div>
-        </div>
-        <div class="approach-mobile-card-edit">
-          <div class="approach-image">
-            <img src=" ../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-          </div>
-          <div class="approach-subtitle">
-            <h6>Educational Philosophy</h6>
-          </div>
-          <div class="approach-topic">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-              ultricies,
-              vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-              massa.</p>
-          </div>
-          <div class="learn-more-A">
-            <h1>learn more</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <!-- MOBILE APPROACH CARDS -->
+      <?php include "mobile-approach-cards.php"?>
+       <!-- MOBILE APPROACH CARDS -->
   <div class="approach-card-row">
     <div class="approach-card-1">
       <div class="approach-image">
@@ -554,11 +291,7 @@
         <h6>Thoughts on Inclusion</h6>
       </div>
       <div class="approach-topic">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-          ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-          ultricies,
-          vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-          massa.</p>
+        <p><?php include "small-text.php" ?></p>
       </div>
       <div class="learn-more-A">
         <h1>learn more</h1>
@@ -572,11 +305,7 @@
         <h6>The Future of BAA</h6>
       </div>
       <div class="approach-topic">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-          ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-          ultricies,
-          vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-          massa.</p>
+        <p><?php include "small-text.php" ?></p>
       </div>
       <div class="learn-more-A">
         <h1>learn more</h1>
@@ -590,11 +319,7 @@
         <h6>Our Students Lead the Way</h6>
       </div>
       <div class="approach-topic">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-          ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-          ultricies,
-          vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-          massa.</p>
+        <p><?php include "small-text.php" ?></p>
       </div>
       <div class="learn-more-A">
         <h1>learn more</h1>
@@ -608,11 +333,7 @@
         <h6>Educational Philosophy</h6>
       </div>
       <div class="approach-topic">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-          ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-          ultricies,
-          vehicula a lectus. Maecenas dolor sem, consequat in odio in, aliquam hendrerit dui. Donec quis laoreet
-          massa.</p>
+        <p><?php include "small-text.php" ?></p>
       </div>
       <div class="learn-more-A">
         <h1>learn more</h1>
@@ -621,9 +342,9 @@
   </div>
   </div>
   <div class="student-work-row">
-    <div class="student-work-mobile">
-      <h1> Student illustration or animation</h1>
-    </div>
+  <!-- MOBILE STUDENT WORK -->
+  <?php include "mobile-student-work.php" ?>
+   <!-- MOBILE STUDENT WORK -->
     <div class="student-work">
       <h1> Student illustration or animation</h1>
     </div>
@@ -636,36 +357,9 @@
       <div class="footer-title">
         <h2>Footer TBD</h2>
       </div>
-      <div class="footer-items-mobile-row">
-        <div class="footer-items-mobile-1">
-          <h3>Newsletter Signup?</h3>
-        </div>
-        <div class="footer-items-mobile-2">
-          <h4>Social Media Icons</h4>
-        </div>
-      </div>
-      <div class="visiter-option-mobile-row">
-        <div class="visiter-border-mobile">
-          <div class="visiter-options-card-mobile">
-            <h5>Connect</h5>
-          </div>
-        </div>
-        <div class="visiter-border-mobile">
-          <div class="visiter-options-card-mobile">
-            <h5>Apply</h5>
-          </div>
-        </div>
-        <div class="visiter-border-mobile">
-          <div class="visiter-options-card-mobile">
-            <h5>Give</h5>
-          </div>
-        </div>
-        <div class="visiter-border-mobile-shop">
-          <div class="visiter-options-card-mobile">
-            <h5>Shop</h5>
-          </div>
-        </div>
-      </div>
+      <!-- MOBILE FOOTER -->
+      <?php include "mobile-footer.php" ?>
+      <!-- MOBILE FOOTER -->
       <div class="footer-more">
         <h1>Learn More</h1>
       </div>
