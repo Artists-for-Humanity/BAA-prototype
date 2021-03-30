@@ -171,7 +171,7 @@
     <div class="information">
       <div class="info-box-wrapper">
         <div class="info-box-row-1">
-          <div class="box-1">
+          <div class="story-box">
             <div class="info-box-h1">
               <h1>6</h1>
             </div>
@@ -179,14 +179,14 @@
             <h3> Consortium Colleges</h3>
             <p>where our students take college-level courses</p>
           </div>
-          <div class="box-2">
+          <div class="story-box">
             <div class="info-box-h1">
               <h1>8</h1>
             </div>
             <h2>Hour School Days</h2>
             <p>Our school day is longer than at other schools to accomodate our dual curriculum</p>
           </div>
-          <div class="box-3">
+          <div class="story-box">
             <div class="info-box-h1">
               <h1>96</h1>
             </div>
@@ -196,7 +196,7 @@
           </div>
         </div>
         <div class="info-box-row-2">
-          <div class="box-4">
+          <div class="story-box">
             <div class="info-box-h1">
               <h1>#</h1>
             </div>
@@ -205,14 +205,14 @@
               ultricies,
               vehicula a lectus</p>
           </div>
-          <div class="box-5">
+          <div class="story-box">
             <div class="info-box-h1">
               <h1>60</h1>
             </div>
             <h2>Perfomances &</h2>
             <p>exhibitions in 2021</p>
           </div>
-          <div class="box-6">
+          <div class="story-box">
             <div class="info-box-h1">
               <h1>#</h1>
             </div>
@@ -267,9 +267,6 @@
             <p>Gallery & Performance Spaces</p>
           </div>
         </div>
-        <!-- CAMPUS MOBILE IMAGES PHP -->
-        <?php include "campus-images-mobile.php" ?>
-        <!-- CAMPUS MOBILE IMAGES PHP -->
       </div>
     </div>
     <div class="our-approach">
