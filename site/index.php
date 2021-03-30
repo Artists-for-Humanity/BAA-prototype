@@ -53,7 +53,7 @@
 ?>
     </div>
   </nav>
-  <?php template("header.php", array(
+  <?php template("hero.php", array(
     'text' => 'Artist Scholars designing their own future',
     'image' => 'assets/images/68-0314.jpg',
     'button' =>'Learn more'
@@ -64,51 +64,47 @@
         <div class="upcoming-events-title">Upcoming Events</div>
         <a class="upcoming-events-cta" href="#">View all</a>
       </div>
+      <?php $upcomingEvents=array(
+array('month'=> 'Feb', 'day' => '10', 'text'=> 'event name 1', 'image' =>'dancers.jpg', 'alt' => 'dancers'),
+array('month'=> 'Mar', 'day' => '15', 'text'=> 'event name 2', 'image' =>'dancers.jpg', 'alt' => 'dancers'),
+array('month'=> 'May', 'day' => '11', 'text'=> 'event name 2', 'image' =>'dancers.jpg', 'alt' => 'dancers'),
+);
+?>
       <div class="upcoming-events-items">
-        <?php
-          template("upcoming-events.php", array(
-            'month' => 'Feb',
-            'day' => '10',
-            'text' => 'event name 1'
-          ));
-        ?>
-        <?php
-          template("upcoming-events.php", array(
-            'month' => 'Mar',
-            'day' => '15',
-            'text' => 'event name 2'
-          ));
-        ?>
-        <?php
-          template("upcoming-events.php", array(
-            'month' => 'May',
-            'day' => '22',
-            'text' => 'event name 3'
-          ));
-        ?>
-        Write some text
-      </div>
-    </div>
+        <?php 
+    forEach($upcomingEvents as $items){
+      template('upcoming-events.php', array(
+        'month'=>$items['month'],
+        'day'=>$items['day'],
+        'text'=>$items['text'],
+        'image'=>$items['image'],
+        'alt'=>$items['alt']
+      ));
+  }
+?>
   </section>
   <div class="title-spacing">
     <h2>News</h2>
     <div class="view-all">View All</div>
   </div>
   </div>
-  <?php template("header.php", array(
+  <?php template("hero.php", array(
     'text' => '174 Ipswich Street',
     'image' => 'assets/images/rhondak-native-florida-folk-artist-_yc7otffn-0-unsplash.jpg',
     'button' => 'Tour the New BAA'
     )) ?>
+
+  <?php $donations=array(
+      array('image'=> 'assets/images/dancers.jpg', 'description'=> 'description 1'),
+      array('image'=> 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg', 'description'=> 'description 2')
+    );
+    ?>
   <div class="donations">
-    <?php template("donation.php", array(
-    'image'=> 'assets/images/dancers.jpg',
-    'description'=> 'description 1'
-  ));
-  ?>
-    <?php template("donation.php", array(
-    'image'=> 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg',
-    'description'=> 'description 2'
+    <?php
+  forEach($donation as $items){
+    template("donation.php", array(
+      'image'=> $items['image'],
+      'description' => $items['description']
   ));
   ?>
   </div>
@@ -202,7 +198,7 @@
         ?> pr
   </div>
   </div>
-  <?php template("header.php", array(
+  <?php template("hero.php", array(
     'text' => 'Winterfest 2021',
     'button'=> "watch the concert",
     'image' => 'assets/images/2015-class-photo.jpg'
@@ -227,10 +223,23 @@
       <div>Social Media Icons</div>
     </div>
     <div class="interaction-buttons-2">
-      <div class="interaction-buttons-box">Connect</div>
-      <div class="interaction-buttons-box">Apply</div>
-      <div class="interaction-buttons-box">Give</div>
-      <div class="shop-interaction-button">Shop</div>
+      <?php $interactionItems=array(
+  array('name' => 'Connect', 'link' => '/academics'),
+  array('name' => 'Apply', 'link' => '/admission'),
+  array('name' => 'Give', 'link' => '/homepage'),
+  array('name' => 'Shop', 'link' => '/dance'),
+);
+?>
+    </div>
+    <div class="interaction-buttons">
+      <?php 
+    forEach($interactionItems as $item){
+      template("footer-buttons.php", array(
+        "name" => $item['name'],
+        "link" => $item['link']
+      ));
+    }
+  ?>
     </div>
   </footer>
   <script src="/script.js"></script>
