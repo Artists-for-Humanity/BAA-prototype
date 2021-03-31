@@ -114,6 +114,10 @@
       <h2>Inquiry & innovation</h2>
     </div>
     <div class="subject-blocks">
+      <?php
+          template("subjects-block.php", array(
+          ));
+        ?>
       <div class="subject-block">
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
         <div class="subject-block-title">Humanities</div>
