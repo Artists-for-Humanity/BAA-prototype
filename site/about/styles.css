@@ -146,8 +146,7 @@
  }
 
  .our-story {
-     margin-left: 50px;
-     margin-right: 50px;
+     padding: 50px;
  }
 
  .date-1 {
@@ -159,7 +158,8 @@
  }
 
  .our-story-title {
-     margin: 40px 0px 40px 0;
+     margin-top: 40px;
+     margin-bottom: 40px;
      font-size: 25px;
  }
 
@@ -171,32 +171,32 @@
  /* HISTORY ROW ONTOP */
 
  .story-box {
-     padding: 100px 200px 100px 200px;
+     padding: 50px 200px 50px 200px;
      background-color: lightgray;
-     margin: 20px;
      text-align: center;
+     margin: 20px;
  }
 
  .info-box-h1 {
      font-size: 110px;
- }
-
-
- .info-box-row-1 {
-     display: flex;
-     flex-direction: row;
      text-align: center;
  }
 
- .info-box-row-2 {
-     display: flex;
-     flex-direction: row;
+ .info-sub-row {
+     display: grid;
+     grid-template-columns: 30% 30% 30%;
+     grid-template-rows: 50% 50%;
+     column-gap: 50px;
+     row-gap: 40px;
+     margin-bottom: 50px;
+     margin-left: 30px;
+ }
+
+ .story-text {
      text-align: center;
  }
 
- .information {
-     margin: 25px 50px 25px 30px;
- }
+
 
  /* SCHOOL INFO ROW ONTOP */
 
@@ -205,55 +205,26 @@
      padding: 20px 30px 80px 30px;
  }
 
- .campus-info-row-1 {
-     display: flex;
-     flex-direction: row;
-     margin: 0px 20px 20px 20px;
- }
-
- .campus-info-row-2 {
-     display: flex;
-     flex-direction: row;
-     margin: 20px;
+ .campus-info-text {
+     column-count: 2;
+     column-gap: 20px;
  }
 
  .campus-title {
      font-size: 25px;
-     margin: 50px 0px 40px 0px;
-     margin-left: 20px;
+     margin-top: 50px;
+     margin-bottom: 40px;
  }
 
  .campus-subtitle {
-     margin: 0px 0px 5px 20px;
- }
-
- .campus-image-edit-1 {
-     width: 100%;
-     margin-left: 20px;
- }
-
- .campus-image-edit-2 {
-     width: 100%;
-     margin: 0px 20px 0px 20px;
- }
-
- .campus-image-edit-3 {
-     margin-right: 20px;
-     width: 100%
+     margin-bottom: 5px;
  }
 
  .campus-image-alignment {
-     display: flex;
-     flex-direction: row;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 20px;
      margin-top: 30px;
- }
-
- .campus-info-1 {
-     margin-right: 20px;
- }
-
- .campus-info-3 {
-     margin-right: 20px;
  }
 
  /* CAMPUS INFO ONTOP */
@@ -273,7 +244,7 @@
      margin-top: 30px;
  }
 
- .approach-image {
+ .approach-image img {
      width: 320px;
      height: 200px;
      padding-bottom: 20px;
@@ -457,14 +428,6 @@
          display: none;
      }
 
-     .campus-info-3 {
-         display: none;
-     }
-
-     .campus-info-4 {
-         display: none;
-     }
-
      .footer-items-row {
          display: none;
      }
@@ -530,26 +493,27 @@
 
      /* TOP PAGE */
 
-     .info-box-mobile {
+     .info-sub-row {
          overflow: scroll;
      }
 
      /* INFORMATION ROW ONTOP */
-     .campus-image-alignment {
-         overflow: scroll;
+     .campus-images-alignment {
+         overflow: auto;
      }
 
      .campus-more-info {
          color: lightskyblue;
-         margin-left: 400px;
+         margin-top: 20px;
+         margin-left: 450px;
          text-decoration: underline;
      }
 
      /* CAMPUS ROW ONTOP */
      .approach-card-row {
          overflow: scroll;
-         margin-left: 85px;
-         margin-right: 80px;
+         margin-left: 80px;
+         margin-right: 100px;
      }
 
      .approach-info-row {
@@ -561,9 +525,9 @@
      }
 
      /* STUDENT WORK */
-     .student-work-mobile {
+     .student-work {
          position: absolute;
-         top: 4500px;
+         top: 5290px;
          color: white;
          margin-left: 130px;
          font-size: 20px;
