@@ -109,107 +109,76 @@ foreach ($donations as $items) {
 }
 ?>
   </div>
-  <div class="student-spotlight-title">
-    <div class="title-spacing">
-      <h2>Student Spotlight</h2>
-      <div class="view-all">View all</div>
+  <div class="student-spotlight-container">
+    <div class="student-spotlight-title">
+      <div class="title-spacing">
+        <h2>Student Spotlight</h2>
+        <div class="view-all">View all</div>
+      </div>
     </div>
-  </div>
-  <div class="student-spotlight">
-    <?php
+    <div class="student-spotlight">
+      <?php
 template("student-spotlight.php", array(
     'name' => 'Sandy Perdue',
     'image' => 'assets/images/68-0314.jpg',
     'class' => '23',
     'department' => 'Music Department',
-    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus
-   scelerisque orci
-   eu rutrum.
-   Nulla blandit pharetra urna ac fringilla. Nam mollis nunc sed turpis suscipit rutrum. Integer dui nisi, auctor
-   at
-   imperdiet et, consectetur vitae lacus. Ut nec aliquam felis, in consectetur est. Proin maximus quis odio et
-   porta.
-   Donec a odio fringilla, volutpat lectus mattis, blandit erat. Aenean dignissim dapibus nibh, ac malesuada
-   risus
-   gravida eu. Ut felis leo, accumsan vitae nibh ac, varius dignissim enim. Suspendisse pharetra cursus tortor,
-   vel
-   dignissim purus tincidunt a.',
+    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus scelerisque orci eu rutrum. Nulla blandit pharetra urna ac fringilla. Nam mollis nunc sed turpis suscipit rutrum. Integer dui nisi, auctor
+   at imperdiet et, consectetur vitae lacus. Ut nec aliquam felis, in consectetur est. Proin maximus quis odio et porta. Donec a odio fringilla, volutpat lectus mattis, blandit erat. Aenean dignissim dapibus nibh, ac malesuada risus gravida eu. Ut felis leo, accumsan vitae nibh ac, varius dignissim enim. Suspendisse pharetra cursus tortor, vel dignissim purus tincidunt a.',
 ));
 ?>
+    </div>
   </div>
   <?php template("impact.php", array(
     'title' => 'Boston Arts Academy Impact',
-    'description' => 'Nam urna mauris, viverra et sem ac, accumsan interdum tellus. Aenean
-    facilisis erat eu
-    quam scelerisque tempus. Duis cursus fermentum elit vel pulvinar. Sed in lectus tristique, aliquam arcu at,
-    iaculis orci. Sed eu orci
-    sapien. Nulla eget volutpat mauris. Phasellus semper sollicitudin dolor. Morbi ut interdum augue. Nam dignissim
-    tempor mattis. Proin sit amet mollis erat, nec viverra nulla. Mauris vehicula lectus non suscipit condimentum.
-    Nulla
-    vestibulum consectetur pellentesque. Proin in pharetra eros. Aenean id suscipit dolor. Phasellus sed fermentum
-    nulla, id fermentum nisi.',
+    'description' => 'Nam urna mauris, viverra et sem ac, accumsan interdum tellus. Aenean facilisis erat eu quam scelerisque tempus. Duis cursus fermentum elit vel pulvinar. Sed in lectus tristique, aliquam arcu at,
+    iaculis orci. Sed eu orci sapien. Nulla eget volutpat mauris. Phasellus semper sollicitudin dolor. Morbi ut interdum augue. Nam dignissim tempor mattis. Proin sit amet mollis erat, nec viverra nulla. Mauris vehicula lectus non suscipit condimentum.
+    Nulla vestibulum consectetur pellentesque. Proin in pharetra eros. Aenean id suscipit dolor. Phasellus sed fermentum nulla, id fermentum nisi.',
     'button' => 'View More Stats',
 ))
 ?>
-  <div class="impact-highlights">
-    <?php
-template("impact-highlights.php", array(
-    'description' => 'ivamus et ante quis massa sagittis dapibus. Aenean vitae eleifend ipsum, vitae
-            cursus
-            ligula.',
-));
-?>
-    <?php
-template("impact-highlights.php", array(
-    'description' => 'Nam malesuada ut est sed gravida. Donec elementum, dui sed finibus malesuada,
-            nisilorem efficitur turpis,sedcondimentum nibh arcu in est.',
-));
-?>
-    <?php
-template("impact-highlights.php", array(
-    'description' => 'Etiam semper magna id massa blandit porta. Nullam malesuada tortor quis velit
-            aliquet,
-            nec aliquam elit aliquet. Quisque consequat cursus nulla',
-));
-?>
-    <?php
-template("impact-highlights.php", array(
-    'description' => 'Vivamus et ante quis massa sagittis dapibus. Aenean vitae eleifend ipsum, vitae
-            cursu ligula.',
-));
-?>
-  </div>
-  </div>
   <div class="month-in-review">
     <div class="title-spacing">
       <h2>Month in Review</h2>
       <div class="view-all">View all</div>
     </div>
     <?php
-template("month-in-review.php", array(
-    'description' => 'Cy wombly student workshop',
-    'image' => 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg',
-));
-?>
-    <?php
-template("month-in-review.php", array(
-    'description' => 'Celine Dion Choral Music Intensive',
-    'image' => 'assets/images/img_2200.jpg',
-));
-?>
-  </div>
+      $monthinreview = array(
+        array('description' => 'Cy wombly student workshop', 'image' => 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg',),
+        array('description' => 'Celine Dion Choral Music Intensive','image' => 'assets/images/img_2200.jpg',),
+      );
+    ?>
+    <?php 
+    foreach($monthinreview as $items) {
+      template("month-in-review.php", array(
+        'description' => $items ['description'],
+        'image'=> $items ['image'],
+      ));
+    }
+    ?>
   </div>
   <?php template("hero.php", array(
-    'text' => 'Winterfest 2021',
-    'button' => "watch the concert",
-    'image' => 'assets/images/2015-class-photo.jpg',
-));
-?>
+          'text' => 'Winterfest 2021',
+          'button' => "watch the concert",
+          'image' => 'assets/images/2015-class-photo.jpg',
+      ));
+    ?>
   <div class="more-from">
     <div class="more-from-title">more from</div>
-    <div class="more-from-buttons">Community</div>
-    <div class="more-from-buttons">Admission</div>
-    <div class="more-from-buttons">Academics</div>
+    <?php $morefrombutton = array(
+      array('name' => 'Community', 'link' => '/about'),
+      array('name' => 'Admissions', 'link' => '/admissions'),
+      array('name' => 'Academics', 'link' => '/academics'),
+);
+?>
+    <?php
+        foreach($morefrombutton as $item){
+        template("more-from.php", array(
+          "name"=>$item['name'],
+          "link"=>$item['link'],
+    ));
+  }
+  ?>
   </div>
   <div class="student-illustration-image-wrapper">
     <img class="student-illustration-image" src="assets/images/russn_fckr-krv5as4jdja-unsplash.jpg">

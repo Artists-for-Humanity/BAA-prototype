@@ -36,6 +36,7 @@
         )
       )
     ),
+
     array(
       "template" => "templates/three-up.php",
       "data" => array(

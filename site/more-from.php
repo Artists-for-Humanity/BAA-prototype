@@ -1,0 +1,1 @@
+<div class="more-from-buttons" href="<?php print $link; ?>"><?php print $name; ?></div>

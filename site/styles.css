@@ -278,6 +278,11 @@ h2 {
     }
 }
 
+.student-spotlight-container {
+    padding: 10px;
+    background-color: lightgray;
+}
+
 .student-spotlight-title {
     padding: 10px;
     padding-top: 50px;
@@ -314,6 +319,7 @@ h2 {
     .student-spotlight-image {
         height: 300px;
         padding: none;
+        object-fit: cover;
     }
 }
 
