@@ -77,7 +77,7 @@
 
     <?php template("hero.php", array('headertext' => 'Dance')) ?>
 
-<?php template("hero.php", array('headertext2' => 'Jodie McSally Dance Program, Class of 21')) ?>
+    <?php template("hero.php", array('headertext2' => 'Jodie McSally Dance Program, Class of 21')) ?>
 
     <div class="sub-nav">
       <div>

@@ -12,9 +12,7 @@
           <div class="related-pages-wrapper">
             <div class="related-pages-title">Alum Jenny Lim Joins
               Alvin Ailey</div>
-            <p>consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit tristique quam. Donec
-              mollis
-              auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui. </p>
+              <p><?php print $relateddesc;?> </p>
             <a>Learn More</a>
           </div>
         </div>
@@ -29,9 +27,7 @@
           <div class="related-pages-wrapper">
             <div class="related-pages-title">BAA Students Perform the
               Nutcracker</div>
-            <p>consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit tristique quam. Donec
-              mollis
-              auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui. </p>
+              <p><?php print $relateddesc;?> </p>
             <a>Learn More</a>
           </div>
         </div>
@@ -43,9 +39,7 @@
           <div class="related-pages-wrapper">
             <div class="related-pages-title">George Hellman, ‘24, Wins
               Dance Competition</div>
-            <p>consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit tristique quam. Donec
-              mollis
-              auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui. </p>
+              <p><?php print $relateddesc;?> </p>
             <a>Learn More</a>
           </div>
         </div>
