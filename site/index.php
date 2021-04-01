@@ -181,10 +181,11 @@ template("student-spotlight.php", array(
   ?>
   </div>
   <div class="student-illustration-image-wrapper">
-    <img class="student-illustration-image" src="assets/images/russn_fckr-krv5as4jdja-unsplash.jpg">
-    <div class="student-illustration">
-      <div class="descriptions">Student Illustration or Animation</div>
-    </div>
+    <?php template("student-illustration-image.php", array(
+        'image'=> 'russn_fckr-krv5as4jdja-unsplash.jpg','description'=>'Student Illustration or Animation',
+    ));
+    ?>
+  </div>
   </div>
   <footer>
     <div class="footer-title">Footer TBD</div>
