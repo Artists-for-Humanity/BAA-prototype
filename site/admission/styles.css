@@ -4,6 +4,7 @@ h1 {
 
 .banner {
     background-color: lightgray;
+    position: relative;
 }
 
 .admission-title {
