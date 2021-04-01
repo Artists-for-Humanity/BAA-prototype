@@ -111,6 +111,8 @@ foreach ($donations as $items) {
   </div>
   <?php
 template("student-spotlight.php", array(
+    'title'=>'Student Spotlight',
+    'stats'=>'Class of \'23',
     'name' => 'Sandy Perdue',
     'image' => 'assets/images/68-0314.jpg',
     'class' => '23',
