@@ -28,13 +28,13 @@
 ?>
     <div class="nav-items">
       <?php
-foreach ($navItems as $item) {
-    template("nav-item.php", array(
-        "name" => $item['name'],
-        "link" => $item['link'],
-    ));
-}
-?>
+      foreach ($navItems as $item) {
+      template("nav-item.php", array(
+          "name" => $item['name'],
+          "link" => $item['link'],
+        ));
+      }
+      ?>
     </div>
     <button class="nav-open-button" type="button">☰</button>
   </nav>
@@ -189,9 +189,20 @@ template("student-spotlight.php", array(
   </div>
   <footer>
     <div class="footer-title">Footer TBD</div>
+    <?php $interactionButtons1 = array(
+      array('name'=>'Newsletter Signup', 'link'=>'/homepage'),
+      array('name'=>'Social Media Icons', 'link'=>'/about'),
+    );
+    ?>
     <div class="interaction-buttons-1">
-      <div>Newsletter Signup</div>
-      <div>Social Media Icons</div>
+      <?php 
+      foreach($interactionButtons1 as $items){
+      template("interaction-buttons-1", array(
+         "link"=>$item['link'],
+          "name"=>$items['name'],
+        ));
+      }
+     ?>
     </div>
     <div class="interaction-buttons-2">
       <?php $interactionItems = array(
