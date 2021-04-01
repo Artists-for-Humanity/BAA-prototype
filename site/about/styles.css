@@ -171,7 +171,7 @@
  /* HISTORY ROW ONTOP */
 
  .story-box {
-     padding: 50px 200px 50px 200px;
+     padding: 50px 50px 50px 50px;
      background-color: lightgray;
      text-align: center;
      margin: 20px;
@@ -182,10 +182,9 @@
      text-align: center;
  }
 
- .info-sub-row {
+ .info-box-row {
      display: grid;
-     grid-template-columns: 30% 30% 30%;
-     grid-template-rows: 50% 50%;
+     grid-template-columns: repeat(3, 1fr);
      column-gap: 50px;
      row-gap: 40px;
      margin-bottom: 50px;
@@ -308,7 +307,7 @@
      margin-left: 710px;
      color: white;
      font-size: 25px;
-     top: 200px;
+     top: 150px;
  }
 
 
@@ -331,16 +330,20 @@
  .footer-items-row {
      display: flex;
      flex-direction: row;
-     margin-left: 400px;
+     justify-content: space-between;
  }
 
- .footer-items-1 {
+ .footer-bottom-items {
+     display: inline-block;
+
+ }
+
+ .footer-items {
      font-size: 20px;
      color: white;
-     margin-right: 555px;
  }
 
- .footer-items-2 {
+ .footer-items {
      font-size: 20px;
      color: white;
  }
@@ -350,24 +353,23 @@
      color: white;
      padding: 40px 60px 40px 60px;
      border: 3px white solid;
-     margin: 20px;
  }
 
- .visiter-border-1 {
+ .visiter-border-shop {
      font-size: 27px;
      color: black;
      padding: 40px 80px 40px 80px;
      border: 3px white solid;
-     margin: 20px;
      background-color: white;
  }
 
  .visiter-option-row {
      display: flex;
      flex-direction: row;
-     margin-left: 355px;
+     justify-content: center;
      margin-bottom: 100px;
-
+     column-gap: 30px;
+     margin-top: 10px;
  }
 
  /* Desktop */
@@ -384,25 +386,10 @@
          display: none;
      }
 
-     .footer-more {
-         display: none;
-     }
-
-     .footer-items-mobile-row {
-         display: none;
-     }
-
-     .about-title-mobile {
-         display: none;
-     }
-
      .placeholder-tall-image img {
          display: none;
      }
 
-     .student-work-mobile {
-         display: none;
-     }
 
      .mobile-menu-nav {
          display: none;
@@ -428,35 +415,7 @@
          display: none;
      }
 
-     .footer-items-row {
-         display: none;
-     }
-
-     .visiter-option-row {
-         display: none;
-     }
-
-     .visiter-border {
-         display: none;
-     }
-
-     .visiter-options-card {
-         display: none;
-     }
-
      .about-title {
-         display: none;
-     }
-
-     .visiter-border-1 {
-         display: none;
-     }
-
-     .footer-items-1 {
-         display: none;
-     }
-
-     .footer-items-2 {
          display: none;
      }
 
@@ -527,48 +486,23 @@
      /* STUDENT WORK */
      .student-work {
          position: absolute;
-         top: 5290px;
+         top: 5035px;
          color: white;
          margin-left: 130px;
          font-size: 20px;
      }
 
      /* APPROACH ROW */
-     .visiter-options-card-mobile {
-         padding: 50px 25px 50px 25px;
+     .visiter-option-row {
+         display: grid;
+         grid-template-columns: 1;
+         grid-template-rows: 4;
+         row-gap: 20px;
      }
 
-     .visiter-border-mobile {
-         font-size: 27px;
-         border: 3px white solid;
-         margin: 20px;
+     .footer-items-row {
+         flex-direction: column;
+         row-gap: 10px;
      }
 
-     .visiter-border-mobile-shop {
-         font-size: 27px;
-         border: 3px white solid;
-         margin: 20px;
-         background-color: white;
-     }
-
-     .footer-more {
-         color: lightskyblue;
-         margin-right: 410px;
-         text-decoration: underline;
-     }
-
-     .footer-items-mobile-row {
-         display: flex;
-         flex-direction: row;
-     }
-
-     .footer-items-mobile-1 {
-         margin-right: 280px;
-         text-decoration: underline;
-     }
-
-     .footer-items-mobile-2 {
-         text-decoration: underline;
-         margin-right: 5px;
-     }
  }
