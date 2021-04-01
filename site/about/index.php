@@ -171,66 +171,64 @@
   <div class="information">
     <div class="info-box-wrapper">
       <div class="info-box-row">
-        <div class="info-sub-row">
-          <div class="story-box">
-            <div class="info-box-h1">
-              <h1>6</h1>
-            </div>
-            <div class="story-text">
-              <h2> Pro-arts</h2>
-              <h3> Consortium Colleges</h3>
-              <p>where our students take college-level courses</p>
-            </div>
+        <div class="story-box">
+          <div class="info-box-h1">
+            <h1>6</h1>
           </div>
-          <div class="story-box">
-            <div class="info-box-h1">
-              <h1>8</h1>
-            </div>
-            <div class="story-text">
-              <h2>Hour School Days</h2>
-              <p>Our school day is longer than at other schools to accomodate our dual curriculum</p>
-            </div>
+          <div class="story-text">
+            <h2> Pro-arts</h2>
+            <h3> Consortium Colleges</h3>
+            <p>where our students take college-level courses</p>
           </div>
-          <div class="story-box">
-            <div class="info-box-h1">
-              <h1>96</h1>
-            </div>
-            <div class="story-text">
-              <h2>Percent of BAA</h2>
-              <h3>students accepted to</h3>
-              <p>4 year colleges</p>
-            </div>
+        </div>
+        <div class="story-box">
+          <div class="info-box-h1">
+            <h1>8</h1>
           </div>
-          <div class="story-box">
-            <div class="info-box-h1">
-              <h1>#</h1>
-            </div>
-            <div class="story-text">
-              <h2>Blah blah</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-                ultricies,
-                vehicula a lectus</p>
-            </div>
+          <div class="story-text">
+            <h2>Hour School Days</h2>
+            <p>Our school day is longer than at other schools to accomodate our dual curriculum</p>
           </div>
-          <div class="story-box">
-            <div class="info-box-h1">
-              <h1>60</h1>
-            </div>
-            <div class="story-text">
-              <h2>Perfomances &</h2>
-              <p>exhibitions in 2021</p>
-            </div>
+        </div>
+        <div class="story-box">
+          <div class="info-box-h1">
+            <h1>96</h1>
           </div>
-          <div class="story-box">
-            <div class="info-box-h1">
-              <h1>#</h1>
-            </div>
-            <div class="story-text">
-              <h2>Blah blah</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
-                ultricies,
-                vehicula a lectus</p>
-            </div>
+          <div class="story-text">
+            <h2>Percent of BAA</h2>
+            <h3>students accepted to</h3>
+            <p>4 year colleges</p>
+          </div>
+        </div>
+        <div class="story-box">
+          <div class="info-box-h1">
+            <h1>#</h1>
+          </div>
+          <div class="story-text">
+            <h2>Blah blah</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
+              ultricies,
+              vehicula a lectus</p>
+          </div>
+        </div>
+        <div class="story-box">
+          <div class="info-box-h1">
+            <h1>60</h1>
+          </div>
+          <div class="story-text">
+            <h2>Perfomances &</h2>
+            <p>exhibitions in 2021</p>
+          </div>
+        </div>
+        <div class="story-box">
+          <div class="info-box-h1">
+            <h1>#</h1>
+          </div>
+          <div class="story-text">
+            <h2>Blah blah</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh nunc, viverra eu euismod
+              ultricies,
+              vehicula a lectus</p>
           </div>
         </div>
       </div>
@@ -357,39 +355,35 @@
       <div class="footer-title">
         <h2>Footer TBD</h2>
       </div>
-      <!-- MOBILE FOOTER -->
-      <?php include "mobile-footer.php" ?>
-      <!-- MOBILE FOOTER -->
-      <div class="footer-more">
-        <h1>Learn More</h1>
-      </div>
-      <div class="footer-items-row">
-        <div class="footer-items-1">
-          <h3>Newsletter Signup?</h3>
-        </div>
-        <div class="footer-items-2">
-          <h4>Social Media Icons</h4>
-        </div>
-      </div>
-      <div class="visiter-option-row">
-        <div class="visiter-border">
-          <div class="visiter-options-card">
-            <h5>Connect</h5>
+      <div class="footer-bottom-items">
+        <div class="footer-items-row">
+          <div class="footer-items">
+            <h3>Newsletter Signup?</h3>
+          </div>
+          <div class="footer-items">
+            <h4>Social Media Icons</h4>
           </div>
         </div>
-        <div class="visiter-border">
-          <div class="visiter-options-card">
-            <h5>Apply</h5>
+        <div class="visiter-option-row">
+          <div class="visiter-border">
+            <div class="visiter-options-card">
+              <h5>Connect</h5>
+            </div>
           </div>
-        </div>
-        <div class="visiter-border">
-          <div class="visiter-options-card">
-            <h5>Give</h5>
+          <div class="visiter-border">
+            <div class="visiter-options-card">
+              <h5>Apply</h5>
+            </div>
           </div>
-        </div>
-        <div class="visiter-border-1">
-          <div class="visiter-options-card">
-            <h5>Shop</h5>
+          <div class="visiter-border">
+            <div class="visiter-options-card">
+              <h5>Give</h5>
+            </div>
+          </div>
+          <div class="visiter-border-shop">
+            <div class="visiter-options-card">
+              <h5>Shop</h5>
+            </div>
           </div>
         </div>
       </div>
