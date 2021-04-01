@@ -87,7 +87,6 @@ foreach ($navItems as $item) {
     <h2>News</h2>
     <div class="view-all">View All</div>
   </div>
-  </div>
   <?php template("hero.php", array(
     'text' => '174 Ipswich Street',
     'image' => 'assets/images/rhondak-native-florida-folk-artist-_yc7otffn-0-unsplash.jpg',
@@ -129,18 +128,19 @@ template("student-spotlight.php", array(
     'button' => 'View More Stats',
 ))
 ?>
-  <div class="month-in-review">
-    <div class="title-spacing">
-      <h2>Month in Review</h2>
-      <div class="view-all">View all</div>
-    </div>
-    <?php
+  <?php
       $monthinreview = array(
         array('description' => 'Cy wombly student workshop', 'image' => 'assets/images/russn_fckr-krv5as4jdja-unsplash.jpg',),
         array('description' => 'Celine Dion Choral Music Intensive','image' => 'assets/images/img_2200.jpg',),
       );
     ?>
-    <?php 
+  <div class="month-in-review-content">
+    <div class="month-in-review">
+      <div class="title-spacing">
+        <h2>Month in Review</h2>
+        <div class="view-all">View all</div>
+      </div>
+      <?php 
     foreach($monthinreview as $items) {
       template("month-in-review.php", array(
         'description' => $items ['description'],
@@ -148,6 +148,7 @@ template("student-spotlight.php", array(
       ));
     }
     ?>
+    </div>
   </div>
   <?php template("hero.php", array(
           'text' => 'Winterfest 2021',

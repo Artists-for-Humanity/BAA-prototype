@@ -36,7 +36,12 @@
         )
       )
     ),
-
+    array(
+      "template" => "templates/hero.php",
+      "data" => array(
+        'text' => 'Example Page yay'
+      )
+    ),
     array(
       "template" => "templates/three-up.php",
       "data" => array(
