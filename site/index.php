@@ -109,15 +109,7 @@ foreach ($donations as $items) {
 }
 ?>
   </div>
-  <div class="student-spotlight-container">
-    <div class="student-spotlight-title">
-      <div class="title-spacing">
-        <h2>Student Spotlight</h2>
-        <div class="view-all">View all</div>
-      </div>
-    </div>
-    <div class="student-spotlight">
-      <?php
+  <?php
 template("student-spotlight.php", array(
     'name' => 'Sandy Perdue',
     'image' => 'assets/images/68-0314.jpg',
@@ -127,8 +119,6 @@ template("student-spotlight.php", array(
    at imperdiet et, consectetur vitae lacus. Ut nec aliquam felis, in consectetur est. Proin maximus quis odio et porta. Donec a odio fringilla, volutpat lectus mattis, blandit erat. Aenean dignissim dapibus nibh, ac malesuada risus gravida eu. Ut felis leo, accumsan vitae nibh ac, varius dignissim enim. Suspendisse pharetra cursus tortor, vel dignissim purus tincidunt a.',
 ));
 ?>
-    </div>
-  </div>
   <?php template("impact.php", array(
     'title' => 'Boston Arts Academy Impact',
     'description' => 'Nam urna mauris, viverra et sem ac, accumsan interdum tellus. Aenean facilisis erat eu quam scelerisque tempus. Duis cursus fermentum elit vel pulvinar. Sed in lectus tristique, aliquam arcu at,
@@ -200,6 +190,7 @@ template("student-spotlight.php", array(
       template("interaction-buttons-1", array(
          "link"=>$item['link'],
           "name"=>$items['name'],
+        
         ));
       }
      ?>
