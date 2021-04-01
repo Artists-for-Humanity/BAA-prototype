@@ -1,4 +1,7 @@
+<?php include_once('../php/template.php'); ?>
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -11,89 +14,8 @@
 </head>
 
 <body>
-  <title>Navv</title>
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-    }
 
-    ul {
-      width: 100%;
-    }
 
-    li {
-      width: 33%;
-      float: left;
-      border-right: 1px solid #eee;
-    }
-
-    li:last-child {
-      border-right: none;
-    }
-
-    li a {
-      display: block;
-      width: 80%;
-      background: #ddd;
-      padding: 4% 10%;
-      font-size: 1.35em;
-      text-decoration: none;
-    }
-
-    @media screen and (max-width: 768px) {
-      #menu {
-        width: 1.4em;
-        display: block;
-        background: #ddd;
-        font-size: 1.35em;
-        text-align: center;
-      }
-
-      #nav.js {
-        display: none;
-      }
-
-      ul {
-        width: 100%;
-      }
-
-      li {
-        width: 100%;
-        border-right: none;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      #menu {
-        display: none;
-      }
-    }
-  </style>
-  </head>
-
-  <body>
-    <ul id="nav">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/academics">Academics</a></li>
-      <li><a href="/admission">Admission</a></li>
-
-    </ul>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript">
-      $("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
-      $("#menu").click(function () {
-        $("#nav").toggle();
-      });
-      $(window).resize(function () {
-        if (window.innerWidth > 768) {
-          $("#nav").removeAttr("style");
-        }
-      });
-    </script>
-
-    <nav><a href="/">Home</a><a href="/about">About</a></nav>
     <div class="visiter-support">
       <div class="nav-1">
         <div class="language-box">
@@ -153,17 +75,9 @@
       </div>
     </div>
 
-    <div class="header-box">
-      <img class="header-box-image" src="../assets/images/placeholder-image-rectangle.png">
-      <div class="header-box-title">
-        <h1>Dance</h1>
-      </div>
-    </div>
-    <div>
-      <p class="header-text">Jodie McSally Dance Program, Class of 21</p>
-    </div>
+    <?php template("hero.php", array('headertext' => 'Dance')) ?>
 
-
+<?php template("hero.php", array('headertext2' => 'Jodie McSally Dance Program, Class of 21')) ?>
 
     <div class="sub-nav">
       <div>
@@ -181,8 +95,7 @@
     </div>
 
 
-    <div class="intro-text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit
+    <?php template("intro.php", array('introtext' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit
         tristique quam. Donec mollis auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui.
         Duis
         dictum in ligula a aliquet. Vestibulum consequat nisl a elementum tincidunt. Nunc nec egestas erat. Fusce
@@ -190,93 +103,21 @@
         nibh nec convallis eleifend, est lorem tristique quam, sit amet aliquet elit lorem eu quam. Etiam pharetra
         aliquam
         orci, vitae blandit nisi maximus in. Integer ante eros, elementum vitae hendrerit eget, pharetra eget quam.
-        Donec
-        fringilla, nisi nec fermentum pellentesque, ante eros consectetur ante, at venenatis ex dui ut velit.</p>
-      <div class="intro-text-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit
-          tristique quam. Donec mollis auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu
-          dui.
-          Duis
-          dictum in ligula a aliquet. Vestibulum consequat nisl a elementum tincidunt. Nunc nec egestas erat. Fusce
-          efficitur,
-          nibh nec convallis eleifend, est lorem tristique quam, sit amet aliquet elit lorem eu quam. Etiam pharetra
-          aliquam
-          orci, vitae blandit nisi maximus in. Integer ante eros, elementum vitae hendrerit eget, pharetra eget quam.
-          Donec
-          fringilla, nisi nec fermentum pellentesque, ante eros consectetur ante, at venenatis ex dui ut velit.</p>
-      </div>
-    </div>
+        Donec')) ?>
 
-    <div class="TBD-space">
-      <div class="TBD-text">TBD</div>
-    </div>
+<?php template("tbd.php", array('TBD' => 'TBD')) ?>
 
-    <div class="related-pages-start">
-      <h2>Related Pages</h2>
-      <div class="related-pages-items">
+   
 
-        <div class="related-pages-item">
-          <div class="related-pages-image">
-            <div class="related-pages-date">April<br>
-              <div class="related-pages-date-number">15</div>
-            </div>
-            <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-          </div>
-          <div class="related-pages-wrapper">
-            <div class="related-pages-title">Dance Audtions</div>
-            <p>consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit tristique quam. Donec
+<?php template("related.php", array('title' => 'Related Pages')) ?>
+
+<?php template("relateditems.php", array('relateddesc' => 'consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit tristique quam. Donec
               mollis
-              auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui. </p>
-            <a>Learn More</a>
-          </div>
-        </div>
+              auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui.')) ?>
 
-        <div class="related-pages-item">
-          <div class="related-pages-image">
-            <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-          </div>
-          <div class="related-pages-wrapper">
-            <div class="related-pages-title">Alum Jenny Lim Joins
-              Alvin Ailey</div>
-            <p>consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit tristique quam. Donec
-              mollis
-              auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui. </p>
-            <a>Learn More</a>
-          </div>
-        </div>
 
-        <div class="related-pages-item">
-          <div class="related-pages-image">
-            <div class="related-pages-date">May<br>
-              <div class="related-pages-date-number">23</div>
-            </div>
-            <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-          </div>
-          <div class="related-pages-wrapper">
-            <div class="related-pages-title">BAA Students Perform the
-              Nutcracker</div>
-            <p>consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit tristique quam. Donec
-              mollis
-              auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui. </p>
-            <a>Learn More</a>
-          </div>
-        </div>
 
-        <div class="related-pages-item">
-          <div class="related-pages-image">
-            <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-          </div>
-          <div class="related-pages-wrapper">
-            <div class="related-pages-title">George Hellman, ‘24, Wins
-              Dance Competition</div>
-            <p>consectetur adipiscing elit. Aliquam augue dolor, luctus eu massa non, blandit tristique quam. Donec
-              mollis
-              auctor vulputate. Aenean eu nisi sit amet diam consequat pulvinar interdum eu dui. </p>
-            <a>Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        
 
 
 
