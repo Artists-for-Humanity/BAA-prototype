@@ -14,7 +14,7 @@
 <body>
   <nav><a href="/">Home</a><a href="/about">About</a></nav>
   <div>
-    <?php template("hero.php", array('text' => 'Academics')) ?>
+    <?php template("header.php", array('text' => 'Academics')) ?>
     <div class="sub-nav">
       <div>Majors</div>
       <div>Inquiry & innovation</div>
@@ -81,12 +81,21 @@
     <div class="section">
       <div class="majors-block-grid">
         <?php
+        $majors= array(
+          'Dance',
+          'Fashion <br>Technology', 
+          'Art &amp; Design',
+          'Music',
+          'Theater',
+        );
+        forEach($majors as $major){
           template("majors-block.php", array(
-            'name'=> 'Music',
+            'name' => $major,   
             'image'=> '../assets/images/placeholder-image-rectangle.png'
           ));
+        }
         ?>
-        <div class="majors-block">
+        <!-- <div class="majors-block">
           <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
           <div class="majors-block-text">Dance</div>
         </div>
@@ -105,7 +114,7 @@
         <div class="majors-block">
           <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
           <div class="majors-block-text">Theater</div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -116,6 +125,12 @@
     <div class="subject-blocks">
       <?php
           template("subjects-block.php", array(
+            'title-1' => 'Humanities',
+            'title-2' => 'Mathmatics',
+            'title-3' => 'Science',
+            'title-4' => 'STEM LAB',
+            'title-5' => 'Service Learning',
+            'title-6' => 'Foreign Languages'
           ));
         ?>
       <div class="subject-block">
@@ -124,7 +139,7 @@
       </div>
       <div class="subject-block">
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-        <div class="subject-block-title">Mathmatecs</div>
+        <div class="subject-block-title">Mathmatics</div>
       </div>
       <div class="subject-block">
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
