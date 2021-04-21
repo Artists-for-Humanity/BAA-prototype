@@ -1,0 +1,28 @@
+.donations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+@media (max-width:700px) {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+.donation {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-image {
+    background-color: gray;
+    height: 500px;
+    object-fit: cover;
+@media (max-width:700px) {
+        height: 300px;
+    }
+}

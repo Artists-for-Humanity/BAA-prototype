@@ -1,0 +1,91 @@
+h1 {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+@media (max-width: 700px) {
+        font-size: 30px;
+    }
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 100px 50px 50px;
+@media (max-width:600px) {
+        padding: 25px;
+    }
+}
+
+.hero-title {
+    color: white;
+    font-size: 90px;
+@media (max-width:600px) {
+        font-size: 48px;
+    }
+}
+
+.header-box {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.header-box-image {
+    object-fit: cover;
+    width: 100%;
+@media (max-width:700px) {
+        height: 700px;
+    }
+}
+
+.header-box-title {
+    font-size: 100px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+    border-style: solid;
+    border-color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding-bottom: 50px;
+@media (max-width:700px) {
+    padding: 50px;
+    padding-bottom: 10px;
+    }
+}
+
+
+
+.button {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    background-color: gray;
+    border: black;
+@media (max-width:700p) {
+        font-size: 10px;
+        padding: 5px;
+    }
+}   
