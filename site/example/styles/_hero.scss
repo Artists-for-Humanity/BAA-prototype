@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.hero-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 100px 50px 50px;
+
+  @media (max-width: $mobileWidth) {
+    padding: 25px;
+  }
+}
+
+.hero-title {
+  color: white;
+  font-size: 90px;
+
+  @media (max-width: $mobileWidth) {
+    font-size: 48px;
+  }
+}
