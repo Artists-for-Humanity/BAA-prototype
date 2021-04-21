@@ -22,11 +22,9 @@
 
 .nav-items {
   display: flex;
-}
 
-@media (max-width: $mobileWidth) {
-  .nav-items {
-      display: none;
+  @media (max-width: $mobileWidth) {
+    display: none;
   }
 }
 
@@ -61,11 +59,9 @@
 
 .mobile-menu[data-state="closed"] {
   display: none;
-}
 
-@media (min-width: $mobileWidth) {
-  .mobile-menu {
-      display: none;
+  @media (min-width: $mobileWidth) {
+    display: none;
   }
 }
 
