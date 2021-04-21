@@ -1,4 +1,5 @@
 <?php include_once('../php/template.php'); ?>
+<?php include_once('data.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,18 +19,10 @@
         Boston Arts<br /> Academy
       </a>
     </div>
-    <?php
-      $navItems = array(
-        array('name' => 'About', 'link' => '/about'),
-        array('name' => 'Academics', 'link' => '/academics'),
-        array('name' => 'Admission', 'link' => '/admission'),
-        array('name' => 'Dance', 'link' => '/dance'),
-      );
-    ?>
     <div class="nav-items">
       <?php
         forEach($navItems as $item) {
-          template("nav-item.php", array(
+          template("templates/nav-item.php", array(
             "name" => $item['name'],
             "link" => $item['link']
           ));
@@ -45,7 +38,7 @@
     <div class="mobile-menu-items">
       <?php
         forEach($navItems as $item) {
-          template("mobile-menu-item.php", array(
+          template("templates/mobile-menu-item.php", array(
             "name" => $item['name'],
             "link" => $item['link']
           ));
@@ -53,38 +46,11 @@
       ?>
     </div>
   </nav>
-  <?php template("hero.php", array('text' => 'Example Page')) ?>
-  <section class="page-section">
-    <div class="three-up-grid">
-      <div class="three-up-grid-title-bar">
-        <div class="three-up-grid-title">Upcoming Events</div>
-        <a class="three-up-grid-cta" href="#">View all</a>
-      </div>
-      <div class="three-up-grid-items">
-        <?php
-          template("three-up-item.php", array(
-            'month' => 'Feb',
-            'day' => '10',
-            'text' => 'Event name 1'
-          ));
-        ?>
-        <?php
-          template("three-up-item.php", array(
-            'month' => 'Mar',
-            'day' => '15',
-            'text' => 'Event name 2'
-          ));
-        ?>
-        <?php
-          template("three-up-item.php", array(
-            'month' => 'Mar',
-            'day' => '22',
-            'text' => 'Event name 3'
-          ));
-        ?>
-      </div>
-    </div>
-  </section>
+  <?php
+    forEach($pageContent as $content) {
+      template($content["template"], $content["data"]);
+    }
+  ?>
   <script src="/example/script.js"></script>
 </body>
 
