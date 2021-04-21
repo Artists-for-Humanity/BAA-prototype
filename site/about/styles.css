@@ -146,8 +146,7 @@
  }
 
  .our-story {
-     margin-left: 50px;
-     margin-right: 50px;
+     padding: 50px;
  }
 
  .date-1 {
@@ -159,7 +158,8 @@
  }
 
  .our-story-title {
-     margin: 40px 0px 40px 0;
+     margin-top: 40px;
+     margin-bottom: 40px;
      font-size: 25px;
  }
 
@@ -170,62 +170,32 @@
 
  /* HISTORY ROW ONTOP */
 
- .box-1 {
+ .story-box {
+     padding: 50px 50px 50px 50px;
      background-color: lightgray;
-     padding: 100px 155px 100px 155px;
-     margin: 20px;
- }
-
- .box-2 {
-     background-color: gray;
-     padding: 100px 100px 100px 100px;
-     margin: 20px;
- }
-
- .box-3 {
-     background-color: lightgray;
-     padding: 100px 195px 100px 195px;
-     margin: 20px;
- }
-
- .box-4 {
-     background-color: lightgray;
-     padding: 100px 100px 100px 100px;
-     margin: 20px;
- }
-
- .box-5 {
-     background-color: lightgray;
-     padding: 100px 220px 100px 220px;
-     margin: 20px;
- }
-
- .box-6 {
-     background-color: gray;
-     padding: 100px;
+     text-align: center;
      margin: 20px;
  }
 
  .info-box-h1 {
      font-size: 110px;
- }
-
-
- .info-box-row-1 {
-     display: flex;
-     flex-direction: row;
      text-align: center;
  }
 
- .info-box-row-2 {
-     display: flex;
-     flex-direction: row;
+ .info-box-row {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     column-gap: 50px;
+     row-gap: 40px;
+     margin-bottom: 50px;
+     margin-left: 30px;
+ }
+
+ .story-text {
      text-align: center;
  }
 
- .information {
-     margin: 25px 50px 25px 30px;
- }
+
 
  /* SCHOOL INFO ROW ONTOP */
 
@@ -234,56 +204,26 @@
      padding: 20px 30px 80px 30px;
  }
 
- .campus-info-row-1 {
-     display: flex;
-     flex-direction: row;
-     margin: 0px 20px 20px 20px;
- }
-
- .campus-info-row-2 {
-     display: flex;
-     flex-direction: row;
-     margin: 20px;
+ .campus-info-text {
+     column-count: 2;
+     column-gap: 20px;
  }
 
  .campus-title {
      font-size: 25px;
-     margin: 50px 0px 40px 0px;
-     margin-left: 20px;
+     margin-top: 50px;
+     margin-bottom: 40px;
  }
 
  .campus-subtitle {
-     margin: 0px 0px 5px 20px;
- }
-
- .campus-image-edit-1 {
-     width: 800px;
-     height: 300px;
- }
-
- .campus-image-edit-2 {
-     width: 800px;
-     height: 300px;
-     margin: 0px 10px 0px 10px;
- }
-
- .campus-image-edit-3 {
-     width: 800px;
-     height: 300px;
+     margin-bottom: 5px;
  }
 
  .campus-image-alignment {
-     display: flex;
-     flex-direction: row;
-     margin: 60px 20px 0px 20px;
- }
-
- .campus-info-1 {
-     margin-right: 20px;
- }
-
- .campus-info-3 {
-     margin-right: 20px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 20px;
+     margin-top: 30px;
  }
 
  /* CAMPUS INFO ONTOP */
@@ -301,10 +241,9 @@
      display: flex;
      flex-direction: row;
      margin-top: 30px;
-     margin-left: 50px;
  }
 
- .approach-image {
+ .approach-image img {
      width: 320px;
      height: 200px;
      padding-bottom: 20px;
@@ -351,6 +290,8 @@
 
  .approach-1-info {
      margin-right: 140px;
+     margin-bottom: 20px;
+
  }
 
  /* APPROACH ROW ONTOP */
@@ -366,7 +307,7 @@
      margin-left: 710px;
      color: white;
      font-size: 25px;
-     top: 200px;
+     top: 150px;
  }
 
 
@@ -389,16 +330,20 @@
  .footer-items-row {
      display: flex;
      flex-direction: row;
-     margin-left: 400px;
+     justify-content: space-between;
  }
 
- .footer-items-1 {
+ .footer-bottom-items {
+     display: inline-block;
+
+ }
+
+ .footer-items {
      font-size: 20px;
      color: white;
-     margin-right: 555px;
  }
 
- .footer-items-2 {
+ .footer-items {
      font-size: 20px;
      color: white;
  }
@@ -408,24 +353,23 @@
      color: white;
      padding: 40px 60px 40px 60px;
      border: 3px white solid;
-     margin: 20px;
  }
 
- .visiter-border-1 {
+ .visiter-border-shop {
      font-size: 27px;
      color: black;
      padding: 40px 80px 40px 80px;
      border: 3px white solid;
-     margin: 20px;
      background-color: white;
  }
 
  .visiter-option-row {
      display: flex;
      flex-direction: row;
-     margin-left: 355px;
+     justify-content: center;
      margin-bottom: 100px;
-
+     column-gap: 30px;
+     margin-top: 10px;
  }
 
  /* Desktop */
@@ -434,31 +378,7 @@
          display: none;
      }
 
-     .info-box-mobile {
-         display: none;
-     }
-
-     .campus-image-mobile {
-         display: none;
-     }
-
      .campus-more-info {
-         display: none;
-     }
-
-     .campus-image-mobile-div {
-         display: none;
-     }
-
-     .approach-1-mobile-info {
-         display: none;
-     }
-
-     .approach-2-mobile-info {
-         display: none;
-     }
-
-     .approach-mobile-card-row {
          display: none;
      }
 
@@ -466,25 +386,10 @@
          display: none;
      }
 
-     .footer-more {
-         display: none;
-     }
-
-     .footer-items-mobile-row {
-         display: none;
-     }
-
-     .about-title-mobile {
-         display: none;
-     }
-
      .placeholder-tall-image img {
          display: none;
      }
 
-     .student-work-mobile {
-         display: none;
-     }
 
      .mobile-menu-nav {
          display: none;
@@ -510,107 +415,7 @@
          display: none;
      }
 
-     .campus-info-3 {
-         display: none;
-     }
-
-     .campus-info-4 {
-         display: none;
-     }
-
-     .campus-image-alignment {
-         display: none;
-     }
-
-     .campus-image-edit-1 {
-         display: none;
-     }
-
-     .campus-image-edit-2 {
-         display: none;
-     }
-
-     .campus-image-edit-3 {
-         display: none;
-     }
-
-     .approach-1-info {
-         display: none;
-     }
-
-     .approach-2-info {
-         display: none;
-     }
-
-     .approach-card-row {
-         display: none;
-     }
-
-     .footer-items-row {
-         display: none;
-     }
-
-     .visiter-option-row {
-         display: none;
-     }
-
-     .visiter-border {
-         display: none;
-     }
-
-     .visiter-options-card {
-         display: none;
-     }
-
      .about-title {
-         display: none;
-     }
-
-     .box-3 {
-         display: none;
-     }
-
-     .box-1 {
-         display: none;
-     }
-
-     .box-2 {
-         display: none;
-     }
-
-     .box-4 {
-         display: none;
-     }
-
-     .box-5 {
-         display: none;
-     }
-
-     .box-6 {
-         display: none;
-     }
-
-     .approach-card-1 {
-         display: none;
-     }
-
-     .approach-card {
-         display: none;
-     }
-
-     .approach-card-4 {
-         display: none;
-     }
-
-     .visiter-border-1 {
-         display: none;
-     }
-
-     .footer-items-1 {
-         display: none;
-     }
-
-     .footer-items-2 {
          display: none;
      }
 
@@ -647,112 +452,57 @@
 
      /* TOP PAGE */
 
-     .info-box-mobile {
-         display: flex;
-         flex-direction: row;
+     .info-sub-row {
          overflow: scroll;
      }
-
-     .mobile-box-info-cards {
-         padding: 100px 200px 100px 200px;
-         background-color: lightgray;
-         margin: 20px;
-         text-align: center;
-     }
-
 
      /* INFORMATION ROW ONTOP */
-     .campus-image-mobile-edit-1 {
-         width: 100%;
-         margin: 20px;
-     }
-
-     .campus-image-mobile-edit-2 {
-         width: 100%;
-         margin: 20px;
-     }
-
-     .campus-image-mobile-edit-3 {
-         width: 100%;
-         margin: 20px;
-     }
-
-     .campus-image-mobile {
-         overflow: scroll;
-         display: flex;
-         flex-direction: row;
+     .campus-images-alignment {
+         overflow: auto;
      }
 
      .campus-more-info {
          color: lightskyblue;
-         margin-left: 400px;
+         margin-top: 20px;
+         margin-left: 450px;
          text-decoration: underline;
      }
 
      /* CAMPUS ROW ONTOP */
-     .approach-mobile-card-row {
-         display: flex;
-         flex-direction: row;
+     .approach-card-row {
          overflow: scroll;
-         margin-left: 85px;
-         margin-top: 20px;
-         margin-right: 80px;
+         margin-left: 80px;
+         margin-right: 100px;
      }
 
-     .approach-1-mobile-info {
-         margin-bottom: 20px;
+     .approach-info-row {
+         flex-direction: column;
      }
 
-     .approach-mobile-card-edit {
-         margin-right: 95px;
-         border: 1px solid black;
+     .approach-1-info {
+         margin-right: 0px;
      }
 
      /* STUDENT WORK */
-     .student-work-mobile {
+     .student-work {
          position: absolute;
-         top: 4500px;
+         top: 5035px;
          color: white;
          margin-left: 130px;
          font-size: 20px;
      }
 
      /* APPROACH ROW */
-     .visiter-options-card-mobile {
-         padding: 50px 25px 50px 25px;
+     .visiter-option-row {
+         display: grid;
+         grid-template-columns: 1;
+         grid-template-rows: 4;
+         row-gap: 20px;
      }
 
-     .visiter-border-mobile {
-         font-size: 27px;
-         border: 3px white solid;
-         margin: 20px;
+     .footer-items-row {
+         flex-direction: column;
+         row-gap: 10px;
      }
 
-     .visiter-border-mobile-shop {
-         font-size: 27px;
-         border: 3px white solid;
-         margin: 20px;
-         background-color: white;
-     }
-
-     .footer-more {
-         color: lightskyblue;
-         margin-right: 410px;
-         text-decoration: underline;
-     }
-
-     .footer-items-mobile-row {
-         display: flex;
-         flex-direction: row;
-     }
-
-     .footer-items-mobile-1 {
-         margin-right: 280px;
-         text-decoration: underline;
-     }
-
-     .footer-items-mobile-2 {
-         text-decoration: underline;
-         margin-right: 5px;
-     }
  }
