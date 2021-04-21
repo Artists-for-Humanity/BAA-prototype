@@ -115,12 +115,11 @@ h2 {
 }
 
 .button {
-    font-size: 15px;
+    font-size: 20px;
     color: white;
-    padding: 10px;
+    padding: 20px;
     background-color: gray;
-    border-color: black;
-    border-width: 120px;
+    border: black;
 }
 
 @media (max-width:700p) {
@@ -131,20 +130,20 @@ h2 {
 }
 
 
-.page-section {
+.upcoming-events {
     background-color: #DDDDDD;
     padding: 60px 135px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.three-up-grid-title {
+.upcoming-events-title {
     font-size: 32px;
     font-weight: 700;
     color: #666666;
 }
 
-.three-up-grid-title-bar {
+.upcoming-events-title-bar {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -152,30 +151,30 @@ h2 {
     margin-bottom: 30px;
 }
 
-.three-up-grid-cta {
+.upcoming-events-cta {
     text-decoration: underline;
 }
 
-.three-up-grid-items {
+.upcoming-events-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
-.grid-item-image {
+.event-image {
     position: relative;
     object-fit: cover;
     width: 100%;
 }
 
-.grid-item-title {
+.event-title {
     font-size: 16px;
     font-weight: 700;
     color: #666666;
     margin-top: 12px;
 }
 
-.grid-item-date {
+.event-date {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -188,30 +187,30 @@ h2 {
     justify-content: center;
 }
 
-.grid-item-date .month {
+.event-date .month {
     font-size: 16px;
 }
 
-.grid-item-date .day {
+.event-date .day {
     font-size: 40px;
 }
 
 @media (max-width: 700px) {
-    .page-section {
+    .upcoming-events {
         padding: 45px 30px;
     }
 }
 
 @media (max-width: 600px) {
-    .page-section {
+    .upcoming-events {
         padding: 30px 20px;
     }
 
-    .three-up-grid-title {
+    .upcoming-events-title {
         font-size: 24px;
     }
 
-    .three-up-grid-items {
+    .upcoming-events-items {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -270,12 +269,18 @@ h2 {
 .donation-image {
     background-color: gray;
     height: 500px;
+    object-fit: cover;
 }
 
 @media (max-width:700px) {
     .donation-image {
         height: 300px;
     }
+}
+
+.student-spotlight-container {
+    padding: 10px;
+    background-color: lightgray;
 }
 
 .student-spotlight-title {
@@ -295,7 +300,7 @@ h2 {
 .student-spotlight {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 150px;
+    padding: 60px;
     background-color: lightgray;
     padding-top: 20px;
     align-items: center;
@@ -314,6 +319,7 @@ h2 {
     .student-spotlight-image {
         height: 300px;
         padding: none;
+        object-fit: cover;
     }
 }
 
@@ -340,7 +346,6 @@ h2 {
     .student-description {
         padding: 10px;
         margin: 0;
-        width: 300px;
         text-align: center;
     }
 }
@@ -385,7 +390,7 @@ h2 {
 
 
 .impact {
-    padding: 100px;
+    padding: 20px;
     background-color: white;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -444,10 +449,8 @@ h2 {
 .impact-highlights {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px;
     padding: 40px;
     grid-gap: 50px;
-    grid-row-gap: 150px
 }
 
 @media (max-width:700px) {
@@ -565,7 +568,7 @@ h2 {
 
 footer {
     text-align: center;
-    padding: 170px;
+    padding: 5vw;
     background-color: gray;
 }
 

@@ -10,7 +10,7 @@
     array(
       "template" => "templates/hero.php",
       "data" => array(
-        'text' => 'Example Page'
+        'text' => 'Example Page 2'
       )
     ),
     array(
@@ -34,12 +34,6 @@
             'text' => 'Event name 3'
           )
         )
-      )
-    ),
-    array(
-      "template" => "templates/hero.php",
-      "data" => array(
-        'text' => 'Example Page yay'
       )
     ),
     array(
