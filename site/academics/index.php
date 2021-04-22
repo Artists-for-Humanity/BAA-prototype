@@ -1,3 +1,4 @@
+<?php include_once('../php/template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,15 +14,7 @@
 <body>
   <nav><a href="/">Home</a><a href="/about">About</a></nav>
   <div>
-    <div class="header">
-      <div class="header-block-text">Academics</div>
-      <div class="header-text">Jodie Mcsally<br>Dance Program, Class of 21</div>
-      <picture>
-        <source srcset="/assets/images/placeholder-image-rectangle-tall.png"
-          media="(orientation: portrait) and ( min-width: 600px)">
-        <img src="/assets/images/placeholder-image-rectangle.png" alt="image" />
-      </picture>
-    </div>
+    <?php template("header.php", array('text' => 'Academics')) ?>
     <div class="sub-nav">
       <div>Majors</div>
       <div>Inquiry & innovation</div>
@@ -87,7 +80,22 @@
     </div>
     <div class="section">
       <div class="majors-block-grid">
-        <div class="majors-block">
+        <?php
+        $majors= array(
+          'Dance',
+          'Fashion <br>Technology', 
+          'Art &amp; Design',
+          'Music',
+          'Theater',
+        );
+        forEach($majors as $major){
+          template("majors-block.php", array(
+            'name' => $major,   
+            'image'=> '../assets/images/placeholder-image-rectangle.png'
+          ));
+        }
+        ?>
+        <!-- <div class="majors-block">
           <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
           <div class="majors-block-text">Dance</div>
         </div>
@@ -106,7 +114,7 @@
         <div class="majors-block">
           <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
           <div class="majors-block-text">Theater</div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -115,13 +123,23 @@
       <h2>Inquiry & innovation</h2>
     </div>
     <div class="subject-blocks">
+      <?php
+          template("subjects-block.php", array(
+            'title-1' => 'Humanities',
+            'title-2' => 'Mathmatics',
+            'title-3' => 'Science',
+            'title-4' => 'STEM LAB',
+            'title-5' => 'Service Learning',
+            'title-6' => 'Foreign Languages'
+          ));
+        ?>
       <div class="subject-block">
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
         <div class="subject-block-title">Humanities</div>
       </div>
       <div class="subject-block">
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-        <div class="subject-block-title">Mathmatecs</div>
+        <div class="subject-block-title">Mathmatics</div>
       </div>
       <div class="subject-block">
         <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
