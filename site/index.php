@@ -29,7 +29,7 @@
     <div class="nav-items">
       <?php
       foreach ($navItems as $item) {
-      template("nav-item.php", array(
+      template("templates/nav-item.php", array(
           "name" => $item['name'],
           "link" => $item['link'],
         ));
@@ -45,7 +45,7 @@
     <div class="mobile-menu-button">
       <?php
 foreach ($navItems as $item) {
-    template("mobile-menu-button.php", array(
+    template("templates/mobile-menu-button.php", array(
         "name" => $item['name'],
         "link" => $item['link'],
     ));
@@ -53,7 +53,7 @@ foreach ($navItems as $item) {
 ?>
     </div>
   </nav>
-  <?php template("hero.php", array(
+  <?php template("templates/hero.php", array(
     'text' => 'Artist Scholars designing their own future',
     'image' => 'assets/images/68-0314.jpg',
     'button' => 'Learn more',
@@ -73,7 +73,7 @@ foreach ($navItems as $item) {
       <div class="upcoming-events-items">
         <?php
         foreach ($upcomingEvents as $items) {
-        template('upcoming-events.php', array(
+        template('templates/upcoming-events.php', array(
         'month' => $items['month'],
         'day' => $items['day'],
         'text' => $items['text'],
@@ -87,7 +87,7 @@ foreach ($navItems as $item) {
     <h2>News</h2>
     <div class="view-all">View All</div>
   </div>
-  <?php template("hero.php", array(
+  <?php template("templates/hero.php", array(
     'text' => '174 Ipswich Street',
     'image' => 'assets/images/rhondak-native-florida-folk-artist-_yc7otffn-0-unsplash.jpg',
     'button' => 'Tour the New BAA',
@@ -101,7 +101,7 @@ foreach ($navItems as $item) {
   <div class="donations">
     <?php
 foreach ($donations as $items) {
-    template("donation.php", array(
+    template("templates/donation.php", array(
         'image' => $items['image'],
         'description' => $items['description'],
     ));
@@ -109,7 +109,7 @@ foreach ($donations as $items) {
 ?>
   </div>
   <?php
-template("student-spotlight.php", array(
+template("templates/student-spotlight.php", array(
     'title'=>'Student Spotlight',
     'stats'=>'Class of \'23',
     'name' => 'Sandy Perdue',
@@ -120,7 +120,7 @@ template("student-spotlight.php", array(
    at imperdiet et, consectetur vitae lacus. Ut nec aliquam felis, in consectetur est. Proin maximus quis odio et porta. Donec a odio fringilla, volutpat lectus mattis, blandit erat. Aenean dignissim dapibus nibh, ac malesuada risus gravida eu. Ut felis leo, accumsan vitae nibh ac, varius dignissim enim. Suspendisse pharetra cursus tortor, vel dignissim purus tincidunt a.',
 ));
 ?>
-  <?php template("impact.php", array(
+  <?php template("templates/impact.php", array(
     'title' => 'Boston Arts Academy Impact',
     'description' => 'Nam urna mauris, viverra et sem ac, accumsan interdum tellus. Aenean facilisis erat eu quam scelerisque tempus. Duis cursus fermentum elit vel pulvinar. Sed in lectus tristique, aliquam arcu at,
     iaculis orci. Sed eu orci sapien. Nulla eget volutpat mauris. Phasellus semper sollicitudin dolor. Morbi ut interdum augue. Nam dignissim tempor mattis. Proin sit amet mollis erat, nec viverra nulla. Mauris vehicula lectus non suscipit condimentum.
@@ -142,7 +142,7 @@ template("student-spotlight.php", array(
       </div>
       <?php 
     foreach($monthinreview as $items) {
-      template("month-in-review.php", array(
+      template("templates/month-in-review.php", array(
         'description' => $items ['description'],
         'image'=> $items ['image'],
       ));
@@ -150,7 +150,7 @@ template("student-spotlight.php", array(
     ?>
     </div>
   </div>
-  <?php template("hero.php", array(
+  <?php template("temaplates/hero.php", array(
           'text' => 'Winterfest 2021',
           'button' => "watch the concert",
           'image' => 'assets/images/2015-class-photo.jpg',
@@ -166,7 +166,7 @@ template("student-spotlight.php", array(
 ?>
     <?php
         foreach($morefrombutton as $item){
-        template("more-from.php", array(
+        template("templates/more-from.php", array(
           "name"=>$item['name'],
           "link"=>$item['link'],
     ));
@@ -174,7 +174,7 @@ template("student-spotlight.php", array(
   ?>
   </div>
   <div class="student-illustration-image-wrapper">
-    <?php template("student-illustration-image.php", array(
+    <?php template("templates/student-illustration-image.php", array(
         'image'=> 'russn_fckr-krv5as4jdja-unsplash.jpg','description'=>'Student Illustration or Animation',
     ));
     ?>
@@ -190,7 +190,7 @@ template("student-spotlight.php", array(
     <div class="interaction-buttons-1">
       <?php 
       foreach($interactionButtons1 as $items){
-      template("interaction-buttons-1", array(
+      template("templates/interaction-buttons-1", array(
          "link"=>$item['link'],
           "name"=>$items['name'],
         
@@ -210,7 +210,7 @@ template("student-spotlight.php", array(
     <div class="interaction-buttons-2">
       <?php
 foreach ($interactionItems as $item) {
-    template("footer-buttons.php", array(
+    template("templates/footer-buttons.php", array(
         "name" => $item['name'],
         "link" => $item['link'],
     ));
