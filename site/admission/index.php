@@ -1,3 +1,4 @@
+<?php include_once('../php/template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,15 +13,11 @@
 
 <body>
   <nav><a href="">Home</a><a href="/about">About</a></nav>
-  <div class="banner">
-    <div class="admission-title">
-      <h1 class="header-title">Admission</h1>
-    </div>
-    <p class="header-text">Jodie McSally Dance Program Class of '21</p>
-    <div class="placeholder-image">
-      <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-    </div>
-  </div>
+  <?php 
+  template("banner.php", array(
+    "text" => "Admission"
+  ));
+  ?>
   <div class="Admission-nav"></div>
   <div class="nav-3">
     <div class="item-1-3">
@@ -38,8 +35,8 @@
   </div>
   <section class="page-section">
     <div class="admission-info">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+      <?php echo"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut nisi ut puh.";?>
     </div>
     <h5>Students must live in Boston by TKTK in order to enroll. Learn more</h5>
     <div class="more-admission-info">
@@ -47,55 +44,60 @@
         <div class="info-1">
           <h5>Grades Blind</h5>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"<p>Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.</p>";?>
       </div>
       <div>
         <div class="info-2">
-          <h5>All Levels of Experience</h5>
+          <?php echo"<h5>All Levels of Experience</h5>";?>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"<p>Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.</p>";?>
       </div>
       <div>
         <div class="info-3">
-          <h5>Full Inclusion</h5>
+          <?php echo"<h5>Full Inclusion</h5>";?>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"<p>Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.</p>";?>
       </div>
     </div>
     <div class="upcoming-admission-events">
-      <div>
-        <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-        <div>Nov 10</div>
-        <p>Sign up for open house</p>
-      </div>
-      <div>
-        <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-        <div>Dec 17</div>
-        <p>Sign up for Audition Workshop</p>
-      </div>
-      <div>
-        <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-        <div>Jan 23</div>
-        <p>Sign up for Alumni Panel: Opportunity After BAA</p>
-      </div>
+      <?php
+          template("upcoming-admission-events.php", array(
+            'link' => 'http://google.com',
+            'month' => 'Nov',
+            'day' => '10',
+            'text' => 'Event name 2'
+          ));
+        ?>
+      <?php
+          template("upcoming-admission-events.php", array(
+            'month' => 'Dec',
+            'day' => '17',
+            'text' => 'Event name 2'
+          ));
+        ?>
+      <?php
+          template("upcoming-admission-events.php", array(
+            'month' => 'Jan',
+            'day' => '23',
+            'text' => 'Event name 2'
+          ));
+        ?>
     </div>
   </section>
   <section class="application-process-section">
     <h2>Application Process</h2>
     <ol class="application-process-info">
-      <li class="application-process-item">
-        <div class="application-process-number">1</div>
-        <div>in BPS (lorem ipsom dolsot) | Due 1/22/21
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Register in BPS (Lorem ipsom dolsot)
-        </div>
-      </li>
+      <?php
+          template("application-process-item.php", array(
+           'number' => '1'
+          ));
+        ?>
       <li class="application-process-item">
         <div class="application-process-number">2</div>
         <div>BPS Choice Form | Due 1/22/21
@@ -244,43 +246,49 @@
         <div class="info-1">
           <h5>Grades Blind</h5>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.";?>
       </div>
       <div>
         <div class="info-2">
           <h5>All Levels of Experience</h5>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        <?php echo"Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
+          dolore magna aliqua. Ut enim ad minim.";?>
       </div>
-        <div class="info-3">
-          <h5>Full Inclusion</h5>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+      <div class="info-3">
+        <h5>Full Inclusion</h5>
+      </div>
+      <?php echo"Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim.</p>
-      </div>
+          dolore magna aliqua. Ut enim ad minim.";?>
+    </div>
     </div>
   </section>
   <div class="upcoming-admission-events">
-    <div>
-      <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-      <div>Nov 10</div>
-      <p>Sign up for open house</p>
-    </div>
-    <div>
-      <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-      <div>Dec 17</div>
-      <p>Sign up for Audition Workshop</p>
-    </div>
-    <div>
-      <img src="../assets/images/placeholder-image-rectangle.png" alt="placeholder-image-rectangle">
-      <div>Jan 23</div>
-      <p>Sign up for Alumni Panel: Opportunity After BAA</p>
-    </div>
+    <?php
+          template("upcoming-admission-events.php", array(
+            'month' => 'Nov',
+            'day' => '10',
+            'text' => 'Event name 2'
+          ));
+        ?>
+    <?php
+          template("upcoming-admission-events.php", array(
+            'month' => 'Dec',
+            'day' => '17',
+            'text' => 'Event name 2'
+          ));
+        ?>
+    <?php
+          template("upcoming-admission-events.php", array(
+            'month' => 'Jan',
+            'day' => '23',
+            'text' => 'Event name 2'
+          ));
+        ?>
   </div>
   <h2>Application Process</h2>
   <ol class="application-process-info">
