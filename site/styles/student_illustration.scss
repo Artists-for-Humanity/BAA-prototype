@@ -1,0 +1,30 @@
+
+.student-illustration {
+    font-size: 100px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    border-style: solid;
+    border-color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.student-illustration-image-wrapper {
+    object-fit: cover;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.student-illustration-image {
+    width: 100%;
+    object-fit: fill;
+}

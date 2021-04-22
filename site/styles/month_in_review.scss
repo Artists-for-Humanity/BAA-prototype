@@ -1,0 +1,16 @@
+.month-in-review {
+    padding: 10px;
+    background-color: lightgray;
+    align-items: center;
+@media (max-width:700px) {
+        padding: 20px;
+    }
+}
+.month-in-review-image {
+    background-color: gray;
+    object-fit: cover;
+@media (max-width:700px) {
+        height: 150px;
+        object-fit: cover;
+    }
+}

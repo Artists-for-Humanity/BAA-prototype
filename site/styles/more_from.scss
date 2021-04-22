@@ -1,0 +1,32 @@
+.more-from {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+@media (max-width:700px) {
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+.more-from-title {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 40px;
+@media (max-width:700px) {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.more-from-buttons {
+    color: white;
+    padding: 40px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 8px;
+    background-color: rgb(160, 160, 160);
+@media (max-width:700px) {
+        padding: 10px;
+    }
+}

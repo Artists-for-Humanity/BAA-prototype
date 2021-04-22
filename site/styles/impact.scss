@@ -1,0 +1,61 @@
+.impact {
+    padding: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+@media (max-width:1000px) {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+.impact-circle {
+    border-radius: 50%;
+    height: 50px;
+    object-fit: fill;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+@media (max-width:700px) {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+.impact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+@media (max-width:700px) {
+        padding: 10px;
+        align-items: center;
+    }
+}
+
+.gray-line {
+    height: 5px;
+    background-color: gray;
+    width: 100px;
+}
+
+.stats {
+    width: 200px;
+    text-align: center;
+    box-shadow: black;
+}
+
+.impact-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    grid-gap: 50px;
+@media (max-width:700px) {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        grid-row-gap: 0;
+        text-align: center;
+    }
+}
