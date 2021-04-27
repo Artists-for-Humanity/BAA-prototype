@@ -21,7 +21,9 @@
     </div>
     <?php $navItems = array(
     array('name' => 'About', 'link' => '/about'),
-    array('name' => 'Academics', 'link' => '/academics'),
+    array('name' => 'Curriculum', 'link' => '/academics'),
+    array('name' => 'Student and Alumni', 'link' => '/academics'),
+    array('name' => 'Events', 'link' => '/academics'),
     array('name' => 'Admission', 'link' => '/admission'),
     array('name' => 'Dance', 'link' => '/dance'),
 );
@@ -54,9 +56,9 @@ foreach ($navItems as $item) {
     </div>
   </nav>
   <?php template("templates/hero.php", array(
-    'text' => 'Artist Scholars designing their own future',
+    'text' => 'Artist-Scholars-Global Citizens',
     'image' => 'assets/images/68-0314.jpg',
-    'button' => 'Learn more',
+    'button' => 'Learn about Our Programs',
 ))?>
   <section class="upcoming-events">
     <div class="upcoming-events-content">
@@ -65,9 +67,9 @@ foreach ($navItems as $item) {
         <a class="upcoming-events-cta" href="#">View all</a>
       </div>
       <?php $upcomingEvents = array(
-          array('month' => 'Feb', 'day' => '10', 'text' => 'event name 1', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
-          array('month' => 'Mar', 'day' => '15', 'text' => 'event name 2', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
-          array('month' => 'May', 'day' => '11', 'text' => 'event name 2', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
+          array('month' => 'Mar', 'day' => '10', 'text' => 'Applications Are Due: Hope to see you next year!', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
+          array('month' => 'May', 'day' => '17', 'text' => 'The Art of Connection: A Virtual Symposium', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
+          array('month' => 'June', 'day' => '23', 'text' => 'Aretha Franklin Tribute: Gospel Years', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
       );
       ?>
       <div class="upcoming-events-items">
@@ -120,6 +122,31 @@ template("templates/student-spotlight.php", array(
    at imperdiet et, consectetur vitae lacus. Ut nec aliquam felis, in consectetur est. Proin maximus quis odio et porta. Donec a odio fringilla, volutpat lectus mattis, blandit erat. Aenean dignissim dapibus nibh, ac malesuada risus gravida eu. Ut felis leo, accumsan vitae nibh ac, varius dignissim enim. Suspendisse pharetra cursus tortor, vel dignissim purus tincidunt a.',
 ));
 ?>
+  <section class="upcoming-events">
+    <div class="upcoming-events-content">
+      <div class="upcoming-events-title-bar">
+        <div class="upcoming-events-title">Admission Events</div>
+        <a class="upcoming-events-cta" href="#">View all</a>
+      </div>
+      <?php $upcomingEvents = array(
+          array('month' => 'Feb', 'day' => '10', 'text' => 'Boston Arts Academy Open House', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
+          array('month' => 'Mar', 'day' => '15', 'text' => 'Real Talk Q & A: Chat with BAA Students and Get the Inside Scoop', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
+          array('month' => 'May', 'day' => '11', 'text' => 'Audition and Portfolio Prep', 'image' => 'dancers.jpg', 'alt' => 'dancers'),
+      );
+      ?>
+      <div class="upcoming-events-items">
+        <?php
+        foreach ($upcomingEvents as $items) {
+        template('templates/upcoming-events.php', array(
+        'month' => $items['month'],
+        'day' => $items['day'],
+        'text' => $items['text'],
+        'image' => $items['image'],
+        'alt' => $items['alt'],
+    ));
+}
+?>
+  </section>
   <?php template("templates/impact.php", array(
     'title' => 'Boston Arts Academy Impact',
     'description' => 'Nam urna mauris, viverra et sem ac, accumsan interdum tellus. Aenean facilisis erat eu quam scelerisque tempus. Duis cursus fermentum elit vel pulvinar. Sed in lectus tristique, aliquam arcu at,
@@ -157,7 +184,7 @@ template("templates/student-spotlight.php", array(
       ));
     ?>
   <div class="more-from">
-    <div class="more-from-title">more from</div>
+    <div class="more-from-title">Talent is evenly distributed  in society, but not opportunity.</div>
     <?php $morefrombutton = array(
       array('name' => 'Community', 'link' => '/about'),
       array('name' => 'Admissions', 'link' => '/admissions'),
@@ -181,7 +208,7 @@ template("templates/student-spotlight.php", array(
   </div>
   </div>
   <footer>
-    <div class="footer-title">Footer TBD</div>
+    <div class="footer-title">Boston Arts Academy</div>
     <?php $interactionButtons1 = array(
       array('name'=>'Newsletter Signup', 'link'=>'/homepage'),
       array('name'=>'Social Media Icons', 'link'=>'/about'),
