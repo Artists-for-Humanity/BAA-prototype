@@ -60,6 +60,7 @@ foreach ($navItems as $item) {
     'image' => 'assets/images/68-0314.jpg',
     'button' => 'Learn about Our Programs',
 ))?>
+  <?php include("templates/slider.php")?>
   <section class="upcoming-events">
     <div class="upcoming-events-content">
       <div class="upcoming-events-title-bar">
@@ -245,7 +246,8 @@ foreach ($interactionItems as $item) {
 ?>
     </div>
   </footer>
-  <script src="/script.js"></script>
+  <script src=<script src="/script.js"></script>
+  </div>
 </body>
 
 </html>

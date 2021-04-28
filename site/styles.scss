@@ -9,6 +9,11 @@
 @import"./styles/nav";
 @import"./styles/mobile_menu";
 @import"./styles/student_illustration";
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 h2 {
     font-size: 35px;
@@ -56,4 +61,13 @@ h2 {
     font-weight: lighter;
     text-align: right;
 }
+
+.container {
+    align-items: center;
+}
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
